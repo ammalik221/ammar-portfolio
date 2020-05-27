@@ -63,8 +63,7 @@
       border-color: #eece1a;
       border-radius: 50%;
       background-size: cover;
-      border-style: solid;
-      opacity: 10; }
+      border-style: solid; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -252,3 +251,105 @@ main {
   opacity: 0.7;
   background-color: #0d0d0d;
   padding: 1px; }
+
+.portfolio-info {
+  margin-left: 80px;
+  grid-gap: 30px;
+  display: grid;
+  grid-template-areas: "project1 project2 project3";
+  grid-template-columns: 350px 350px 350px; }
+  .portfolio-info .project-1,
+  .portfolio-info .project-2,
+  .portfolio-info .project-3 {
+    border-radius: 2%;
+    background-color: #373737;
+    box-shadow: 10px 10px 5px #2b2b2b; }
+    .portfolio-info .project-1 h2,
+    .portfolio-info .project-1 p,
+    .portfolio-info .project-1 .btn-proj-1,
+    .portfolio-info .project-1 .btn-proj-2,
+    .portfolio-info .project-1 .btn-proj-3,
+    .portfolio-info .project-2 h2,
+    .portfolio-info .project-2 p,
+    .portfolio-info .project-2 .btn-proj-1,
+    .portfolio-info .project-2 .btn-proj-2,
+    .portfolio-info .project-2 .btn-proj-3,
+    .portfolio-info .project-3 h2,
+    .portfolio-info .project-3 p,
+    .portfolio-info .project-3 .btn-proj-1,
+    .portfolio-info .project-3 .btn-proj-2,
+    .portfolio-info .project-3 .btn-proj-3 {
+      padding-left: 5px; }
+    .portfolio-info .project-1 h2,
+    .portfolio-info .project-2 h2,
+    .portfolio-info .project-3 h2 {
+      color: #d0b30f; }
+    .portfolio-info .project-1 img,
+    .portfolio-info .project-2 img,
+    .portfolio-info .project-3 img {
+      margin-left: 25px;
+      margin-top: 10px;
+      border-radius: 2%; }
+    .portfolio-info .project-1 .btn-proj-1,
+    .portfolio-info .project-1 .btn-proj-2,
+    .portfolio-info .project-1 .btn-proj-3,
+    .portfolio-info .project-2 .btn-proj-1,
+    .portfolio-info .project-2 .btn-proj-2,
+    .portfolio-info .project-2 .btn-proj-3,
+    .portfolio-info .project-3 .btn-proj-1,
+    .portfolio-info .project-3 .btn-proj-2,
+    .portfolio-info .project-3 .btn-proj-3 {
+      margin: 30px 5px 30px 5px; }
+      .portfolio-info .project-1 .btn-proj-1 .button,
+      .portfolio-info .project-1 .btn-proj-2 .button,
+      .portfolio-info .project-1 .btn-proj-3 .button,
+      .portfolio-info .project-2 .btn-proj-1 .button,
+      .portfolio-info .project-2 .btn-proj-2 .button,
+      .portfolio-info .project-2 .btn-proj-3 .button,
+      .portfolio-info .project-3 .btn-proj-1 .button,
+      .portfolio-info .project-3 .btn-proj-2 .button,
+      .portfolio-info .project-3 .btn-proj-3 .button {
+        margin-right: 6px;
+        border-radius: 6px;
+        background-color: #fff;
+        color: #000;
+        padding: 10px 20px; }
+        .portfolio-info .project-1 .btn-proj-1 .button:hover,
+        .portfolio-info .project-1 .btn-proj-2 .button:hover,
+        .portfolio-info .project-1 .btn-proj-3 .button:hover,
+        .portfolio-info .project-2 .btn-proj-1 .button:hover,
+        .portfolio-info .project-2 .btn-proj-2 .button:hover,
+        .portfolio-info .project-2 .btn-proj-3 .button:hover,
+        .portfolio-info .project-3 .btn-proj-1 .button:hover,
+        .portfolio-info .project-3 .btn-proj-2 .button:hover,
+        .portfolio-info .project-3 .btn-proj-3 .button:hover {
+          color: #eece1a;
+          background-color: #2b2b2b;
+          transition: all 0.5s ease-out; }
+    .portfolio-info .project-1 .footer-proj-1,
+    .portfolio-info .project-1 .footer-proj-2,
+    .portfolio-info .project-1 .footer-proj-3,
+    .portfolio-info .project-2 .footer-proj-1,
+    .portfolio-info .project-2 .footer-proj-2,
+    .portfolio-info .project-2 .footer-proj-3,
+    .portfolio-info .project-3 .footer-proj-1,
+    .portfolio-info .project-3 .footer-proj-2,
+    .portfolio-info .project-3 .footer-proj-3 {
+      border-style: solid;
+      border-color: grey;
+      border-radius: 6px;
+      margin-bottom: 0;
+      background-color: grey; }
+
+.project-1 {
+  grid-area: project1; }
+
+.project-2 {
+  grid-area: project2; }
+
+.project-3 {
+  grid-area: project3; }
+
+#portfolio .lg-heading,
+#portfolio .sm-heading {
+  margin-left: 85px; }

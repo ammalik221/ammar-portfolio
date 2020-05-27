@@ -97,18 +97,3 @@ function init() {
   // Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
-
-const f_icon = document.querySelector(".first-icon");
-let f_show_icon = false;
-f_icon.addEventListener("click", firstIconChange);
-function firstIconChange() {
-  a = document.getElementById("first-icon");
-  if (!f_show_icon) {
-    a.innerHTML = "&#xf115;";
-    showMenu = true;
-  } else {
-    a.innerHTML = "&#xf114;";
-
-    showMenu = false;
-  }
-}
