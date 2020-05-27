@@ -209,6 +209,7 @@ main {
 
     h2 {
       color: darken($color: $secondary-color, $amount: 8);
+      font-family: "Comic Sans MS", cursive, sans-serif;
     }
 
     img {
@@ -231,6 +232,9 @@ main {
         background-color: #fff;
         color: #000;
         padding: 10px 20px;
+        font-size: 12px;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-weight: 200;
 
         &:hover {
           color: $secondary-color;
@@ -244,11 +248,12 @@ main {
     .footer-proj-2,
     .footer-proj-3 {
       border-style: solid;
-      border-color: grey;
+      border-color: darken(grey, 10);
       border-radius: 6px;
       //border-width: 3px;
       margin-bottom: 0;
-      background-color: grey;
+      background-color: darken(grey, 10);
+      font-family: "Times New Roman", Times, serif;
     }
   }
 }
@@ -270,5 +275,27 @@ main {
   .sm-heading {
     margin-left: 85px;
     //border-style: solid;
+  }
+}
+
+.more-projects {
+  width: 1120px;
+  border-style: solid;
+  display: grid;
+  grid-template-areas:
+    "head"
+    "proj1"
+    "proj2"
+    "proj3"
+    "proj4";
+  grid-template-rows: 250px;
+  grid-template-columns: 1fr;
+
+  .more-proj-head,
+  .more-proj-1,
+  .more-proj-2,
+  .more-proj-3,
+  .more-proj-4 {
+    border-style: solid;
   }
 }
