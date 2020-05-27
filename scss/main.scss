@@ -1,0 +1,274 @@
+@import "config";
+@import "menu";
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
+
+* {
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+body {
+  @include background;
+  background: $primary-color;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+}
+
+.lg-heading {
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 5rem;
+  margin-left: 3rem;
+  padding: 0;
+}
+
+.sm-heading {
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 3rem;
+  font-weight: 300;
+  margin-left: 3rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+main {
+  padding: 2rem;
+  padding-right: 4rem;
+  height: 100%;
+
+  .lg-icons {
+    margin-top: 6rem;
+    text-align: center;
+
+    a {
+      margin: 8rem;
+      &:hover {
+        color: $secondary-color;
+        @include easeOut;
+      }
+
+      i {
+        text-align: center;
+        //border-style: solid;
+        background-color: rgba(255, 255, 255, 0.815);
+        padding: 15px;
+        border-radius: 35px;
+        font-size: 2rem;
+        color: $primary-color;
+
+        &:hover {
+          color: $secondary-color;
+          background-color: $primary-color;
+          @include easeOut;
+        }
+      }
+    }
+  }
+
+  &#home {
+    overflow: hidden;
+    h1 {
+      margin-top: 20vh;
+    }
+  }
+}
+
+.container {
+  h2 {
+    margin-left: 3rem;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+
+  h2 {
+    font-weight: 300;
+    margin: 0.4rem;
+  }
+}
+
+.txt-type > .txt {
+  border-right: 0.2rem solid darken($primary-color, 5);
+  color: $secondary-color;
+}
+
+#resume-home {
+  .lg-heading {
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 4rem;
+    margin-left: 18rem;
+    padding: 0;
+  }
+  .document {
+    margin-left: 18rem;
+    //border-style: solid;
+  }
+  .sm-heading {
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    margin-left: 18rem;
+    color: $secondary-color;
+    margin-bottom: 8px;
+  }
+  .button {
+    background-color: #fff;
+    border-style: none;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 35rem;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+#resume-bg {
+  background-color: $primary-color;
+
+  .btn-line {
+    background-color: #fff;
+  }
+}
+
+#about-home {
+  .lg-heading {
+    //border-style: solid;
+    font-size: 3rem;
+    margin-left: 10rem;
+  }
+  .first-para {
+    //border-style: solid;
+    width: 1000px;
+    margin-left: 10rem;
+    opacity: 0.7;
+    background-color: lighten($color: #000, $amount: 5);
+    padding: 1px;
+  }
+}
+
+.portfolio-info {
+  margin-left: 80px;
+  //border-style: solid;
+  grid-gap: 30px;
+  display: grid;
+  grid-template-areas: "project1 project2 project3";
+  grid-template-columns: 350px 350px 350px;
+
+  .project-1,
+  .project-2,
+  .project-3 {
+    //border-style: solid;
+    border-radius: 2%;
+    background-color: darken($color: $primary-color, $amount: 5);
+    box-shadow: 10px 10px 5px darken($color: $primary-color, $amount: 10);
+    //box-shadow: ;
+
+    h2,
+    p,
+    .btn-proj-1,
+    .btn-proj-2,
+    .btn-proj-3 {
+      //border-style: solid;
+      padding-left: 5px;
+    }
+
+    h2 {
+      color: darken($color: $secondary-color, $amount: 8);
+    }
+
+    img {
+      //border-style: solid;
+      margin-left: 25px;
+      margin-top: 10px;
+      border-radius: 2%;
+    }
+
+    .btn-proj-1,
+    .btn-proj-2,
+    .btn-proj-3 {
+      margin: 30px 5px 30px 5px;
+      //border-style: solid;
+      .button {
+        //border-style: solid;
+        //margin - top right bottom left
+        margin-right: 6px;
+        border-radius: 6px;
+        background-color: #fff;
+        color: #000;
+        padding: 10px 20px;
+
+        &:hover {
+          color: $secondary-color;
+          background-color: darken($color: $primary-color, $amount: 10);
+          @include easeOut;
+        }
+      }
+    }
+
+    .footer-proj-1,
+    .footer-proj-2,
+    .footer-proj-3 {
+      border-style: solid;
+      border-color: grey;
+      border-radius: 6px;
+      //border-width: 3px;
+      margin-bottom: 0;
+      background-color: grey;
+    }
+  }
+}
+
+.project-1 {
+  grid-area: project1;
+}
+
+.project-2 {
+  grid-area: project2;
+}
+
+.project-3 {
+  grid-area: project3;
+}
+
+#portfolio {
+  .lg-heading,
+  .sm-heading {
+    margin-left: 85px;
+    //border-style: solid;
+  }
+}
