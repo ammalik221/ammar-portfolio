@@ -542,7 +542,7 @@ main {
   margin: 0;
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
-  background-image: url(../img/bg_contact.jpg);
+  background-image: url(../img/bg_contact_2.jpg);
   background-attachment: fixed;
   background-size: cover; }
   #bg-contact:after {
@@ -556,7 +556,7 @@ main {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: rgba(68, 68, 68, 0.6); }
+    background: rgba(68, 68, 68, 0.7); }
   #bg-contact #contact .lg-heading {
     font-size: 4rem; }
   #bg-contact #contact .sm-heading {
