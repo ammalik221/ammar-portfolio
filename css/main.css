@@ -115,7 +115,7 @@ body {
   font-family: "Raleway", sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpg);
+    background: url(../img/background_1.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -126,21 +126,23 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.7); }
+      background: rgba(68, 68, 68, 0.5); }
 
 .lg-heading {
   margin-bottom: 0;
   font-weight: 300;
-  font-size: 5rem;
+  font-size: 4rem;
+  margin-top: 0;
   margin-left: 3rem;
   padding: 0; }
 
 .sm-heading {
   margin-top: 0;
   padding: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   font-weight: 300;
-  margin-left: 3rem; }
+  margin-left: 3rem;
+  font-size: 1.4rem; }
 
 a {
   color: #fff;
@@ -159,7 +161,7 @@ main {
   padding-right: 4rem;
   height: 100%; }
   main .lg-icons {
-    margin-top: 6rem;
+    margin-top: 8rem;
     text-align: center; }
     main .lg-icons a {
       margin: 8rem; }
@@ -171,7 +173,7 @@ main {
         background-color: rgba(255, 255, 255, 0.815);
         padding: 15px;
         border-radius: 35px;
-        font-size: 2rem;
+        font-size: 1rem;
         color: #444; }
         main .lg-icons a i:hover {
           color: #eece1a;
@@ -183,13 +185,13 @@ main {
     margin-top: 3px;
     grid-template-columns: repeat(3, 1fr); }
     main .lg-icons-name .lg-icon-name-1 {
-      margin-left: 282px;
+      margin-left: 295px;
       color: #eece1a; }
     main .lg-icons-name .lg-icon-name-2 {
       margin-left: 193px;
       color: #eece1a; }
     main .lg-icons-name .lg-icon-name-3 {
-      margin-left: 83px;
+      margin-left: 65px;
       color: #eece1a; }
   main#home {
     overflow: hidden; }
@@ -207,7 +209,8 @@ main {
   padding: 0 3rem; }
   .container h2 {
     font-weight: 300;
-    margin: 0.4rem; }
+    margin: 0.4rem;
+    font-size: 1.2rem; }
 
 .txt-type > .txt {
   border-right: 0.2rem solid #373737;
@@ -273,7 +276,7 @@ main {
   .portfolio-info .project-2,
   .portfolio-info .project-3 {
     border-radius: 2%;
-    background-color: #373737;
+    background-color: #414141;
     box-shadow: 10px 10px 5px #2b2b2b; }
     .portfolio-info .project-1 h2,
     .portfolio-info .project-1 p,
@@ -377,8 +380,6 @@ main {
   grid-template-areas: "proj1" "proj2" "proj3" "proj4";
   grid-template-rows: 60px;
   grid-template-columns: 1fr; }
-  .more-projects .more-proj-head {
-    border-bottom-style: solid; }
   .more-projects .more-proj-1,
   .more-projects .more-proj-2,
   .more-projects .more-proj-3,
@@ -388,8 +389,6 @@ main {
     border-color: #303030;
     padding-left: 4px; }
   .more-projects .more-proj-head {
-    border-width: 1px;
-    border-color: #303030;
     margin: 0;
     font-size: 2rem; }
   .more-projects .header-proj-1,
@@ -458,9 +457,20 @@ main {
     cursor: pointer;
     transition: all 0.5s ease-out; }
 
+#contact .lg-heading {
+  text-align: center;
+  margin-top: 9rem; }
+
+#contact .sm-heading {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif; }
+
 #contact .contact-icons {
   margin-left: 4rem;
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  text-align: center; }
   #contact .contact-icons a {
     margin: 7px; }
     #contact .contact-icons a i {
@@ -532,7 +542,7 @@ main {
   margin: 0;
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
-  background-image: url(../img/bg_contact_4.jpg);
+  background-image: url(../img/bg_contact.jpg);
   background-attachment: fixed;
   background-size: cover; }
   #bg-contact:after {
@@ -559,7 +569,7 @@ main {
   margin: 0;
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
-  background-image: url(../img/bg_contact_2.jpg);
+  background-image: url(../img/bg_resume.jpg);
   background-attachment: fixed;
   background-size: cover; }
   #bg-resume:after {
@@ -580,7 +590,7 @@ main {
   margin: 0;
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
-  background-image: url(../img/bg_portfolio_1.jpg);
+  background-image: url(../img/bg_portfolio.jpg);
   background-attachment: fixed;
   background-size: cover; }
   #bg-portfolio:after {
@@ -601,7 +611,7 @@ main {
   margin: 0;
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
-  background-image: url(../img/bg_portfolio.jpg);
+  background-image: url(../img/bg_about.jpg);
   background-attachment: fixed;
   background-size: cover; }
   #bg-about:after {
