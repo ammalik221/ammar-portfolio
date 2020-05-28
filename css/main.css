@@ -569,7 +569,7 @@ main {
   margin: 0;
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
-  background-image: url(../img/bg_resume.jpg);
+  background-image: url(../img/bg_resume_2.jpg);
   background-attachment: fixed;
   background-size: cover; }
   #bg-resume:after {
@@ -583,14 +583,14 @@ main {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: rgba(68, 68, 68, 0.6); }
+    background: rgba(68, 68, 68, 0.5); }
 
 #bg-portfolio {
   height: 100%;
   margin: 0;
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
-  background-image: url(../img/bg_portfolio.jpg);
+  background-image: url(../img/bg_about_1.jpg);
   background-attachment: fixed;
   background-size: cover; }
   #bg-portfolio:after {
@@ -604,14 +604,14 @@ main {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: rgba(68, 68, 68, 0.6); }
+    background: rgba(68, 68, 68, 0.4); }
 
 #bg-about {
   height: 100%;
   margin: 0;
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
-  background-image: url(../img/bg_about.jpg);
+  background-image: url(../img/bg_about_3.jpg);
   background-attachment: fixed;
   background-size: cover; }
   #bg-about:after {
@@ -625,4 +625,4 @@ main {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: rgba(68, 68, 68, 0.6); }
+    background: rgba(0, 0, 0, 0.5); }
