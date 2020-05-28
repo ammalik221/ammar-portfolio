@@ -82,6 +82,30 @@ main {
     }
   }
 
+  .lg-icons-name {
+    //border-style: solid;
+    display: grid;
+    grid-template-areas: "name-1 name-2 name-3";
+    margin-top: 3px;
+    grid-template-columns: repeat(3, 1fr);
+
+    .lg-icon-name-1 {
+      margin-left: 282px;
+      color: $secondary-color;
+      //font-weight: 500;
+    }
+
+    .lg-icon-name-2 {
+      margin-left: 193px;
+      color: $secondary-color;
+    }
+
+    .lg-icon-name-3 {
+      margin-left: 83px;
+      color: $secondary-color;
+    }
+  }
+
   &#home {
     overflow: hidden;
     h1 {
@@ -154,14 +178,6 @@ main {
       color: $secondary-color;
       @include easeOut;
     }
-  }
-}
-
-#resume-bg {
-  background-color: $primary-color;
-
-  .btn-line {
-    background-color: #fff;
   }
 }
 
@@ -279,23 +295,213 @@ main {
 }
 
 .more-projects {
+  margin-top: 75px;
   width: 1120px;
-  border-style: solid;
+  //border-style: solid;
   display: grid;
   grid-template-areas:
-    "head"
     "proj1"
     "proj2"
     "proj3"
     "proj4";
-  grid-template-rows: 250px;
+  grid-template-rows: 60px;
   grid-template-columns: 1fr;
 
-  .more-proj-head,
+  .more-proj-head {
+    border-bottom-style: solid;
+  }
+
   .more-proj-1,
   .more-proj-2,
   .more-proj-3,
   .more-proj-4 {
-    border-style: solid;
+    //border-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: darken($color: $primary-color, $amount: 8);
+    padding-left: 4px;
+  }
+
+  .more-proj-head {
+    //border-style: solid;
+    border-width: 1px;
+    border-color: darken($color: $primary-color, $amount: 8);
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .header-proj-1,
+  .header-proj-2,
+  .header-proj-3,
+  .header-proj-4 {
+    display: grid;
+    //border-style: solid;
+    grid-template-areas: "heading link";
+    grid-template-columns: 1000px 200px;
+
+    h3 {
+      //border-style: solid;
+      text-decoration: solid;
+      font-size: 1.5rem;
+      color: darken($color: $secondary-color, $amount: 10);
+    }
+
+    .link-proj-1,
+    .link-proj-2,
+    .link-proj-3,
+    .link-proj-4 {
+      //border-style: solid;
+      padding: 23px 0px 0px 4px;
+      //justify-content: center;
+      padding-left: 30px;
+      text-decoration: underline;
+
+      a {
+        //border-style: solid;
+        &:hover {
+          color: aqua;
+          @include easeOut;
+        }
+      }
+    }
+  }
+
+  h4 {
+    //border-style: solid;
+    margin-top: 20px;
+    margin-bottom: 3px;
+    //background-color: lighten($color: grey, $amount: 5);
+    color: lighten($color: $primary-color, $amount: 20);
+    padding-left: 4px;
+  }
+}
+
+.check-out {
+  //border-style: solid;
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: underline;
+
+  &:hover {
+    color: aqua;
+    cursor: pointer;
+    @include easeOut;
+  }
+}
+
+.contact {
+  .lg-heading {
+  }
+}
+
+#bg-contact {
+  height: 100%;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  background-image: url(../img/bg_contact_4.jpg);
+  //background-color: $primary-color;
+  background-attachment: fixed;
+  background-size: cover;
+
+  &:after {
+    content: "";
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba($primary-color, 0.6);
+  }
+
+  #contact {
+    .lg-heading {
+      font-size: 4rem;
+    }
+
+    .sm-heading {
+      font-size: 1rem;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-weight: 100;
+    }
+  }
+}
+
+#bg-resume {
+  height: 100%;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  background-image: url(../img/bg_contact_2.jpg);
+  //background-color: $primary-color;
+  background-attachment: fixed;
+  background-size: cover;
+
+  &:after {
+    content: "";
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba($primary-color, 0.6);
+  }
+}
+
+#bg-portfolio {
+  height: 100%;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  background-image: url(../img/bg_portfolio_1.jpg);
+  //background-color: $primary-color;
+  background-attachment: fixed;
+  background-size: cover;
+
+  &:after {
+    content: "";
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba($primary-color, 0.6);
+  }
+}
+
+#bg-about {
+  height: 100%;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  background-image: url(../img/bg_portfolio.jpg);
+  //background-color: $primary-color;
+  background-attachment: fixed;
+  background-size: cover;
+
+  &:after {
+    content: "";
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba($primary-color, 0.6);
   }
 }
