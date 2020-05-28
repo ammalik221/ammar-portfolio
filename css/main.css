@@ -218,7 +218,8 @@ main {
   font-weight: 300;
   font-size: 4rem;
   margin-left: 18rem;
-  padding: 0; }
+  padding: 0;
+  font-family: "Raleway", sans-serif; }
 
 #resume-home .document {
   margin-left: 18rem; }
@@ -229,8 +230,8 @@ main {
   margin-bottom: 3rem;
   font-weight: 300;
   margin-left: 18rem;
-  color: #eece1a;
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+  font-family: "Raleway", sans-serif; }
 
 #resume-home .button {
   background-color: #fff;
@@ -244,7 +245,8 @@ main {
   margin-left: 35rem;
   margin-top: 20px;
   cursor: pointer;
-  border-radius: 6px; }
+  border-radius: 6px;
+  font-weight: 600; }
   #resume-home .button:hover {
     background-color: #444;
     color: #eece1a;
@@ -455,6 +457,75 @@ main {
     color: aqua;
     cursor: pointer;
     transition: all 0.5s ease-out; }
+
+#contact .contact-icons {
+  margin-left: 4rem;
+  margin-top: 3rem; }
+  #contact .contact-icons a {
+    margin: 7px; }
+    #contact .contact-icons a i {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.815);
+      padding: 10px;
+      border-radius: 35px;
+      font-size: 1rem;
+      color: #444; }
+  #contact .contact-icons #git:hover {
+    color: #333;
+    transition: all 0.5s ease-out; }
+  #contact .contact-icons #git i {
+    text-align: center;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 35px;
+    font-size: 1rem;
+    color: #fff; }
+    #contact .contact-icons #git i:hover {
+      color: #333;
+      background-color: #fff;
+      transition: all 0.5s ease-out; }
+  #contact .contact-icons #linkedin:hover {
+    color: #0077b5;
+    transition: all 0.5s ease-out; }
+  #contact .contact-icons #linkedin i {
+    text-align: center;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 35px;
+    font-size: 1rem;
+    color: #fff; }
+    #contact .contact-icons #linkedin i:hover {
+      color: #0077b5;
+      background-color: #fff;
+      transition: all 0.5s ease-out; }
+  #contact .contact-icons #medium:hover {
+    color: #00ab6c;
+    transition: all 0.5s ease-out; }
+  #contact .contact-icons #medium i {
+    text-align: center;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 35px;
+    font-size: 1rem;
+    color: #fff; }
+    #contact .contact-icons #medium i:hover {
+      color: #00ab6c;
+      background-color: #fff;
+      transition: all 0.5s ease-out; }
+  #contact .contact-icons #gmail:hover {
+    color: #ea4335;
+    transition: all 0.5s ease-out; }
+  #contact .contact-icons #gmail i {
+    text-align: center;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 35px;
+    font-size: 1rem;
+    color: #fff; }
+    #contact .contact-icons #gmail i:hover {
+      color: #ea4335;
+      background-color: #fff;
+      transition: all 0.5s ease-out; }
 
 #bg-contact {
   height: 100%;
