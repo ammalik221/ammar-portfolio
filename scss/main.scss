@@ -145,6 +145,7 @@ main {
     font-size: 4rem;
     margin-left: 18rem;
     padding: 0;
+    font-family: "Raleway", sans-serif;
   }
   .document {
     margin-left: 18rem;
@@ -156,8 +157,9 @@ main {
     margin-bottom: 3rem;
     font-weight: 300;
     margin-left: 18rem;
-    color: $secondary-color;
+    //color: $secondary-color;
     margin-bottom: 8px;
+    font-family: "Raleway", sans-serif;
   }
   .button {
     background-color: #fff;
@@ -172,6 +174,7 @@ main {
     margin-top: 20px;
     cursor: pointer;
     border-radius: 6px;
+    font-weight: 600;
 
     &:hover {
       background-color: $primary-color;
@@ -389,8 +392,118 @@ main {
   }
 }
 
-.contact {
-  .lg-heading {
+#contact {
+  .contact-icons {
+    margin-left: 4rem;
+    //border-style: solid;
+    margin-top: 3rem;
+    //text-align: center;
+
+    a {
+      margin: 7px;
+
+      i {
+        text-align: center;
+        //border-style: solid;
+        background-color: rgba(255, 255, 255, 0.815);
+        padding: 10px;
+        border-radius: 35px;
+        font-size: 1rem;
+        color: $primary-color;
+      }
+    }
+
+    #git {
+      &:hover {
+        color: #333;
+        @include easeOut;
+      }
+
+      i {
+        text-align: center;
+        //border-style: solid;
+        background-color: $primary-color;
+        padding: 10px;
+        border-radius: 35px;
+        font-size: 1rem;
+        color: #fff;
+
+        &:hover {
+          color: #333;
+          background-color: #fff;
+          @include easeOut;
+        }
+      }
+    }
+
+    #linkedin {
+      &:hover {
+        color: #0077b5;
+        @include easeOut;
+      }
+
+      i {
+        text-align: center;
+        //border-style: solid;
+        background-color: $primary-color;
+        padding: 10px;
+        border-radius: 35px;
+        font-size: 1rem;
+        color: #fff;
+
+        &:hover {
+          color: #0077b5;
+          background-color: #fff;
+          @include easeOut;
+        }
+      }
+    }
+
+    #medium {
+      &:hover {
+        color: #00ab6c;
+        @include easeOut;
+      }
+
+      i {
+        text-align: center;
+        //border-style: solid;
+        background-color: $primary-color;
+        padding: 10px;
+        border-radius: 35px;
+        font-size: 1rem;
+        color: #fff;
+
+        &:hover {
+          color: #00ab6c;
+          background-color: #fff;
+          @include easeOut;
+        }
+      }
+    }
+
+    #gmail {
+      &:hover {
+        color: #ea4335;
+        @include easeOut;
+      }
+
+      i {
+        text-align: center;
+        //border-style: solid;
+        background-color: $primary-color;
+        padding: 10px;
+        border-radius: 35px;
+        font-size: 1rem;
+        color: #fff;
+
+        &:hover {
+          color: #ea4335;
+          background-color: #fff;
+          @include easeOut;
+        }
+      }
+    }
   }
 }
 
