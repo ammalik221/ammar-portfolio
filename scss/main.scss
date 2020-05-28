@@ -20,7 +20,8 @@ body {
 .lg-heading {
   margin-bottom: 0;
   font-weight: 300;
-  font-size: 5rem;
+  font-size: 4rem;
+  margin-top: 0;
   margin-left: 3rem;
   padding: 0;
 }
@@ -28,9 +29,10 @@ body {
 .sm-heading {
   margin-top: 0;
   padding: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   font-weight: 300;
   margin-left: 3rem;
+  font-size: 1.4rem;
 }
 
 a {
@@ -54,10 +56,12 @@ main {
   height: 100%;
 
   .lg-icons {
-    margin-top: 6rem;
+    //border-style: solid;
+    margin-top: 8rem;
     text-align: center;
 
     a {
+      //border-style: solid;
       margin: 8rem;
       &:hover {
         color: $secondary-color;
@@ -70,7 +74,7 @@ main {
         background-color: rgba(255, 255, 255, 0.815);
         padding: 15px;
         border-radius: 35px;
-        font-size: 2rem;
+        font-size: 1rem;
         color: $primary-color;
 
         &:hover {
@@ -90,7 +94,7 @@ main {
     grid-template-columns: repeat(3, 1fr);
 
     .lg-icon-name-1 {
-      margin-left: 282px;
+      margin-left: 295px;
       color: $secondary-color;
       //font-weight: 500;
     }
@@ -101,7 +105,7 @@ main {
     }
 
     .lg-icon-name-3 {
-      margin-left: 83px;
+      margin-left: 65px;
       color: $secondary-color;
     }
   }
@@ -130,6 +134,7 @@ main {
   h2 {
     font-weight: 300;
     margin: 0.4rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -213,7 +218,7 @@ main {
   .project-3 {
     //border-style: solid;
     border-radius: 2%;
-    background-color: darken($color: $primary-color, $amount: 5);
+    background-color: darken($color: $primary-color, $amount: 1);
     box-shadow: 10px 10px 5px darken($color: $primary-color, $amount: 10);
     //box-shadow: ;
 
@@ -310,10 +315,6 @@ main {
   grid-template-rows: 60px;
   grid-template-columns: 1fr;
 
-  .more-proj-head {
-    border-bottom-style: solid;
-  }
-
   .more-proj-1,
   .more-proj-2,
   .more-proj-3,
@@ -327,8 +328,8 @@ main {
 
   .more-proj-head {
     //border-style: solid;
-    border-width: 1px;
-    border-color: darken($color: $primary-color, $amount: 8);
+    //border-width: 1px;
+    //border-color: darken($color: $primary-color, $amount: 8);
     margin: 0;
     font-size: 2rem;
   }
@@ -393,11 +394,24 @@ main {
 }
 
 #contact {
+  .lg-heading {
+    //border-style: solid;
+    text-align: center;
+    margin-top: 9rem;
+  }
+
+  .sm-heading {
+    //border-style: solid;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Times New Roman", Times, serif;
+  }
   .contact-icons {
     margin-left: 4rem;
     //border-style: solid;
     margin-top: 3rem;
-    //text-align: center;
+    text-align: center;
 
     a {
       margin: 7px;
@@ -512,7 +526,7 @@ main {
   margin: 0;
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
-  background-image: url(../img/bg_contact_4.jpg);
+  background-image: url(../img/bg_contact.jpg);
   //background-color: $primary-color;
   background-attachment: fixed;
   background-size: cover;
@@ -549,7 +563,7 @@ main {
   margin: 0;
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
-  background-image: url(../img/bg_contact_2.jpg);
+  background-image: url(../img/bg_resume.jpg);
   //background-color: $primary-color;
   background-attachment: fixed;
   background-size: cover;
@@ -574,7 +588,7 @@ main {
   margin: 0;
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
-  background-image: url(../img/bg_portfolio_1.jpg);
+  background-image: url(../img/bg_portfolio.jpg);
   //background-color: $primary-color;
   background-attachment: fixed;
   background-size: cover;
@@ -599,7 +613,7 @@ main {
   margin: 0;
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
-  background-image: url(../img/bg_portfolio.jpg);
+  background-image: url(../img/bg_about.jpg);
   //background-color: $primary-color;
   background-attachment: fixed;
   background-size: cover;
