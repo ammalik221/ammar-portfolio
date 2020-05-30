@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio &#183; Ammar Alam</title>
+    <title>Ammar Alam</title>
     <link rel="stylesheet" href="css/main.css" />
     <script src="https://use.fontawesome.com/ca1da78cfc.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
   </head>
 
   <body id="bg-portfolio">
@@ -22,24 +26,14 @@
         </div>
 
         <ul class="menu-nav">
-          <li class="nav-item">
+          <li class="nav-item current">
             <a href="index.html" class="nav-link">
               Home
             </a>
           </li>
           <li class="nav-item">
-            <a href="about.html" class="nav-link">
-              About
-            </a>
-          </li>
-          <li class="nav-item current">
             <a href="portfolio.html" class="nav-link">
               Portfolio
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="resume.html" class="nav-link">
-              Resume
             </a>
           </li>
           <li class="nav-item">
@@ -52,172 +46,60 @@
     </header>
 
     <main id="portfolio">
-      <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
+      <div class="portfolio-intro">
+        <h2 class="heading">
+          My <span class="text-secondary">Portfolio</span>
+        </h2>
+        <h3 class="small-heading">
+          A little more about me
+        </h3>
 
-      <h2 class="sm-heading">
-        Some of the cool stuff I've worked on.
-      </h2>
-
-      <div class="portfolio-info">
-        <div class="project project-1">
-          <img
-            src="img/nucleus.jpg"
-            alt="nucleus"
-            class="img-project-1"
-            width="300px"
-            height="300px"
-          />
-          <h2>
-            Finding Nuclei in Images
-          </h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
-            rerum quibusdam, maiores odio corporis illo vitae labore et alias
-            sequi? Aperiam obcaecati assumenda illum corrupti aliquam nesciunt
-            deserunt dicta consequuntur.
-          </p>
-
-          <div class="btn-proj-1">
-            <a href="#!" class="button">Github Repo</a>
-            <a href="#!" class="button">Project Report</a>
-          </div>
-
-          <div class="footer-proj-1">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-          </div>
+        <div class="portfolio-divider">
+          <div class="portfolio-divider-inside"></div>
         </div>
 
-        <div class="project project-2">
-          <img
-            src="img/catvsdogs.jpg"
-            alt="cats and dogs"
-            class="img-project-2"
-            width="300px"
-            height="300px"
-          />
-          <h2>
-            Cats Vs Dogs
-          </h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
-            rerum quibusdam, maiores odio corporis illo vitae labore et alias
-            sequi? Aperiam obcaecati assumenda illum corrupti aliquam nesciunt
-            deserunt dicta consequuntur.
-          </p>
-          <div class="btn-proj-2">
-            <a href="#!" class="button">Github Repo</a>
-            <a href="#!" class="button">Project Report</a>
-          </div>
-          <div class="footer-proj-2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-          </div>
-        </div>
-
-        <div class="project project-3">
-          <img
-            src="img/iris.jpg"
-            alt="flower image"
-            class="img-project-3"
-            width="300px"
-            height="300px"
-          />
-          <h2>
-            Classifying Iris dataset
-          </h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
-            rerum quibusdam, maiores odio corporis illo vitae labore et alias
-            sequi? Aperiam obcaecati assumenda illum corrupti aliquam nesciunt
-            deserunt dicta consequuntur.
-          </p>
-          <div class="btn-proj-3">
-            <a href="#!" class="button">Github Repo</a>
-            <a href="#!" class="button">Project Report</a>
-          </div>
-          <div class="footer-proj-3">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-          </div>
-        </div>
-
-        <div class="more-projects">
-          <h2 class="more-proj-head">
-            More <span class="text-secondary">Projects</span>
-          </h2>
-
-          <div class="more-proj-1">
-            <div class="header-proj-1">
-              <h3>
-                Sequential MNIST digit Generator
-              </h3>
-              <div class="link-proj-1">
-                <a href="#!" class="button">Colab Notebook</a>
-              </div>
-            </div>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-              nam maxime rerum atque id soluta debitis, error eum magnam
-              similique, error eum magnam similique.
-            </p>
-            <h4>Lorem ih4sum dolor sit amet consectetur.</h4>
-          </div>
-
-          <div class="more-proj-2">
-            <div class="header-proj-2">
-              <h3>
-                3-way Sentiment Analysis for Tweets
-              </h3>
-              <div class="link-proj-2">
-                <a href="#!" class="button">Colab Notebook</a>
-              </div>
-            </div>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-              nam maxime rerum atque id soluta debitis, error eum magnam
-              similique, error eum magnam similique.
-            </p>
-            <h4>Lorem ih4sum dolor sit amet consectetur.</h4>
-          </div>
-
-          <div class="more-proj-3">
-            <div class="header-proj-3">
-              <h3>
-                Stock market Prediction
-              </h3>
-              <div class="link-proj-3">
-                <a href="#!" class="button">Colab Notebook</a>
-              </div>
-            </div>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-              nam maxime rerum atque id soluta debitis, error eum magnam
-              similique, error eum magnam similique.
-            </p>
-            <h4>Lorem ih4sum dolor sit amet consectetur.</h4>
-          </div>
-
-          <div class="more-proj-4">
-            <div class="header-proj-4">
-              <h3>
-                Predicting house Prices
-              </h3>
-              <div class="link-proj-4">
-                <a href="#!" class="button">Colab Notebook</a>
-              </div>
-            </div>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-              nam maxime rerum atque id soluta debitis, error eum magnam
-              similique, error eum magnam similique.
-            </p>
-            <h4>Lorem ih4sum dolor sit amet consectetur.</h4>
-          </div>
-        </div>
+        <a href="../AmmarAlam_Resume.pdf" class="button">Go to Resume</a>
       </div>
-
-      <h3 class="check-out">
-        View the full portfolio on Github.
-      </h3>
     </main>
+
+    <div class="portfolio-bio">
+      <div class="portfolio-outer-box">
+        <h2>
+          Bio.
+        </h2>
+        <h3>
+          A little more about me.
+        </h3>
+        <p class="portfolio-bio-left-para">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde officia
+          tempore voluptas molestias voluptatum non recusandae, consectetur quae
+          quisquam nulla.
+          <br />
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
+          expedita iste totam incidunt, ducimus obcaecati repellat placeat
+          asperiores sapiente quo.
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+          numquam nostrum vel labore impedit animi quibusdam, ex cupiditate eum
+          tempora.
+        </p>
+        <p class="portfolio-bio-right-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, autem
+          aut repudiandae adipisci id nisi eligendi quo magni nemo distinctio.
+          Quis dicta suscipit reprehenderit architecto sapiente excepturi
+          perspiciatis quidem impedit.
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          accusamus architecto aperiam nam animi voluptatum numquam iste harum a
+          doloribus.
+          <br />
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos id
+          libero quasi rerum maiores adipisci sequi in voluptatem atque
+          laudantium maxime, facere aspernatur nisi illum numquam praesentium
+          totam veritatis quisquam?
+        </p>
+      </div>
+    </div>
 
     <script src="js/main.js"></script>
   </body>
