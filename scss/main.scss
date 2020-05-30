@@ -7,6 +7,8 @@
 * {
   box-sizing: border-box;
   font-weight: 400;
+  //border-style: solid;
+  //border-color: black;
 }
 
 //--------------------------------------home page -----------------------------------
@@ -29,7 +31,15 @@ body {
   //margin-left: 3rem;
   padding: 0;
   text-align: center;
-  font-family: "Calistoga", sans-serif;
+  //font-family: "Calistoga", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+
+  span {
+    color: $secondary-color;
+    font-weight: 700;
+    font-family: "Noto Sans JP", sans-serif;
+  }
 }
 
 .divider {
@@ -85,12 +95,15 @@ main {
       //border-style: solid;
       //border-style: solid;
       margin: 2rem;
+      margin-bottom: 0;
+      margin-top: 1rem;
       &:hover {
         color: aqua;
         @include easeOut;
       }
 
       i {
+        margin-bottom: 0;
         //border-style: solid;
         text-align: center;
         //border-style: solid;
@@ -115,8 +128,10 @@ main {
         @include easeOut;
       }
     }
-    .fa-mobile {
-      font-size: 2rem;
+    .fa-weixin {
+      font-size: 1.5rem;
+      margin: 0;
+      padding: 0rem;
       &:hover {
         color: #0abf53;
         //background-color: #fff;
@@ -153,6 +168,7 @@ main {
       color: #fff;
       font-size: 15px;
       //border-style: solid;
+      margin-top: 0;
     }
   }
 
@@ -168,7 +184,7 @@ main {
     margin-top: 0;
     padding: 0;
     margin-bottom: 1rem;
-    font-weight: 300;
+    font-weight: 500;
     margin-left: 3rem;
     font-size: 1.1rem;
     padding-left: 30.1rem;
@@ -209,7 +225,10 @@ main {
   //text-align: center;
 
   h3 {
-    margin-left: 75rem;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    //margin-left: 75rem;
     //margin-right: 0;
     //border-style: solid;
     font-size: 0.5rem;
@@ -537,6 +556,332 @@ main {
         margin-left: 1rem;
         right: 0;
       }
+    }
+
+    .portfolio-projects {
+      border-top-style: solid;
+      border-color: #a3d2df;
+      background-color: #f5f7f9;
+      margin-top: 5rem;
+      height: 210vh;
+
+      .portfolio-project-heading {
+        width: 600px;
+        color: #27303b;
+        //background-color: #000000;
+        font-family: "Space Mono", monospace, sans-serif;
+        //border-style: solid;
+        border-color: black;
+        font-size: 50px;
+        margin-left: 220px;
+        font-weight: 700;
+      }
+
+      .portfolio-project-grid {
+        //border-style: solid;
+        border-color: black;
+        display: grid;
+        margin-left: 220px;
+        margin-top: 4rem;
+        width: 880px;
+        height: 900px;
+        grid-template-areas: "proj1 proj2" "proj3 proj4";
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+
+        .portfolio-project-1 {
+          //border-style: solid;
+          background-color: white;
+          border-color: black;
+          grid-area: proj1;
+          box-shadow: 2px 2px 7px grey;
+          //border-radius: 1%;
+
+          h4 {
+            color: #a3afbf;
+            font-family: "Noto Sans JP", sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 1rem;
+            margin-bottom: 0;
+          }
+
+          a {
+            font-family: "Noto Sans JP", sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #27303b;
+            margin-left: 1rem;
+            margin-top: 0;
+
+            &:hover {
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+
+          p {
+            color: #526173;
+            font-family: "Noto Sans JP", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+          }
+
+          &:hover {
+            box-shadow: 3px 3px 5px 3px grey;
+            //@include easeOut;
+          }
+        }
+        .portfolio-project-2 {
+          //border-style: solid;
+          background-color: white;
+          border-color: black;
+          grid-area: proj2;
+          box-shadow: 2px 2px 7px grey;
+          //border-radius: 1%;
+
+          h4 {
+            color: #a3afbf;
+            font-family: "Noto Sans JP", sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 1rem;
+            margin-bottom: 0;
+          }
+
+          a {
+            font-family: "Noto Sans JP", sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #27303b;
+            margin-left: 1rem;
+            margin-top: 0;
+            &:hover {
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+          p {
+            color: #526173;
+            font-family: "Noto Sans JP", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+          }
+
+          &:hover {
+            box-shadow: 3px 3px 5px 3px grey;
+            //@include easeOut;
+          }
+        }
+        .portfolio-project-3 {
+          //border-style: solid;
+          background-color: white;
+          border-color: black;
+          grid-area: proj3;
+          box-shadow: 2px 2px 7px grey;
+          //border-radius: 1%;
+
+          h4 {
+            color: #a3afbf;
+            font-family: "Noto Sans JP", sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 1rem;
+            margin-bottom: 0;
+          }
+
+          a {
+            font-family: "Noto Sans JP", sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #27303b;
+            margin-left: 1rem;
+            margin-top: 0;
+            &:hover {
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+          p {
+            color: #526173;
+            font-family: "Noto Sans JP", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+          }
+
+          &:hover {
+            box-shadow: 3px 3px 5px 3px grey;
+            //@include easeOut;
+          }
+        }
+        .portfolio-project-4 {
+          //border-style: solid;
+          background-color: white;
+          border-color: black;
+          grid-area: proj4;
+          box-shadow: 2px 2px 7px grey;
+          //border-radius: 1%;
+
+          h4 {
+            color: #a3afbf;
+            font-family: "Noto Sans JP", sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 1rem;
+            margin-bottom: 0;
+          }
+
+          a {
+            font-family: "Noto Sans JP", sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #27303b;
+            margin-left: 1rem;
+            margin-top: 0;
+
+            &:hover {
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+          p {
+            color: #526173;
+            font-family: "Noto Sans JP", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+          }
+
+          &:hover {
+            box-shadow: 2px 2px 5px 3px grey;
+            //@include easeOut;
+          }
+        }
+      }
+
+      .portfolio-more-proj-btn {
+        //background-color: aqua;
+
+        width: 300px;
+        margin-top: 15rem;
+        margin-left: 220px;
+
+        a {
+          background-image: linear-gradient(to bottom right, #73a8e4, #7287ea);
+          padding: 16px 20px;
+          border-radius: 20px;
+          font-family: "Noto Sans JP", sans-serif;
+          font-size: 16px;
+          font-weight: 600;
+          //background-color: aqua;
+
+          &:hover {
+            box-shadow: 5px 5px 5px 2px grey;
+            @include easeOut;
+          }
+        }
+      }
+    }
+  }
+
+  .portfolio-skills {
+    background-color: #c6f0d5;
+    border-top-style: solid;
+    border-color: #f5f7f9;
+    border-bottom-color: blueviolet;
+    //border-style: solid;
+    //border-color: blue;
+    width: 100%;
+    margin-bottom: 0;
+    height: 101vh;
+    margin-top: 86.1rem;
+
+    .portfolio-skills-outer-box {
+      background-color: #fff;
+      //border-style: solid;
+      //border-color: black;
+      height: 500px;
+      width: 1000px;
+      margin-left: 10rem;
+      margin-top: 5rem;
+      box-shadow: 5px 5px 10px black;
+      border-left-style: solid;
+      border-width: 40px;
+      border-color: #eeeeee;
+
+      h2,
+      h3,
+      p {
+        color: #27303b;
+      }
+
+      h2 {
+        font-family: "Space Mono", monospace, sans-serif;
+        font-size: 64px;
+        //border-style: solid;
+        border-color: black;
+        margin-bottom: 0;
+        width: 400px;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        color: #eb613d;
+      }
+
+      h3 {
+        font-family: "Space Mono", monospace, sans-serif;
+        //border-style: solid;
+        border-color: black;
+        font-size: 20.8px;
+        margin: 0;
+        margin-left: 1rem;
+        width: 400px;
+      }
+
+      p {
+        font-family: "Space Mono", monospace, sans-serif;
+        font-size: 16;
+      }
+
+      .portfolio-skills-right-para {
+        //border-style: solid;
+        //background-color: aqua;
+        position: absolute;
+        right: 0;
+        top: 177rem;
+        margin-right: 250px;
+        width: 400px;
+      }
+
+      .portfolio-skills-left-para {
+        //border-style: solid;
+        width: 400px;
+        margin-left: 1rem;
+        right: 0;
+      }
+    }
+  }
+
+  .footer {
+    background-color: #282b2e;
+    text-align: center;
+    border-style: solid;
+    border-color: #282b2e;
+
+    span {
+      color: darken($color: aqua, $amount: 5);
+    }
+
+    p {
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 14px;
+      font-weight: 400px;
     }
   }
 }
