@@ -1,12 +1,15 @@
 @import "config";
 @import "menu";
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
+@import url("https://fonts.googleapis.com/css?family=Calistoga");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 
 * {
   box-sizing: border-box;
   font-weight: 400;
 }
 
+//--------------------------------------home page -----------------------------------
 body {
   @include background;
   background: $primary-color;
@@ -18,21 +21,36 @@ body {
 }
 
 .lg-heading {
+  //border-style: solid;
   margin-bottom: 0;
   font-weight: 300;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-top: 0;
-  margin-left: 3rem;
+  //margin-left: 3rem;
   padding: 0;
+  text-align: center;
+  font-family: "Calistoga", sans-serif;
 }
 
-.sm-heading {
-  margin-top: 0;
-  padding: 0;
-  margin-bottom: 2rem;
-  font-weight: 300;
-  margin-left: 3rem;
-  font-size: 1.4rem;
+.divider {
+  //border-style: solid;
+  margin-bottom: 1.5rem;
+  padding-left: 28rem;
+  .divider-inside {
+    border-top: solid;
+    border-width: 1px;
+    //border-bottom: solid;
+    width: 350px;
+    color: darken($color: grey, $amount: 10);
+  }
+}
+
+.sm-para {
+  text-align: center;
+  font-weight: 400;
+  font-family: "Patrick Hand", cursive;
+  word-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 
 a {
@@ -41,6 +59,7 @@ a {
 }
 
 header {
+  //border-style: solid;
   position: fixed;
   z-index: 2;
   width: 100%;
@@ -51,37 +70,57 @@ header {
 }
 
 main {
+  //border-style: solid;
   padding: 2rem;
   padding-right: 4rem;
   height: 100%;
 
   .lg-icons {
     //border-style: solid;
-    margin-top: 8rem;
+    //border-style: solid;
+    margin-top: 3rem;
     text-align: center;
 
     a {
       //border-style: solid;
-      margin: 8rem;
+      //border-style: solid;
+      margin: 2rem;
       &:hover {
-        color: $secondary-color;
+        color: aqua;
         @include easeOut;
       }
 
       i {
+        //border-style: solid;
         text-align: center;
         //border-style: solid;
-        background-color: rgba(255, 255, 255, 0.815);
-        padding: 15px;
-        border-radius: 35px;
-        font-size: 1rem;
-        color: $primary-color;
-
-        &:hover {
-          color: $secondary-color;
-          background-color: $primary-color;
-          @include easeOut;
-        }
+        //background-color: #fff;
+        padding: 0px;
+        //border-radius: 35px
+        font-size: 1.5rem;
+        color: #fff;
+      }
+    }
+    .fa-folder-open-o {
+      &:hover {
+        color: #f38654;
+        //background-color: #fff;
+        @include easeOut;
+      }
+    }
+    .fa-file-pdf-o {
+      &:hover {
+        color: #49c0b6;
+        //background-color: #fff;
+        @include easeOut;
+      }
+    }
+    .fa-mobile {
+      font-size: 2rem;
+      &:hover {
+        color: #0abf53;
+        //background-color: #fff;
+        @include easeOut;
       }
     }
   }
@@ -91,22 +130,29 @@ main {
     display: grid;
     grid-template-areas: "name-1 name-2 name-3";
     margin-top: 3px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 550px 145px 200px;
 
     .lg-icon-name-1 {
-      margin-left: 295px;
-      color: $secondary-color;
+      margin-left: 517px;
+      color: #fff;
+      font-size: 15px;
+      //font-family: "Raleway", sans-serif;
+      //border-style: solid;
       //font-weight: 500;
     }
 
     .lg-icon-name-2 {
-      margin-left: 193px;
-      color: $secondary-color;
+      margin-left: 60px;
+      color: #fff;
+      font-size: 15px;
+      //border-style: solid;
     }
 
     .lg-icon-name-3 {
-      margin-left: 65px;
-      color: $secondary-color;
+      margin-left: 3px;
+      color: #fff;
+      font-size: 15px;
+      //border-style: solid;
     }
   }
 
@@ -116,15 +162,23 @@ main {
       margin-top: 20vh;
     }
   }
-}
 
-.container {
-  h2 {
+  .sm-heading {
+    //border-style: solid;
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+    font-weight: 300;
     margin-left: 3rem;
+    font-size: 1.1rem;
+    padding-left: 30.1rem;
+    font-weight: 500;
+    //text-align: center;
   }
 }
 
 .container {
+  //border-style: solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,9 +186,14 @@ main {
   padding: 0 3rem;
 
   h2 {
-    font-weight: 300;
-    margin: 0.4rem;
+    padding-left: 18rem;
+    //border-style: solid;
+    font-weight: 500;
+    margin: 0.8rem;
     font-size: 1.2rem;
+    font-family: "Patrick Hand", cursive;
+    word-spacing: 2px;
+    letter-spacing: 1.5px;
   }
 }
 
@@ -143,272 +202,67 @@ main {
   color: $secondary-color;
 }
 
-#resume-home {
-  .lg-heading {
-    margin-bottom: 0;
-    font-weight: 300;
-    font-size: 4rem;
-    margin-left: 18rem;
+.copyright {
+  margin-top: 4.3rem;
+  margin-bottom: 0;
+  //border-style: solid;
+  //text-align: center;
+
+  h3 {
+    margin-left: 75rem;
+    //margin-right: 0;
+    //border-style: solid;
+    font-size: 0.5rem;
     padding: 0;
-    font-family: "Raleway", sans-serif;
-  }
-  .document {
-    margin-left: 18rem;
-    //border-style: solid;
-  }
-  .sm-heading {
-    margin-top: 0;
-    padding: 0;
-    margin-bottom: 3rem;
-    font-weight: 300;
-    margin-left: 18rem;
-    //color: $secondary-color;
-    margin-bottom: 8px;
-    font-family: "Raleway", sans-serif;
-  }
-  .button {
-    background-color: #fff;
-    border-style: none;
-    color: black;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-left: 35rem;
-    margin-top: 20px;
-    cursor: pointer;
-    border-radius: 6px;
-    font-weight: 600;
-
-    &:hover {
-      background-color: $primary-color;
-      color: $secondary-color;
-      @include easeOut;
-    }
   }
 }
 
-#about-home {
-  .lg-heading {
-    //border-style: solid;
-    font-size: 3rem;
-    margin-left: 10rem;
-  }
-  .first-para {
-    //border-style: solid;
-    width: 1000px;
-    margin-left: 10rem;
-    opacity: 0.7;
-    background-color: lighten($color: #000, $amount: 5);
-    padding: 1px;
-  }
-}
+#bg-resume {
+  height: 100%;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  background-image: url(../img/bg_resume_2.jpg);
+  //background-color: $primary-color;
+  background-attachment: fixed;
+  background-size: cover;
 
-.portfolio-info {
-  margin-left: 80px;
-  //border-style: solid;
-  grid-gap: 30px;
-  display: grid;
-  grid-template-areas: "project1 project2 project3";
-  grid-template-columns: 350px 350px 350px;
-
-  .project-1,
-  .project-2,
-  .project-3 {
-    //border-style: solid;
-    border-radius: 2%;
-    background-color: darken($color: $primary-color, $amount: 1);
-    box-shadow: 10px 10px 5px darken($color: $primary-color, $amount: 10);
-    //box-shadow: ;
-
-    h2,
-    p,
-    .btn-proj-1,
-    .btn-proj-2,
-    .btn-proj-3 {
-      //border-style: solid;
-      padding-left: 5px;
-    }
-
-    h2 {
-      color: darken($color: $secondary-color, $amount: 8);
-      font-family: "Comic Sans MS", cursive, sans-serif;
-    }
-
-    img {
-      //border-style: solid;
-      margin-left: 25px;
-      margin-top: 10px;
-      border-radius: 2%;
-    }
-
-    .btn-proj-1,
-    .btn-proj-2,
-    .btn-proj-3 {
-      margin: 30px 5px 30px 5px;
-      //border-style: solid;
-      .button {
-        //border-style: solid;
-        //margin - top right bottom left
-        margin-right: 6px;
-        border-radius: 6px;
-        background-color: #fff;
-        color: #000;
-        padding: 10px 20px;
-        font-size: 12px;
-        font-family: "Comic Sans MS", cursive, sans-serif;
-        font-weight: 200;
-
-        &:hover {
-          color: $secondary-color;
-          background-color: darken($color: $primary-color, $amount: 10);
-          @include easeOut;
-        }
-      }
-    }
-
-    .footer-proj-1,
-    .footer-proj-2,
-    .footer-proj-3 {
-      border-style: solid;
-      border-color: darken(grey, 10);
-      border-radius: 6px;
-      //border-width: 3px;
-      margin-bottom: 0;
-      background-color: darken(grey, 10);
-      font-family: "Times New Roman", Times, serif;
-    }
+  &:after {
+    content: "";
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(rgb(145, 135, 135), 0.3);
   }
 }
 
-.project-1 {
-  grid-area: project1;
-}
-
-.project-2 {
-  grid-area: project2;
-}
-
-.project-3 {
-  grid-area: project3;
-}
-
-#portfolio {
-  .lg-heading,
-  .sm-heading {
-    margin-left: 85px;
-    //border-style: solid;
-  }
-}
-
-.more-projects {
-  margin-top: 75px;
-  width: 1120px;
-  //border-style: solid;
-  display: grid;
-  grid-template-areas:
-    "proj1"
-    "proj2"
-    "proj3"
-    "proj4";
-  grid-template-rows: 60px;
-  grid-template-columns: 1fr;
-
-  .more-proj-1,
-  .more-proj-2,
-  .more-proj-3,
-  .more-proj-4 {
-    //border-style: solid;
-    border-bottom-style: solid;
-    border-width: 1px;
-    border-color: darken($color: $primary-color, $amount: 8);
-    padding-left: 4px;
-  }
-
-  .more-proj-head {
-    //border-style: solid;
-    //border-width: 1px;
-    //border-color: darken($color: $primary-color, $amount: 8);
-    margin: 0;
-    font-size: 2rem;
-  }
-
-  .header-proj-1,
-  .header-proj-2,
-  .header-proj-3,
-  .header-proj-4 {
-    display: grid;
-    //border-style: solid;
-    grid-template-areas: "heading link";
-    grid-template-columns: 1000px 200px;
-
-    h3 {
-      //border-style: solid;
-      text-decoration: solid;
-      font-size: 1.5rem;
-      color: darken($color: $secondary-color, $amount: 10);
-    }
-
-    .link-proj-1,
-    .link-proj-2,
-    .link-proj-3,
-    .link-proj-4 {
-      //border-style: solid;
-      padding: 23px 0px 0px 4px;
-      //justify-content: center;
-      padding-left: 30px;
-      text-decoration: underline;
-
-      a {
-        //border-style: solid;
-        &:hover {
-          color: aqua;
-          @include easeOut;
-        }
-      }
-    }
-  }
-
-  h4 {
-    //border-style: solid;
-    margin-top: 20px;
-    margin-bottom: 3px;
-    //background-color: lighten($color: grey, $amount: 5);
-    color: lighten($color: $primary-color, $amount: 20);
-    padding-left: 4px;
-  }
-}
-
-.check-out {
-  //border-style: solid;
-  margin-top: 30px;
-  text-align: center;
-  text-decoration: underline;
-
-  &:hover {
-    color: aqua;
-    cursor: pointer;
-    @include easeOut;
-  }
-}
+//#-------------------------------------------contact-----------------------------------
 
 #contact {
+  //border-style: solid;
   .lg-heading {
+    font-size: 4rem;
     //border-style: solid;
     text-align: center;
     margin-top: 9rem;
   }
 
-  .sm-heading {
+  .contact-sm-heading {
     //border-style: solid;
     margin-top: 1.5rem;
     text-align: center;
     font-size: 1rem;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: 100;
   }
   .contact-icons {
-    margin-left: 4rem;
+    //margin-left: 3.5rem;
     //border-style: solid;
     margin-top: 3rem;
     text-align: center;
@@ -429,14 +283,14 @@ main {
 
     #git {
       &:hover {
-        color: #333;
+        color: darken($color: #333, $amount: 10);
         @include easeOut;
       }
 
       i {
         text-align: center;
         //border-style: solid;
-        background-color: $primary-color;
+        background-color: darken($color: #333, $amount: 10);
         padding: 10px;
         border-radius: 35px;
         font-size: 1rem;
@@ -452,14 +306,14 @@ main {
 
     #linkedin {
       &:hover {
-        color: #0077b5;
+        color: darken($color: #333, $amount: 10);
         @include easeOut;
       }
 
       i {
         text-align: center;
         //border-style: solid;
-        background-color: $primary-color;
+        background-color: darken($color: #333, $amount: 10);
         padding: 10px;
         border-radius: 35px;
         font-size: 1rem;
@@ -482,7 +336,7 @@ main {
       i {
         text-align: center;
         //border-style: solid;
-        background-color: $primary-color;
+        background-color: darken($color: #333, $amount: 10);
         padding: 10px;
         border-radius: 35px;
         font-size: 1rem;
@@ -505,7 +359,7 @@ main {
       i {
         text-align: center;
         //border-style: solid;
-        background-color: $primary-color;
+        background-color: darken($color: #333, $amount: 10);
         padding: 10px;
         border-radius: 35px;
         font-size: 1rem;
@@ -542,93 +396,147 @@ main {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: rgba($primary-color, 0.7);
-  }
-
-  #contact {
-    .lg-heading {
-      font-size: 4rem;
-    }
-
-    .sm-heading {
-      font-size: 1rem;
-      font-family: "Comic Sans MS", cursive, sans-serif;
-      font-weight: 100;
-    }
-  }
-}
-
-#bg-resume {
-  height: 100%;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  line-height: 1.5;
-  background-image: url(../img/bg_resume_2.jpg);
-  //background-color: $primary-color;
-  background-attachment: fixed;
-  background-size: cover;
-
-  &:after {
-    content: "";
-    position: fixed;
-    display: block;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: rgba($primary-color, 0.5);
+    background: rgba(black, 0.6);
   }
 }
 
 #bg-portfolio {
-  height: 100%;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  line-height: 1.5;
-  background-image: url(../img/bg_about_1.jpg);
-  //background-color: $primary-color;
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: #fff;
 
-  &:after {
-    content: "";
-    position: fixed;
-    display: block;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: rgba($primary-color, 0.4);
+  #portfolio {
+    //border-style: solid;
+    //border-color: black;
+    height: 100vh;
+    background-image: url(../img/bg_portfolio.jpg);
+    background-size: cover;
+
+    .portfolio-intro {
+      //border-style: solid;
+
+      h2 {
+        margin-top: 20rem;
+        margin-left: 7rem;
+        margin-bottom: 0;
+        //border-style: solid;
+        font-size: 3rem;
+      }
+      h3 {
+        //border-style: solid;
+        font-size: 1.2rem;
+        margin-top: 0.1rem;
+        margin-left: 7rem;
+      }
+      a {
+        margin-left: 7rem;
+        margin-top: 2rem;
+        //border-style: solid;
+      }
+    }
+
+    .button {
+      //background-color: #fff;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #f38654;
+      color: white;
+      padding: 10px 25px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f38654;
+        color: black;
+        @include easeOut;
+      }
+    }
+
+    .portfolio-divider {
+      //border-style: solid;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      padding-left: 7rem;
+
+      .portfolio-divider-inside {
+        border-top: solid;
+        border-width: 1px;
+        //border-bottom: solid;
+        width: 70px;
+        color: darken($color: grey, $amount: 10);
+      }
+    }
   }
-}
 
-#bg-about {
-  height: 100%;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  line-height: 1.5;
-  background-image: url(../img/bg_about_3.jpg);
-  //background-color: $primary-color;
-  background-attachment: fixed;
-  background-size: cover;
-
-  &:after {
-    content: "";
-    position: fixed;
-    display: block;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
+  .portfolio-bio {
+    background-color: #a3d2df;
+    border-top-style: solid;
+    border-color: black;
     width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: rgba(black, 0.5);
+    height: 101vh;
+
+    .portfolio-outer-box {
+      background-color: #fff;
+      //border-style: solid;
+      //border-color: black;
+      height: 500px;
+      width: 1000px;
+      margin-left: 10rem;
+      margin-top: 5rem;
+      box-shadow: 5px 5px 10px black;
+      border-left-style: solid;
+      border-width: 40px;
+      border-color: #eeeeee;
+
+      h2,
+      h3,
+      p {
+        color: #27303b;
+      }
+
+      h2 {
+        font-family: "Space Mono", monospace, sans-serif;
+        font-size: 64px;
+        //border-style: solid;
+        border-color: black;
+        margin-bottom: 0;
+        width: 400px;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        color: #eb613d;
+      }
+
+      h3 {
+        font-family: "Space Mono", monospace, sans-serif;
+        //border-style: solid;
+        border-color: black;
+        font-size: 20.8px;
+        margin: 0;
+        margin-left: 1rem;
+        width: 400px;
+      }
+
+      p {
+        font-family: "Space Mono", monospace, sans-serif;
+        font-size: 16;
+      }
+
+      .portfolio-bio-right-para {
+        //border-style: solid;
+        position: absolute;
+        right: 0;
+        top: 50rem;
+        margin-right: 250px;
+        width: 400px;
+      }
+
+      .portfolio-bio-left-para {
+        //border-style: solid;
+        width: 400px;
+        margin-left: 1rem;
+        right: 0;
+      }
+    }
   }
 }

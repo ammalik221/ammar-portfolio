@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
+@import url("https://fonts.googleapis.com/css?family=Calistoga");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -115,7 +117,7 @@ body {
   font-family: "Raleway", sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background_1.jpg);
+    background: url(../img/bg_portfolio_2.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -126,23 +128,32 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.5); }
+      background: rgba(68, 68, 68, 0.3); }
 
 .lg-heading {
   margin-bottom: 0;
   font-weight: 300;
-  font-size: 4rem;
-  margin-top: 0;
-  margin-left: 3rem;
-  padding: 0; }
-
-.sm-heading {
+  font-size: 3rem;
   margin-top: 0;
   padding: 0;
-  margin-bottom: 2rem;
-  font-weight: 300;
-  margin-left: 3rem;
-  font-size: 1.4rem; }
+  text-align: center;
+  font-family: "Calistoga", sans-serif; }
+
+.divider {
+  margin-bottom: 1.5rem;
+  padding-left: 28rem; }
+  .divider .divider-inside {
+    border-top: solid;
+    border-width: 1px;
+    width: 350px;
+    color: #676767; }
+
+.sm-para {
+  text-align: center;
+  font-weight: 400;
+  font-family: "Patrick Hand", cursive;
+  word-spacing: 2px;
+  letter-spacing: 1.5px; }
 
 a {
   color: #fff;
@@ -161,45 +172,59 @@ main {
   padding-right: 4rem;
   height: 100%; }
   main .lg-icons {
-    margin-top: 8rem;
+    margin-top: 3rem;
     text-align: center; }
     main .lg-icons a {
-      margin: 8rem; }
+      margin: 2rem; }
       main .lg-icons a:hover {
-        color: #eece1a;
+        color: aqua;
         transition: all 0.5s ease-out; }
       main .lg-icons a i {
         text-align: center;
-        background-color: rgba(255, 255, 255, 0.815);
-        padding: 15px;
-        border-radius: 35px;
-        font-size: 1rem;
-        color: #444; }
-        main .lg-icons a i:hover {
-          color: #eece1a;
-          background-color: #444;
-          transition: all 0.5s ease-out; }
+        padding: 0px;
+        font-size: 1.5rem;
+        color: #fff; }
+    main .lg-icons .fa-folder-open-o:hover {
+      color: #f38654;
+      transition: all 0.5s ease-out; }
+    main .lg-icons .fa-file-pdf-o:hover {
+      color: #49c0b6;
+      transition: all 0.5s ease-out; }
+    main .lg-icons .fa-mobile {
+      font-size: 2rem; }
+      main .lg-icons .fa-mobile:hover {
+        color: #0abf53;
+        transition: all 0.5s ease-out; }
   main .lg-icons-name {
     display: grid;
     grid-template-areas: "name-1 name-2 name-3";
     margin-top: 3px;
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: 550px 145px 200px; }
     main .lg-icons-name .lg-icon-name-1 {
-      margin-left: 295px;
-      color: #eece1a; }
+      margin-left: 517px;
+      color: #fff;
+      font-size: 15px; }
     main .lg-icons-name .lg-icon-name-2 {
-      margin-left: 193px;
-      color: #eece1a; }
+      margin-left: 60px;
+      color: #fff;
+      font-size: 15px; }
     main .lg-icons-name .lg-icon-name-3 {
-      margin-left: 65px;
-      color: #eece1a; }
+      margin-left: 3px;
+      color: #fff;
+      font-size: 15px; }
   main#home {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
-
-.container h2 {
-  margin-left: 3rem; }
+  main .sm-heading {
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    margin-left: 3rem;
+    font-size: 1.1rem;
+    padding-left: 30.1rem;
+    font-weight: 500; }
 
 .container {
   display: flex;
@@ -208,267 +233,60 @@ main {
   height: 100%;
   padding: 0 3rem; }
   .container h2 {
-    font-weight: 300;
-    margin: 0.4rem;
-    font-size: 1.2rem; }
+    padding-left: 18rem;
+    font-weight: 500;
+    margin: 0.8rem;
+    font-size: 1.2rem;
+    font-family: "Patrick Hand", cursive;
+    word-spacing: 2px;
+    letter-spacing: 1.5px; }
 
 .txt-type > .txt {
   border-right: 0.2rem solid #373737;
   color: #eece1a; }
 
-#resume-home .lg-heading {
-  margin-bottom: 0;
-  font-weight: 300;
-  font-size: 4rem;
-  margin-left: 18rem;
-  padding: 0;
-  font-family: "Raleway", sans-serif; }
+.copyright {
+  margin-top: 4.3rem;
+  margin-bottom: 0; }
+  .copyright h3 {
+    margin-left: 75rem;
+    font-size: 0.5rem;
+    padding: 0; }
 
-#resume-home .document {
-  margin-left: 18rem; }
-
-#resume-home .sm-heading {
-  margin-top: 0;
-  padding: 0;
-  margin-bottom: 3rem;
-  font-weight: 300;
-  margin-left: 18rem;
-  margin-bottom: 8px;
-  font-family: "Raleway", sans-serif; }
-
-#resume-home .button {
-  background-color: #fff;
-  border-style: none;
-  color: black;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-left: 35rem;
-  margin-top: 20px;
-  cursor: pointer;
-  border-radius: 6px;
-  font-weight: 600; }
-  #resume-home .button:hover {
-    background-color: #444;
-    color: #eece1a;
-    transition: all 0.5s ease-out; }
-
-#about-home .lg-heading {
-  font-size: 3rem;
-  margin-left: 10rem; }
-
-#about-home .first-para {
-  width: 1000px;
-  margin-left: 10rem;
-  opacity: 0.7;
-  background-color: #0d0d0d;
-  padding: 1px; }
-
-.portfolio-info {
-  margin-left: 80px;
-  grid-gap: 30px;
-  display: grid;
-  grid-template-areas: "project1 project2 project3";
-  grid-template-columns: 350px 350px 350px; }
-  .portfolio-info .project-1,
-  .portfolio-info .project-2,
-  .portfolio-info .project-3 {
-    border-radius: 2%;
-    background-color: #414141;
-    box-shadow: 10px 10px 5px #2b2b2b; }
-    .portfolio-info .project-1 h2,
-    .portfolio-info .project-1 p,
-    .portfolio-info .project-1 .btn-proj-1,
-    .portfolio-info .project-1 .btn-proj-2,
-    .portfolio-info .project-1 .btn-proj-3,
-    .portfolio-info .project-2 h2,
-    .portfolio-info .project-2 p,
-    .portfolio-info .project-2 .btn-proj-1,
-    .portfolio-info .project-2 .btn-proj-2,
-    .portfolio-info .project-2 .btn-proj-3,
-    .portfolio-info .project-3 h2,
-    .portfolio-info .project-3 p,
-    .portfolio-info .project-3 .btn-proj-1,
-    .portfolio-info .project-3 .btn-proj-2,
-    .portfolio-info .project-3 .btn-proj-3 {
-      padding-left: 5px; }
-    .portfolio-info .project-1 h2,
-    .portfolio-info .project-2 h2,
-    .portfolio-info .project-3 h2 {
-      color: #d0b30f;
-      font-family: "Comic Sans MS", cursive, sans-serif; }
-    .portfolio-info .project-1 img,
-    .portfolio-info .project-2 img,
-    .portfolio-info .project-3 img {
-      margin-left: 25px;
-      margin-top: 10px;
-      border-radius: 2%; }
-    .portfolio-info .project-1 .btn-proj-1,
-    .portfolio-info .project-1 .btn-proj-2,
-    .portfolio-info .project-1 .btn-proj-3,
-    .portfolio-info .project-2 .btn-proj-1,
-    .portfolio-info .project-2 .btn-proj-2,
-    .portfolio-info .project-2 .btn-proj-3,
-    .portfolio-info .project-3 .btn-proj-1,
-    .portfolio-info .project-3 .btn-proj-2,
-    .portfolio-info .project-3 .btn-proj-3 {
-      margin: 30px 5px 30px 5px; }
-      .portfolio-info .project-1 .btn-proj-1 .button,
-      .portfolio-info .project-1 .btn-proj-2 .button,
-      .portfolio-info .project-1 .btn-proj-3 .button,
-      .portfolio-info .project-2 .btn-proj-1 .button,
-      .portfolio-info .project-2 .btn-proj-2 .button,
-      .portfolio-info .project-2 .btn-proj-3 .button,
-      .portfolio-info .project-3 .btn-proj-1 .button,
-      .portfolio-info .project-3 .btn-proj-2 .button,
-      .portfolio-info .project-3 .btn-proj-3 .button {
-        margin-right: 6px;
-        border-radius: 6px;
-        background-color: #fff;
-        color: #000;
-        padding: 10px 20px;
-        font-size: 12px;
-        font-family: "Comic Sans MS", cursive, sans-serif;
-        font-weight: 200; }
-        .portfolio-info .project-1 .btn-proj-1 .button:hover,
-        .portfolio-info .project-1 .btn-proj-2 .button:hover,
-        .portfolio-info .project-1 .btn-proj-3 .button:hover,
-        .portfolio-info .project-2 .btn-proj-1 .button:hover,
-        .portfolio-info .project-2 .btn-proj-2 .button:hover,
-        .portfolio-info .project-2 .btn-proj-3 .button:hover,
-        .portfolio-info .project-3 .btn-proj-1 .button:hover,
-        .portfolio-info .project-3 .btn-proj-2 .button:hover,
-        .portfolio-info .project-3 .btn-proj-3 .button:hover {
-          color: #eece1a;
-          background-color: #2b2b2b;
-          transition: all 0.5s ease-out; }
-    .portfolio-info .project-1 .footer-proj-1,
-    .portfolio-info .project-1 .footer-proj-2,
-    .portfolio-info .project-1 .footer-proj-3,
-    .portfolio-info .project-2 .footer-proj-1,
-    .portfolio-info .project-2 .footer-proj-2,
-    .portfolio-info .project-2 .footer-proj-3,
-    .portfolio-info .project-3 .footer-proj-1,
-    .portfolio-info .project-3 .footer-proj-2,
-    .portfolio-info .project-3 .footer-proj-3 {
-      border-style: solid;
-      border-color: #676767;
-      border-radius: 6px;
-      margin-bottom: 0;
-      background-color: #676767;
-      font-family: "Times New Roman", Times, serif; }
-
-.project-1 {
-  grid-area: project1; }
-
-.project-2 {
-  grid-area: project2; }
-
-.project-3 {
-  grid-area: project3; }
-
-#portfolio .lg-heading,
-#portfolio .sm-heading {
-  margin-left: 85px; }
-
-.more-projects {
-  margin-top: 75px;
-  width: 1120px;
-  display: grid;
-  grid-template-areas: "proj1" "proj2" "proj3" "proj4";
-  grid-template-rows: 60px;
-  grid-template-columns: 1fr; }
-  .more-projects .more-proj-1,
-  .more-projects .more-proj-2,
-  .more-projects .more-proj-3,
-  .more-projects .more-proj-4 {
-    border-bottom-style: solid;
-    border-width: 1px;
-    border-color: #303030;
-    padding-left: 4px; }
-  .more-projects .more-proj-head {
-    margin: 0;
-    font-size: 2rem; }
-  .more-projects .header-proj-1,
-  .more-projects .header-proj-2,
-  .more-projects .header-proj-3,
-  .more-projects .header-proj-4 {
-    display: grid;
-    grid-template-areas: "heading link";
-    grid-template-columns: 1000px 200px; }
-    .more-projects .header-proj-1 h3,
-    .more-projects .header-proj-2 h3,
-    .more-projects .header-proj-3 h3,
-    .more-projects .header-proj-4 h3 {
-      text-decoration: solid;
-      font-size: 1.5rem;
-      color: #c6ab0f; }
-    .more-projects .header-proj-1 .link-proj-1,
-    .more-projects .header-proj-1 .link-proj-2,
-    .more-projects .header-proj-1 .link-proj-3,
-    .more-projects .header-proj-1 .link-proj-4,
-    .more-projects .header-proj-2 .link-proj-1,
-    .more-projects .header-proj-2 .link-proj-2,
-    .more-projects .header-proj-2 .link-proj-3,
-    .more-projects .header-proj-2 .link-proj-4,
-    .more-projects .header-proj-3 .link-proj-1,
-    .more-projects .header-proj-3 .link-proj-2,
-    .more-projects .header-proj-3 .link-proj-3,
-    .more-projects .header-proj-3 .link-proj-4,
-    .more-projects .header-proj-4 .link-proj-1,
-    .more-projects .header-proj-4 .link-proj-2,
-    .more-projects .header-proj-4 .link-proj-3,
-    .more-projects .header-proj-4 .link-proj-4 {
-      padding: 23px 0px 0px 4px;
-      padding-left: 30px;
-      text-decoration: underline; }
-      .more-projects .header-proj-1 .link-proj-1 a:hover,
-      .more-projects .header-proj-1 .link-proj-2 a:hover,
-      .more-projects .header-proj-1 .link-proj-3 a:hover,
-      .more-projects .header-proj-1 .link-proj-4 a:hover,
-      .more-projects .header-proj-2 .link-proj-1 a:hover,
-      .more-projects .header-proj-2 .link-proj-2 a:hover,
-      .more-projects .header-proj-2 .link-proj-3 a:hover,
-      .more-projects .header-proj-2 .link-proj-4 a:hover,
-      .more-projects .header-proj-3 .link-proj-1 a:hover,
-      .more-projects .header-proj-3 .link-proj-2 a:hover,
-      .more-projects .header-proj-3 .link-proj-3 a:hover,
-      .more-projects .header-proj-3 .link-proj-4 a:hover,
-      .more-projects .header-proj-4 .link-proj-1 a:hover,
-      .more-projects .header-proj-4 .link-proj-2 a:hover,
-      .more-projects .header-proj-4 .link-proj-3 a:hover,
-      .more-projects .header-proj-4 .link-proj-4 a:hover {
-        color: aqua;
-        transition: all 0.5s ease-out; }
-  .more-projects h4 {
-    margin-top: 20px;
-    margin-bottom: 3px;
-    color: #777777;
-    padding-left: 4px; }
-
-.check-out {
-  margin-top: 30px;
-  text-align: center;
-  text-decoration: underline; }
-  .check-out:hover {
-    color: aqua;
-    cursor: pointer;
-    transition: all 0.5s ease-out; }
+#bg-resume {
+  height: 100%;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  background-image: url(../img/bg_resume_2.jpg);
+  background-attachment: fixed;
+  background-size: cover; }
+  #bg-resume:after {
+    content: "";
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(145, 135, 135, 0.3); }
 
 #contact .lg-heading {
+  font-size: 4rem;
   text-align: center;
   margin-top: 9rem; }
 
-#contact .sm-heading {
+#contact .contact-sm-heading {
   margin-top: 1.5rem;
   text-align: center;
   font-size: 1rem;
-  font-family: "Times New Roman", Times, serif; }
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: 100; }
 
 #contact .contact-icons {
-  margin-left: 4rem;
   margin-top: 3rem;
   text-align: center; }
   #contact .contact-icons a {
@@ -481,11 +299,11 @@ main {
       font-size: 1rem;
       color: #444; }
   #contact .contact-icons #git:hover {
-    color: #333;
+    color: #1a1a1a;
     transition: all 0.5s ease-out; }
   #contact .contact-icons #git i {
     text-align: center;
-    background-color: #444;
+    background-color: #1a1a1a;
     padding: 10px;
     border-radius: 35px;
     font-size: 1rem;
@@ -495,11 +313,11 @@ main {
       background-color: #fff;
       transition: all 0.5s ease-out; }
   #contact .contact-icons #linkedin:hover {
-    color: #0077b5;
+    color: #1a1a1a;
     transition: all 0.5s ease-out; }
   #contact .contact-icons #linkedin i {
     text-align: center;
-    background-color: #444;
+    background-color: #1a1a1a;
     padding: 10px;
     border-radius: 35px;
     font-size: 1rem;
@@ -513,7 +331,7 @@ main {
     transition: all 0.5s ease-out; }
   #contact .contact-icons #medium i {
     text-align: center;
-    background-color: #444;
+    background-color: #1a1a1a;
     padding: 10px;
     border-radius: 35px;
     font-size: 1rem;
@@ -527,7 +345,7 @@ main {
     transition: all 0.5s ease-out; }
   #contact .contact-icons #gmail i {
     text-align: center;
-    background-color: #444;
+    background-color: #1a1a1a;
     padding: 10px;
     border-radius: 35px;
     font-size: 1rem;
@@ -556,73 +374,96 @@ main {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: rgba(68, 68, 68, 0.7); }
-  #bg-contact #contact .lg-heading {
-    font-size: 4rem; }
-  #bg-contact #contact .sm-heading {
-    font-size: 1rem;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    font-weight: 100; }
-
-#bg-resume {
-  height: 100%;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  line-height: 1.5;
-  background-image: url(../img/bg_resume_2.jpg);
-  background-attachment: fixed;
-  background-size: cover; }
-  #bg-resume:after {
-    content: "";
-    position: fixed;
-    display: block;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: rgba(68, 68, 68, 0.5); }
+    background: rgba(0, 0, 0, 0.6); }
 
 #bg-portfolio {
-  height: 100%;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  line-height: 1.5;
-  background-image: url(../img/bg_about_1.jpg);
-  background-attachment: fixed;
-  background-size: cover; }
-  #bg-portfolio:after {
-    content: "";
-    position: fixed;
-    display: block;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
+  background-color: #fff; }
+  #bg-portfolio #portfolio {
+    height: 100vh;
+    background-image: url(../img/bg_portfolio.jpg);
+    background-size: cover; }
+    #bg-portfolio #portfolio .portfolio-intro h2 {
+      margin-top: 20rem;
+      margin-left: 7rem;
+      margin-bottom: 0;
+      font-size: 3rem; }
+    #bg-portfolio #portfolio .portfolio-intro h3 {
+      font-size: 1.2rem;
+      margin-top: 0.1rem;
+      margin-left: 7rem; }
+    #bg-portfolio #portfolio .portfolio-intro a {
+      margin-left: 7rem;
+      margin-top: 2rem; }
+    #bg-portfolio #portfolio .button {
+      border-style: solid;
+      border-width: 1px;
+      border-color: #f38654;
+      color: white;
+      padding: 10px 25px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer; }
+      #bg-portfolio #portfolio .button:hover {
+        background-color: #f38654;
+        color: black;
+        transition: all 0.5s ease-out; }
+    #bg-portfolio #portfolio .portfolio-divider {
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      padding-left: 7rem; }
+      #bg-portfolio #portfolio .portfolio-divider .portfolio-divider-inside {
+        border-top: solid;
+        border-width: 1px;
+        width: 70px;
+        color: #676767; }
+  #bg-portfolio .portfolio-bio {
+    background-color: #a3d2df;
+    border-top-style: solid;
+    border-color: black;
     width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: rgba(68, 68, 68, 0.4); }
-
-#bg-about {
-  height: 100%;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  line-height: 1.5;
-  background-image: url(../img/bg_about_3.jpg);
-  background-attachment: fixed;
-  background-size: cover; }
-  #bg-about:after {
-    content: "";
-    position: fixed;
-    display: block;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: rgba(0, 0, 0, 0.5); }
+    height: 101vh; }
+    #bg-portfolio .portfolio-bio .portfolio-outer-box {
+      background-color: #fff;
+      height: 500px;
+      width: 1000px;
+      margin-left: 10rem;
+      margin-top: 5rem;
+      box-shadow: 5px 5px 10px black;
+      border-left-style: solid;
+      border-width: 40px;
+      border-color: #eeeeee; }
+      #bg-portfolio .portfolio-bio .portfolio-outer-box h2,
+      #bg-portfolio .portfolio-bio .portfolio-outer-box h3,
+      #bg-portfolio .portfolio-bio .portfolio-outer-box p {
+        color: #27303b; }
+      #bg-portfolio .portfolio-bio .portfolio-outer-box h2 {
+        font-family: "Space Mono", monospace, sans-serif;
+        font-size: 64px;
+        border-color: black;
+        margin-bottom: 0;
+        width: 400px;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        color: #eb613d; }
+      #bg-portfolio .portfolio-bio .portfolio-outer-box h3 {
+        font-family: "Space Mono", monospace, sans-serif;
+        border-color: black;
+        font-size: 20.8px;
+        margin: 0;
+        margin-left: 1rem;
+        width: 400px; }
+      #bg-portfolio .portfolio-bio .portfolio-outer-box p {
+        font-family: "Space Mono", monospace, sans-serif;
+        font-size: 16; }
+      #bg-portfolio .portfolio-bio .portfolio-outer-box .portfolio-bio-right-para {
+        position: absolute;
+        right: 0;
+        top: 50rem;
+        margin-right: 250px;
+        width: 400px; }
+      #bg-portfolio .portfolio-bio .portfolio-outer-box .portfolio-bio-left-para {
+        width: 400px;
+        margin-left: 1rem;
+        right: 0; }
