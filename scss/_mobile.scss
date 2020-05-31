@@ -57,4 +57,52 @@
 
 //smartphones
 @include mediaSm {
+  * {
+    //border-style: solid;
+  }
+  #home {
+    .lg-heading {
+      margin-top: 20vh;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-left: 6vh;
+    }
+    .sm-heading {
+      font-size: 1.5rem;
+      margin-left: 6vh;
+    }
+    .container {
+      h2 {
+        width: 200px;
+        font-size: 0.6rem;
+        margin-left: 4vh;
+      }
+    }
+    .divider {
+      .divider-inside {
+        width: 100px;
+        margin-left: 4vh;
+      }
+    }
+    .sm-para {
+      font-size: 0.6rem;
+      margin-left: 6vh;
+    }
+    .lg-icons {
+      margin-left: 6vh;
+      a {
+        margin: 1rem;
+        i {
+          font-size: 1rem;
+        }
+      }
+    }
+    .lg-icons-name {
+      margin-left: 6vh;
+      span {
+        margin: 0.4rem;
+        font-size: 0.6rem;
+      }
+    }
+  }
 }
