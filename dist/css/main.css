@@ -668,7 +668,22 @@ main {
     .menu-branding .portrait {
       background: url("../img/profile_sm.jpg");
       width: 150px;
-      height: 150px; } }
+      height: 150px; }
+  #contact .contact-lg-heading {
+    font-size: 4rem;
+    margin-left: 8vh; }
+  #contact .contact-sm-heading {
+    font-size: 1rem;
+    margin-left: 8vh; }
+  #contact .contact-icons {
+    margin-top: 5vh;
+    text-align: center;
+    margin-left: 8vh; }
+    #contact .contact-icons a {
+      margin: 2vh; }
+      #contact .contact-icons a i {
+        font-size: 1rem;
+        padding: 10px; } }
 
 @media screen and (max-width: 500px) {
   #bg-img {
@@ -711,11 +726,13 @@ main {
       margin: 0.4rem;
       font-size: 0.8rem; }
   #contact .contact-lg-heading {
-    font-size: 3rem;
-    margin-left: 8vh; }
+    font-size: 2.5rem;
+    margin-left: 8vh;
+    margin-top: 12vh; }
   #contact .contact-sm-heading {
     font-size: 0.8rem;
-    margin-left: 8vh; }
+    margin-left: 8vh;
+    margin-top: 3vh; }
   #contact .contact-icons {
     margin-top: 5vh;
     text-align: center;

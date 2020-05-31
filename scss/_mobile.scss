@@ -53,6 +53,34 @@
       height: 150px;
     }
   }
+
+  #contact {
+    * {
+      //border-style: solid;
+    }
+    .contact-lg-heading {
+      font-size: 4rem;
+      margin-left: 8vh;
+      //margin-top: vh;
+    }
+    .contact-sm-heading {
+      //font-size: 4rem;
+      font-size: 1rem;
+      margin-left: 8vh;
+    }
+    .contact-icons {
+      margin-top: 5vh;
+      text-align: center;
+      margin-left: 8vh;
+      a {
+        margin: 2vh;
+        i {
+          font-size: 1rem;
+          padding: 10px;
+        }
+      }
+    }
+  }
 }
 
 //smartphones
@@ -121,14 +149,15 @@
       //border-style: solid;
     }
     .contact-lg-heading {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-left: 8vh;
-      //margin-top: vh;
+      margin-top: 12vh;
     }
     .contact-sm-heading {
       //font-size: 4rem;
       font-size: 0.8rem;
       margin-left: 8vh;
+      margin-top: 3vh;
     }
     .contact-icons {
       margin-top: 5vh;
