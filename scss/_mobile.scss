@@ -81,6 +81,13 @@
       }
     }
   }
+  #portfolio {
+    .portfolio-intro {
+      h2 {
+        font-size: 1vh;
+      }
+    }
+  }
 }
 
 //smartphones
@@ -155,24 +162,32 @@
     .contact-lg-heading {
       font-size: 2.5rem;
       margin-left: 8vh;
-      margin-top: 12vh;
+      margin-top: 25vh;
     }
     .contact-sm-heading {
       //font-size: 4rem;
-      font-size: 0.8rem;
+      font-size: 1rem;
       margin-left: 8vh;
-      margin-top: 3vh;
+      margin-top: 10vh;
     }
     .contact-icons {
-      margin-top: 5vh;
+      margin-top: 10vh;
       text-align: center;
       margin-left: 8vh;
       a {
         margin: 2vh;
         i {
-          font-size: 0.7rem;
-          padding: 7px;
+          font-size: 0.9rem;
+          padding: 10px;
         }
+      }
+    }
+  }
+
+  #portfolio {
+    .portfolio-intro {
+      h2 {
+        font-size: 1vh;
       }
     }
   }
