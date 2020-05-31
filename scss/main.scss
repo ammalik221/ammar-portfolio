@@ -350,11 +350,11 @@ main {
         margin-left: 10rem;
         margin-bottom: 0;
         //border-style: solid;
-        font-size: 5rem;
+        font-size: 12vh;
       }
       h3 {
         //border-style: solid;
-        font-size: 1.5rem;
+        font-size: 4vh;
         margin-top: 0.1rem;
         margin-left: 10rem;
       }
@@ -404,7 +404,7 @@ main {
   .portfolio-bio {
     border-top-style: solid;
     border-color: #727270;
-    width: 205.1vh;
+    width: 100%;
     height: 100vh;
     margin: 0;
     background-image: url(../img/bg_bio_4.jpg);
@@ -479,7 +479,8 @@ main {
     //margin-top: 5rem;
     margin: 0;
     height: 210vh;
-    width: 205.1vh;
+    width: 100%;
+
     .portfolio-project-heading {
       width: 100vh;
       color: #27303b;
@@ -616,7 +617,7 @@ main {
   border-bottom-color: blueviolet;
   background-image: url(../img/bg_skills.jpg);
   background-size: cover;
-  width: 205.1vh;
+  width: 100%;
   margin-bottom: 0;
   height: 100vh;
 

@@ -8,6 +8,10 @@
 
 //tablet and small laptops
 @include mediaMd {
+  #bg-img {
+    background-size: cover;
+  }
+
   #home {
     .sm-heading {
       text-align: center;
@@ -55,9 +59,6 @@
   }
 
   #contact {
-    * {
-      //border-style: solid;
-    }
     .contact-lg-heading {
       font-size: 4rem;
       margin-left: 8vh;
@@ -83,7 +84,13 @@
   }
   #portfolio {
     .portfolio-intro {
-      h2 {
+      .heading {
+        font-size: 8vh;
+        span {
+          font-size: 8vh;
+        }
+      }
+      h3 {
         font-size: 1vh;
       }
     }
@@ -92,9 +99,6 @@
 
 //smartphones
 @include mediaSm {
-  * {
-    //border-style: solid;
-  }
   #bg-img {
     background-size: cover;
   }
@@ -150,11 +154,6 @@
       }
     }
   }
-
-  #bg-contact {
-    background-size: initial;
-  }
-
   #contact {
     * {
       //border-style: solid;
