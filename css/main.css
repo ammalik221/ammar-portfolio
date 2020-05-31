@@ -62,7 +62,7 @@
       width: 250px;
       height: 250px;
       background: url("../img/profile_md.jpg");
-      border-color: #eece1a;
+      border-color: #f38654;
       border-radius: 50%;
       background-size: cover;
       border-style: solid; }
@@ -72,7 +72,7 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #f38654; }
     .menu .nav-item:hover {
       background-color: #2b2b2b;
       cursor: pointer;
@@ -88,7 +88,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #f38654; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -121,7 +121,7 @@ body {
   font-family: "Raleway", sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/bg_portfolio_4.jpg);
+    background: url(../img/bg_main.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -132,21 +132,20 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.3); }
+      background: rgba(68, 68, 68, 0.6); }
 
 .lg-heading {
   margin-bottom: 0;
   font-weight: 300;
-  font-size: 3rem;
-  margin-top: 0;
+  font-size: 4rem;
   padding: 0;
   text-align: center;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700; }
   .lg-heading span {
-    color: #eece1a;
+    color: #f38654;
     font-weight: 700;
-    font-family: "Noto Sans JP", sans-serif; }
+    font-family: "Raleway", sans-serif; }
 
 .divider {
   margin-bottom: 1.5rem;
@@ -160,9 +159,10 @@ body {
 .sm-para {
   text-align: center;
   font-weight: 400;
-  font-family: "Patrick Hand", cursive;
+  font-family: "Space Mono", cursive, sans-serif;
   word-spacing: 2px;
-  letter-spacing: 1.5px; }
+  letter-spacing: 1.5px;
+  line-height: 1.7; }
 
 a {
   color: #fff;
@@ -174,14 +174,14 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #f38654; }
 
 main {
-  padding: 2rem;
+  padding: 1rem;
   padding-right: 4rem;
   height: 100%; }
   main .lg-icons {
-    margin-top: 3rem;
+    margin-top: 2rem;
     text-align: center; }
     main .lg-icons a {
       margin: 2rem;
@@ -200,33 +200,22 @@ main {
       color: #f38654;
       transition: all 0.5s ease-out; }
     main .lg-icons .fa-file-pdf-o:hover {
-      color: #49c0b6;
+      color: #f38654;
       transition: all 0.5s ease-out; }
     main .lg-icons .fa-weixin {
       font-size: 1.5rem;
       margin: 0;
       padding: 0rem; }
       main .lg-icons .fa-weixin:hover {
-        color: #0abf53;
+        color: #f38654;
         transition: all 0.5s ease-out; }
   main .lg-icons-name {
-    display: grid;
-    grid-template-areas: "name-1 name-2 name-3";
     margin-top: 3px;
-    grid-template-columns: 550px 145px 200px; }
-    main .lg-icons-name .lg-icon-name-1 {
-      margin-left: 517px;
+    text-align: center; }
+    main .lg-icons-name span {
+      margin: 1rem;
       color: #fff;
       font-size: 15px; }
-    main .lg-icons-name .lg-icon-name-2 {
-      margin-left: 60px;
-      color: #fff;
-      font-size: 15px; }
-    main .lg-icons-name .lg-icon-name-3 {
-      margin-left: 3px;
-      color: #fff;
-      font-size: 15px;
-      margin-top: 0; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -237,31 +226,31 @@ main {
     margin-bottom: 1rem;
     font-weight: 500;
     margin-left: 3rem;
-    font-size: 1.1rem;
-    padding-left: 30.1rem;
-    font-weight: 500; }
+    font-size: 1.7rem;
+    padding-left: 27.5rem;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif; }
 
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  text-align: center;
   height: 100%;
   padding: 0 3rem; }
   .container h2 {
-    padding-left: 18rem;
     font-weight: 500;
     margin: 0.8rem;
-    font-size: 1.2rem;
-    font-family: "Patrick Hand", cursive;
+    font-size: 1.1rem;
+    font-family: "Space Mono", cursive, sans-serif;
     word-spacing: 2px;
-    letter-spacing: 1.5px; }
+    letter-spacing: 1px; }
 
 .txt-type > .txt {
   border-right: 0.2rem solid #373737;
-  color: #eece1a; }
+  color: #f38654; }
 
 .copyright {
-  margin-top: 4.3rem;
+  margin-top: 2.3rem;
   margin-bottom: 0; }
   .copyright h3 {
     position: absolute;
@@ -300,8 +289,10 @@ main {
   margin-top: 1.5rem;
   text-align: center;
   font-size: 1rem;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-weight: 100; }
+  font-family: "Space Mono", cursive, sans-serif;
+  font-weight: 100;
+  line-height: 2;
+  letter-spacing: 1px; }
 
 #contact .contact-icons {
   margin-top: 3rem;
@@ -377,7 +368,7 @@ main {
   margin: 0;
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
-  background-image: url(../img/bg_contact_2.jpg);
+  background-image: url(../img/bg_contact.jpg);
   background-attachment: fixed;
   background-size: cover; }
   #bg-contact:after {
@@ -391,25 +382,25 @@ main {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: rgba(0, 0, 0, 0.6); }
+    background: rgba(51, 51, 51, 0.3); }
 
 #bg-portfolio {
   background-color: #fff; }
   #bg-portfolio #portfolio {
     height: 100vh;
-    background-image: url(../img/bg_portfolio.jpg);
+    background-image: url(../img/bg_portfolio_2.jpg);
     background-size: cover; }
     #bg-portfolio #portfolio .portfolio-intro h2 {
-      margin-top: 20rem;
-      margin-left: 7rem;
+      margin-top: 15rem;
+      margin-left: 10rem;
       margin-bottom: 0;
-      font-size: 3rem; }
+      font-size: 5rem; }
     #bg-portfolio #portfolio .portfolio-intro h3 {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       margin-top: 0.1rem;
-      margin-left: 7rem; }
+      margin-left: 10rem; }
     #bg-portfolio #portfolio .portfolio-intro a {
-      margin-left: 7rem;
+      margin-left: 10rem;
       margin-top: 2rem; }
     #bg-portfolio #portfolio .button {
       border-style: solid;
@@ -419,8 +410,8 @@ main {
       padding: 10px 25px;
       text-decoration: none;
       display: inline-block;
-      font-size: 16px;
-      font-weight: 600;
+      font-size: 20px;
+      font-weight: 500;
       cursor: pointer; }
       #bg-portfolio #portfolio .button:hover {
         background-color: #f38654;
@@ -429,15 +420,15 @@ main {
     #bg-portfolio #portfolio .portfolio-divider {
       margin-top: 2.5rem;
       margin-bottom: 1rem;
-      padding-left: 7rem; }
+      padding-left: 10rem; }
       #bg-portfolio #portfolio .portfolio-divider .portfolio-divider-inside {
         border-top: solid;
         border-width: 1px;
         width: 70px;
-        color: #676767; }
+        color: white; }
   #bg-portfolio .portfolio-bio {
     border-top-style: solid;
-    border-color: #1a1d21;
+    border-color: #727270;
     width: 100%;
     height: 101vh;
     background-image: url(../img/bg_bio_4.jpg); }
