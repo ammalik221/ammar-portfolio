@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
 @import url("https://fonts.googleapis.com/css?family=Calistoga");
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 @import "mobile";
 
 * {
@@ -562,7 +563,7 @@ main {
 
       .portfolio-project-heading {
         width: 600px;
-        color: #f38654;
+        color: #27303b;
         letter-spacing: 1px;
         word-spacing: 0;
         //background-color: #000000;
@@ -570,9 +571,15 @@ main {
         //border-style: solid;
         border-color: black;
         margin-top: 5rem;
-        font-size: 50px;
+        font-size: 45px;
         margin-left: 220px;
         font-weight: 700;
+        letter-spacing: 0;
+        word-spacing: 0;
+
+        span {
+          color: #f38654;
+        }
       }
 
       .portfolio-project-grid {
@@ -672,7 +679,7 @@ main {
         font-size: 16px;
         font-weight: 600;
         cursor: pointer;
-        margin-top: 6rem;
+        margin-top: 6.5rem;
         margin-left: 36.4rem;
 
         a {
@@ -757,7 +764,7 @@ main {
       //background-color: aqua;
       position: absolute;
       right: 0;
-      top: 182rem;
+      top: 184rem;
       margin-right: 250px;
       width: 400px;
       color: #27303b;
@@ -803,6 +810,7 @@ main {
     .portfolio-skills-left-para {
       //border-style: solid;
       width: 400px;
+      margin-top: 2rem;
       margin-left: 3rem;
       //margin-top: 2rem;
       right: 0;
@@ -810,19 +818,36 @@ main {
   }
 }
 
-.footer {
-  background-color: #282b2e;
+.footer-1 {
+  background-color: #27303b;
   text-align: center;
+  //border-color: green;
   border-style: solid;
-  border-color: #282b2e;
-
-  span {
-    color: darken($color: aqua, $amount: 5);
-  }
+  border-color: #27303b;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 
   p {
+    margin: 1rem;
     font-family: "Noto Sans JP", sans-serif;
-    font-size: 14px;
-    font-weight: 400px;
+    background-color: #27303b;
+    letter-spacing: 1px;
+  }
+
+  #footer-icon {
+    color: #99a3e8;
+  }
+}
+
+.footer-2 {
+  background-color: #4b5e6a;
+  border-color: #4b5e6a;
+  border-style: solid;
+  text-align: center;
+
+  p {
+    font-size: 12px;
   }
 }
