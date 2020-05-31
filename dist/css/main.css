@@ -725,6 +725,8 @@ main {
     #home .lg-icons-name span {
       margin: 0.4rem;
       font-size: 0.8rem; }
+  #bg-contact {
+    background-size: contain; }
   #contact .contact-lg-heading {
     font-size: 2.5rem;
     margin-left: 8vh;
