@@ -664,7 +664,7 @@ main {
   border-top-style: solid;
   border-color: #f5f7f9;
   border-bottom-color: blueviolet;
-  background-image: url(../img/bg_skills_3.jpg);
+  background-image: url(../img/bg_skills.jpg);
   background-size: cover;
   width: 100%;
   margin-bottom: 0;
@@ -691,14 +691,14 @@ main {
       margin-bottom: 0;
       width: 400px;
       margin-top: 2rem;
-      margin-left: 1rem;
+      margin-left: 2rem;
       color: #eb613d; }
     .portfolio-skills .portfolio-skills-outer-box h3 {
       font-family: "Space Mono", monospace, sans-serif;
       border-color: black;
       font-size: 20.8px;
       margin: 0;
-      margin-left: 1rem;
+      margin-left: 2rem;
       width: 400px; }
     .portfolio-skills .portfolio-skills-outer-box p {
       font-family: "Space Mono", monospace, sans-serif;
@@ -706,13 +706,39 @@ main {
     .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para {
       position: absolute;
       right: 0;
-      top: 175rem;
+      top: 182rem;
       margin-right: 250px;
-      width: 400px; }
+      width: 400px;
+      color: #27303b;
+      font-family: "Space Mono", monospace, sans-serif;
+      font-size: 16;
+      display: grid;
+      grid-template-areas: "heading heading" "left-skills right-skills";
+      grid-template-columns: 200px 200px; }
+      .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para h3 {
+        padding: 0;
+        margin: 0;
+        grid-area: heading; }
+      .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para .ulist-1 {
+        grid-area: left-skills; }
+      .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para .ulist-2 {
+        grid-area: right-skills; }
+      .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para .ulist-1,
+      .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para .ulist-2 {
+        list-style-type: disc;
+        border-color: green;
+        color: #27303b;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-right: 0; }
+        .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para .ulist-1 li,
+        .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para .ulist-2 li {
+          margin-right: 0px;
+          font-family: "Space Mono", monospace, sans-serif;
+          font-size: 16; }
     .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-left-para {
       width: 400px;
-      margin-left: 2rem;
-      margin-top: 2rem;
+      margin-left: 3rem;
       right: 0; }
 
 .footer {
