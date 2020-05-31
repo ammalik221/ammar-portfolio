@@ -131,7 +131,7 @@
 
 @media screen and (max-width: 500px) {
   #bg-img {
-    background-size: contain; }
+    background-size: cover; }
   #home .lg-heading {
     margin-top: 20vh;
     font-size: 2.5rem;
@@ -140,27 +140,34 @@
   #home .sm-heading {
     font-size: 1.5rem;
     margin-left: 6vh; }
-  #home .container h2 {
-    width: 200px;
-    font-size: 0.6rem;
-    margin-left: 4vh; }
-  #home .divider .divider-inside {
-    width: 100px;
-    margin-left: 4vh; }
+  #home .container {
+    margin-left: 5vh;
+    padding: 0; }
+    #home .container h2 {
+      padding: 0;
+      margin-left: 0;
+      margin: 0;
+      font-size: 0.8rem;
+      margin-left: 0; }
+  #home .divider {
+    margin-top: 1rem; }
+    #home .divider .divider-inside {
+      width: 100px;
+      margin-left: 4vh; }
   #home .sm-para {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     margin-left: 6vh; }
   #home .lg-icons {
-    margin-left: 6vh; }
+    margin-left: 4vh; }
     #home .lg-icons a {
       margin: 1rem; }
       #home .lg-icons a i {
-        font-size: 1rem; }
+        font-size: 1.5rem; }
   #home .lg-icons-name {
-    margin-left: 6vh; }
+    margin-left: 4vh; }
     #home .lg-icons-name span {
       margin: 0.4rem;
-      font-size: 0.6rem; } }
+      font-size: 0.8rem; } }
 
 * {
   box-sizing: border-box;
