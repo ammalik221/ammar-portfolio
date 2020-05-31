@@ -100,75 +100,6 @@
 .nav-item:nth-child(3) {
   transition-delay: 0.3s; }
 
-@media screen and (max-width: 768px) {
-  #home .sm-heading {
-    text-align: center;
-    padding-left: 0; }
-  #home .container h2 {
-    padding-left: 0;
-    text-align: center; }
-  #home .divider {
-    padding-left: 0; }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      background: url("../img/profile_sm.jpg");
-      width: 150px;
-      height: 150px; } }
-
-@media screen and (max-width: 500px) {
-  #bg-img {
-    background-size: cover; }
-  #home .lg-heading {
-    margin-top: 20vh;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-left: 6vh; }
-  #home .sm-heading {
-    font-size: 1.5rem;
-    margin-left: 6vh; }
-  #home .container {
-    margin-left: 5vh;
-    padding: 0; }
-    #home .container h2 {
-      padding: 0;
-      margin-left: 0;
-      margin: 0;
-      font-size: 0.8rem;
-      margin-left: 0; }
-  #home .divider {
-    margin-top: 1rem; }
-    #home .divider .divider-inside {
-      width: 100px;
-      margin-left: 4vh; }
-  #home .sm-para {
-    font-size: 0.8rem;
-    margin-left: 6vh; }
-  #home .lg-icons {
-    margin-left: 4vh; }
-    #home .lg-icons a {
-      margin: 1rem; }
-      #home .lg-icons a i {
-        font-size: 1.5rem; }
-  #home .lg-icons-name {
-    margin-left: 4vh; }
-    #home .lg-icons-name span {
-      margin: 0.4rem;
-      font-size: 0.8rem; } }
-
 * {
   box-sizing: border-box;
   font-weight: 400; }
@@ -329,10 +260,10 @@ main {
     z-index: -1;
     background: rgba(145, 135, 135, 0.3); }
 
-#contact .lg-heading {
+#contact .contact-lg-heading {
   font-size: 4rem;
   text-align: center;
-  margin-top: 9rem; }
+  margin-top: 25vh; }
 
 #contact .contact-sm-heading {
   margin-top: 1.5rem;
@@ -347,70 +278,30 @@ main {
   margin-top: 3rem;
   text-align: center; }
   #contact .contact-icons a {
-    margin: 7px; }
+    margin: 2vh; }
     #contact .contact-icons a i {
       text-align: center;
-      background-color: rgba(255, 255, 255, 0.815);
+      background-color: #1a1a1a;
       padding: 10px;
       border-radius: 35px;
       font-size: 1rem;
-      color: #444; }
-  #contact .contact-icons #git:hover {
-    color: #1a1a1a;
+      color: #fff; }
+  #contact .contact-icons #git i:hover {
+    color: #333;
+    background-color: #fff;
     transition: all 0.5s ease-out; }
-  #contact .contact-icons #git i {
-    text-align: center;
-    background-color: #1a1a1a;
-    padding: 10px;
-    border-radius: 35px;
-    font-size: 1rem;
-    color: #fff; }
-    #contact .contact-icons #git i:hover {
-      color: #333;
-      background-color: #fff;
-      transition: all 0.5s ease-out; }
-  #contact .contact-icons #linkedin:hover {
-    color: #1a1a1a;
+  #contact .contact-icons #linkedin i:hover {
+    color: #0077b5;
+    background-color: #fff;
     transition: all 0.5s ease-out; }
-  #contact .contact-icons #linkedin i {
-    text-align: center;
-    background-color: #1a1a1a;
-    padding: 10px;
-    border-radius: 35px;
-    font-size: 1rem;
-    color: #fff; }
-    #contact .contact-icons #linkedin i:hover {
-      color: #0077b5;
-      background-color: #fff;
-      transition: all 0.5s ease-out; }
-  #contact .contact-icons #medium:hover {
+  #contact .contact-icons #medium i:hover {
     color: #00ab6c;
+    background-color: #fff;
     transition: all 0.5s ease-out; }
-  #contact .contact-icons #medium i {
-    text-align: center;
-    background-color: #1a1a1a;
-    padding: 10px;
-    border-radius: 35px;
-    font-size: 1rem;
-    color: #fff; }
-    #contact .contact-icons #medium i:hover {
-      color: #00ab6c;
-      background-color: #fff;
-      transition: all 0.5s ease-out; }
-  #contact .contact-icons #gmail:hover {
+  #contact .contact-icons #gmail i:hover {
     color: #ea4335;
+    background-color: #fff;
     transition: all 0.5s ease-out; }
-  #contact .contact-icons #gmail i {
-    text-align: center;
-    background-color: #1a1a1a;
-    padding: 10px;
-    border-radius: 35px;
-    font-size: 1rem;
-    color: #fff; }
-    #contact .contact-icons #gmail i:hover {
-      color: #ea4335;
-      background-color: #fff;
-      transition: all 0.5s ease-out; }
 
 #bg-contact {
   height: 100%;
@@ -749,3 +640,88 @@ main {
   text-align: center; }
   .footer-2 p {
     font-size: 12px; }
+
+@media screen and (max-width: 768px) {
+  #home .sm-heading {
+    text-align: center;
+    padding-left: 0; }
+  #home .container h2 {
+    padding-left: 0;
+    text-align: center; }
+  #home .divider {
+    padding-left: 0; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../img/profile_sm.jpg");
+      width: 150px;
+      height: 150px; } }
+
+@media screen and (max-width: 500px) {
+  #bg-img {
+    background-size: cover; }
+  #home .lg-heading {
+    margin-top: 20vh;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 6vh; }
+  #home .sm-heading {
+    font-size: 1.5rem;
+    margin-left: 6vh; }
+  #home .container {
+    margin-top: 3vh;
+    margin-left: 5vh;
+    padding: 0; }
+    #home .container h2 {
+      padding: 0;
+      margin-left: 0;
+      margin: 0;
+      font-size: 0.8rem;
+      margin-left: 0; }
+  #home .divider {
+    margin-top: 1rem; }
+    #home .divider .divider-inside {
+      width: 100px;
+      margin-left: 4vh; }
+  #home .sm-para {
+    font-size: 0.8rem;
+    margin-left: 6vh; }
+  #home .lg-icons {
+    margin-left: 4vh; }
+    #home .lg-icons a {
+      margin: 1rem; }
+      #home .lg-icons a i {
+        font-size: 1.5rem; }
+  #home .lg-icons-name {
+    margin-left: 4vh; }
+    #home .lg-icons-name span {
+      margin: 0.4rem;
+      font-size: 0.8rem; }
+  #contact .contact-lg-heading {
+    font-size: 3rem;
+    margin-left: 8vh; }
+  #contact .contact-sm-heading {
+    font-size: 0.8rem;
+    margin-left: 8vh; }
+  #contact .contact-icons {
+    margin-top: 5vh;
+    text-align: center;
+    margin-left: 8vh; }
+    #contact .contact-icons a {
+      margin: 2vh; }
+      #contact .contact-icons a i {
+        font-size: 0.7rem;
+        padding: 7px; } }
