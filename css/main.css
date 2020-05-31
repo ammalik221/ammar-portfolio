@@ -101,6 +101,8 @@
   transition-delay: 0.3s; }
 
 @media screen and (max-width: 768px) {
+  #bg-img {
+    background-size: cover; }
   #home .sm-heading {
     text-align: center;
     padding-left: 0; }
@@ -143,10 +145,14 @@
       #contact .contact-icons a i {
         font-size: 1rem;
         padding: 10px; }
-  #portfolio .portfolio-intro h2 {
+  #portfolio .portfolio-intro .heading {
+    font-size: 8vh; }
+    #portfolio .portfolio-intro .heading span {
+      font-size: 8vh; }
+  #portfolio .portfolio-intro h3 {
     font-size: 1vh; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   #bg-img {
     background-size: cover; }
   #home .lg-heading {
@@ -186,8 +192,6 @@
     #home .lg-icons-name span {
       margin: 0.4rem;
       font-size: 0.8rem; }
-  #bg-contact {
-    background-size: initial; }
   #contact .contact-lg-heading {
     font-size: 2.5rem;
     margin-left: 8vh;
@@ -442,9 +446,9 @@ main {
       margin-top: 35vh;
       margin-left: 10rem;
       margin-bottom: 0;
-      font-size: 5rem; }
+      font-size: 12vh; }
     #bg-portfolio #portfolio .portfolio-intro h3 {
-      font-size: 1.5rem;
+      font-size: 4vh;
       margin-top: 0.1rem;
       margin-left: 10rem; }
     #bg-portfolio #portfolio .portfolio-intro a {
@@ -477,7 +481,7 @@ main {
   #bg-portfolio .portfolio-bio {
     border-top-style: solid;
     border-color: #727270;
-    width: 205.1vh;
+    width: 100%;
     height: 100vh;
     margin: 0;
     background-image: url(../img/bg_bio_4.jpg); }
@@ -531,7 +535,7 @@ main {
     background-color: #f5f7f9;
     margin: 0;
     height: 210vh;
-    width: 205.1vh; }
+    width: 100%; }
     #bg-portfolio .portfolio-projects .portfolio-project-heading {
       width: 100vh;
       color: #27303b;
@@ -647,7 +651,7 @@ main {
   border-bottom-color: blueviolet;
   background-image: url(../img/bg_skills.jpg);
   background-size: cover;
-  width: 205.1vh;
+  width: 100%;
   margin-bottom: 0;
   height: 100vh; }
   .portfolio-skills .portfolio-skills-outer-box {
@@ -747,6 +751,8 @@ main {
     font-size: 12px; }
 
 @media screen and (max-width: 768px) {
+  #bg-img {
+    background-size: cover; }
   #home .sm-heading {
     text-align: center;
     padding-left: 0; }
@@ -789,10 +795,14 @@ main {
       #contact .contact-icons a i {
         font-size: 1rem;
         padding: 10px; }
-  #portfolio .portfolio-intro h2 {
+  #portfolio .portfolio-intro .heading {
+    font-size: 8vh; }
+    #portfolio .portfolio-intro .heading span {
+      font-size: 8vh; }
+  #portfolio .portfolio-intro h3 {
     font-size: 1vh; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   #bg-img {
     background-size: cover; }
   #home .lg-heading {
@@ -832,8 +842,6 @@ main {
     #home .lg-icons-name span {
       margin: 0.4rem;
       font-size: 0.8rem; }
-  #bg-contact {
-    background-size: initial; }
   #contact .contact-lg-heading {
     font-size: 2.5rem;
     margin-left: 8vh;
