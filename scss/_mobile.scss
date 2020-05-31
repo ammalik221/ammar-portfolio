@@ -61,7 +61,7 @@
     //border-style: solid;
   }
   #bg-img {
-    background-size: contain;
+    background-size: cover;
   }
   #home {
     .lg-heading {
@@ -75,36 +75,42 @@
       margin-left: 6vh;
     }
     .container {
+      margin-left: 5vh;
+      padding: 0;
       h2 {
-        width: 200px;
-        font-size: 0.6rem;
-        margin-left: 4vh;
+        padding: 0;
+        margin-left: 0;
+        margin: 0;
+        //width: 45vh;
+        font-size: 0.8rem;
+        margin-left: 0;
       }
     }
     .divider {
+      margin-top: 1rem;
       .divider-inside {
         width: 100px;
         margin-left: 4vh;
       }
     }
     .sm-para {
-      font-size: 0.6rem;
+      font-size: 0.8rem;
       margin-left: 6vh;
     }
     .lg-icons {
-      margin-left: 6vh;
+      margin-left: 4vh;
       a {
         margin: 1rem;
         i {
-          font-size: 1rem;
+          font-size: 1.5rem;
         }
       }
     }
     .lg-icons-name {
-      margin-left: 6vh;
+      margin-left: 4vh;
       span {
         margin: 0.4rem;
-        font-size: 0.6rem;
+        font-size: 0.8rem;
       }
     }
   }
