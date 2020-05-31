@@ -1,0 +1,32 @@
+//Widescreens
+@include mediaXl {
+}
+
+//desktops and laptops
+@include mediaLg {
+}
+
+//tablet and small laptops
+@include mediaMd {
+  main#home {
+    .sm-heading {
+      text-align: center;
+      padding-left: 0;
+    }
+
+    .container {
+      h2 {
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+
+    .divider {
+      padding-left: 0;
+    }
+  }
+}
+
+//smartphones
+@include mediaSm {
+}

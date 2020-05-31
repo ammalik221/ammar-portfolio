@@ -61,7 +61,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/profile.jpeg");
+      background: url("../img/profile_md.jpg");
       border-color: #eece1a;
       border-radius: 50%;
       background-size: cover;
@@ -98,6 +98,16 @@
 
 .nav-item:nth-child(3) {
   transition-delay: 0.3s; }
+
+@media screen and (max-width: 768px) {
+  main#home .sm-heading {
+    text-align: center;
+    padding-left: 0; }
+  main#home .container h2 {
+    padding-left: 0;
+    text-align: center; }
+  main#home .divider {
+    padding-left: 0; } }
 
 * {
   box-sizing: border-box;
@@ -426,13 +436,14 @@ main {
         width: 70px;
         color: #676767; }
   #bg-portfolio .portfolio-bio {
-    background-color: #a3d2df;
     border-top-style: solid;
-    border-color: black;
+    border-color: #1a1d21;
     width: 100%;
-    height: 101vh; }
+    height: 101vh;
+    background-image: url(../img/bg_bio_4.jpg); }
     #bg-portfolio .portfolio-bio .portfolio-outer-box {
       background-color: #fff;
+      background-size: cover;
       height: 500px;
       width: 1000px;
       margin-left: 10rem;
@@ -452,14 +463,14 @@ main {
         margin-bottom: 0;
         width: 400px;
         margin-top: 2rem;
-        margin-left: 1rem;
+        margin-left: 2rem;
         color: #eb613d; }
       #bg-portfolio .portfolio-bio .portfolio-outer-box h3 {
         font-family: "Space Mono", monospace, sans-serif;
         border-color: black;
         font-size: 20.8px;
         margin: 0;
-        margin-left: 1rem;
+        margin-left: 2rem;
         width: 400px; }
       #bg-portfolio .portfolio-bio .portfolio-outer-box p {
         font-family: "Space Mono", monospace, sans-serif;
@@ -467,16 +478,16 @@ main {
       #bg-portfolio .portfolio-bio .portfolio-outer-box .portfolio-bio-right-para {
         position: absolute;
         right: 0;
-        top: 50rem;
+        top: 49rem;
         margin-right: 250px;
         width: 400px; }
       #bg-portfolio .portfolio-bio .portfolio-outer-box .portfolio-bio-left-para {
         width: 400px;
-        margin-left: 1rem;
+        margin-left: 2rem;
         right: 0; }
     #bg-portfolio .portfolio-bio .portfolio-projects {
       border-top-style: solid;
-      border-color: #a3d2df;
+      border-color: #f5f7f9;
       background-color: #f5f7f9;
       margin-top: 5rem;
       height: 210vh; }
@@ -492,7 +503,7 @@ main {
         border-color: black;
         display: grid;
         margin-left: 220px;
-        margin-top: 4rem;
+        margin-top: 3rem;
         width: 880px;
         height: 900px;
         grid-template-areas: "proj1 proj2" "proj3 proj4";
@@ -511,7 +522,7 @@ main {
             margin-left: 1rem;
             margin-bottom: 0; }
           #bg-portfolio .portfolio-bio .portfolio-projects .portfolio-project-grid .portfolio-project-1 a {
-            font-family: "Noto Sans JP", sans-serif;
+            font-family: "Raleway", sans-serif;
             font-size: 28px;
             font-weight: 700;
             color: #27303b;
@@ -528,7 +539,8 @@ main {
             margin-left: 1rem;
             margin-bottom: 1rem; }
           #bg-portfolio .portfolio-bio .portfolio-projects .portfolio-project-grid .portfolio-project-1:hover {
-            box-shadow: 3px 3px 5px 3px grey; }
+            box-shadow: 10px 10px 10px 3px grey;
+            transition: all 0.5s ease-out; }
         #bg-portfolio .portfolio-bio .portfolio-projects .portfolio-project-grid .portfolio-project-2 {
           background-color: white;
           border-color: black;
@@ -542,7 +554,7 @@ main {
             margin-left: 1rem;
             margin-bottom: 0; }
           #bg-portfolio .portfolio-bio .portfolio-projects .portfolio-project-grid .portfolio-project-2 a {
-            font-family: "Noto Sans JP", sans-serif;
+            font-family: "Raleway", sans-serif;
             font-size: 28px;
             font-weight: 700;
             color: #27303b;
@@ -559,7 +571,8 @@ main {
             margin-left: 1rem;
             margin-bottom: 1rem; }
           #bg-portfolio .portfolio-bio .portfolio-projects .portfolio-project-grid .portfolio-project-2:hover {
-            box-shadow: 3px 3px 5px 3px grey; }
+            box-shadow: 10px 10px 10px 3px grey;
+            transition: all 0.5s ease-out; }
         #bg-portfolio .portfolio-bio .portfolio-projects .portfolio-project-grid .portfolio-project-3 {
           background-color: white;
           border-color: black;
@@ -573,7 +586,7 @@ main {
             margin-left: 1rem;
             margin-bottom: 0; }
           #bg-portfolio .portfolio-bio .portfolio-projects .portfolio-project-grid .portfolio-project-3 a {
-            font-family: "Noto Sans JP", sans-serif;
+            font-family: "Raleway", sans-serif;
             font-size: 28px;
             font-weight: 700;
             color: #27303b;
@@ -590,7 +603,8 @@ main {
             margin-left: 1rem;
             margin-bottom: 1rem; }
           #bg-portfolio .portfolio-bio .portfolio-projects .portfolio-project-grid .portfolio-project-3:hover {
-            box-shadow: 3px 3px 5px 3px grey; }
+            box-shadow: 10px 10px 10px 3px grey;
+            transition: all 0.5s ease-out; }
         #bg-portfolio .portfolio-bio .portfolio-projects .portfolio-project-grid .portfolio-project-4 {
           background-color: white;
           border-color: black;
@@ -604,7 +618,7 @@ main {
             margin-left: 1rem;
             margin-bottom: 0; }
           #bg-portfolio .portfolio-bio .portfolio-projects .portfolio-project-grid .portfolio-project-4 a {
-            font-family: "Noto Sans JP", sans-serif;
+            font-family: "Raleway", sans-serif;
             font-size: 28px;
             font-weight: 700;
             color: #27303b;
@@ -621,81 +635,94 @@ main {
             margin-left: 1rem;
             margin-bottom: 1rem; }
           #bg-portfolio .portfolio-bio .portfolio-projects .portfolio-project-grid .portfolio-project-4:hover {
-            box-shadow: 2px 2px 5px 3px grey; }
+            box-shadow: 10px 10px 10px 3px grey;
+            transition: all 0.5s ease-out; }
       #bg-portfolio .portfolio-bio .portfolio-projects .portfolio-more-proj-btn {
-        width: 300px;
-        margin-top: 15rem;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #f38654;
+        color: black;
+        padding: 10px 25px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 13rem;
         margin-left: 220px; }
         #bg-portfolio .portfolio-bio .portfolio-projects .portfolio-more-proj-btn a {
-          background-image: linear-gradient(to bottom right, #73a8e4, #7287ea);
-          padding: 16px 20px;
-          border-radius: 20px;
-          font-family: "Noto Sans JP", sans-serif;
+          color: #27303b;
           font-size: 16px;
           font-weight: 600; }
-          #bg-portfolio .portfolio-bio .portfolio-projects .portfolio-more-proj-btn a:hover {
-            box-shadow: 5px 5px 5px 2px grey;
-            transition: all 0.5s ease-out; }
-  #bg-portfolio .portfolio-skills {
-    background-color: #c6f0d5;
-    border-top-style: solid;
-    border-color: #f5f7f9;
-    border-bottom-color: blueviolet;
-    width: 100%;
-    margin-bottom: 0;
-    height: 101vh;
-    margin-top: 86.1rem; }
-    #bg-portfolio .portfolio-skills .portfolio-skills-outer-box {
-      background-color: #fff;
-      height: 500px;
-      width: 1000px;
-      margin-left: 10rem;
-      margin-top: 5rem;
-      box-shadow: 5px 5px 10px black;
-      border-left-style: solid;
-      border-width: 40px;
-      border-color: #eeeeee; }
-      #bg-portfolio .portfolio-skills .portfolio-skills-outer-box h2,
-      #bg-portfolio .portfolio-skills .portfolio-skills-outer-box h3,
-      #bg-portfolio .portfolio-skills .portfolio-skills-outer-box p {
-        color: #27303b; }
-      #bg-portfolio .portfolio-skills .portfolio-skills-outer-box h2 {
-        font-family: "Space Mono", monospace, sans-serif;
-        font-size: 64px;
-        border-color: black;
-        margin-bottom: 0;
-        width: 400px;
-        margin-top: 2rem;
-        margin-left: 1rem;
-        color: #eb613d; }
-      #bg-portfolio .portfolio-skills .portfolio-skills-outer-box h3 {
-        font-family: "Space Mono", monospace, sans-serif;
-        border-color: black;
-        font-size: 20.8px;
-        margin: 0;
-        margin-left: 1rem;
-        width: 400px; }
-      #bg-portfolio .portfolio-skills .portfolio-skills-outer-box p {
-        font-family: "Space Mono", monospace, sans-serif;
-        font-size: 16; }
-      #bg-portfolio .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para {
-        position: absolute;
-        right: 0;
-        top: 177rem;
-        margin-right: 250px;
-        width: 400px; }
-      #bg-portfolio .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-left-para {
-        width: 400px;
-        margin-left: 1rem;
-        right: 0; }
-  #bg-portfolio .footer {
-    background-color: #282b2e;
-    text-align: center;
-    border-style: solid;
-    border-color: #282b2e; }
-    #bg-portfolio .footer span {
-      color: #00e6e6; }
-    #bg-portfolio .footer p {
-      font-family: "Noto Sans JP", sans-serif;
-      font-size: 14px;
-      font-weight: 400px; }
+        #bg-portfolio .portfolio-bio .portfolio-projects .portfolio-more-proj-btn:hover {
+          background-color: #f38654;
+          color: white;
+          box-shadow: 10px 10px 10px grey;
+          transition: all 0.5s ease-out; }
+
+.portfolio-skills {
+  border-top-style: solid;
+  border-color: #f5f7f9;
+  border-bottom-color: blueviolet;
+  background-image: url(../img/bg_skills_3.jpg);
+  background-size: cover;
+  width: 100%;
+  margin-bottom: 0;
+  height: 101vh;
+  margin-top: 86.1rem; }
+  .portfolio-skills .portfolio-skills-outer-box {
+    background-color: #fff;
+    height: 500px;
+    width: 1000px;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    box-shadow: 5px 5px 10px black;
+    border-left-style: solid;
+    border-width: 40px;
+    border-color: #eeeeee; }
+    .portfolio-skills .portfolio-skills-outer-box h2,
+    .portfolio-skills .portfolio-skills-outer-box h3,
+    .portfolio-skills .portfolio-skills-outer-box p {
+      color: #27303b; }
+    .portfolio-skills .portfolio-skills-outer-box h2 {
+      font-family: "Space Mono", monospace, sans-serif;
+      font-size: 64px;
+      border-color: black;
+      margin-bottom: 0;
+      width: 400px;
+      margin-top: 2rem;
+      margin-left: 1rem;
+      color: #eb613d; }
+    .portfolio-skills .portfolio-skills-outer-box h3 {
+      font-family: "Space Mono", monospace, sans-serif;
+      border-color: black;
+      font-size: 20.8px;
+      margin: 0;
+      margin-left: 1rem;
+      width: 400px; }
+    .portfolio-skills .portfolio-skills-outer-box p {
+      font-family: "Space Mono", monospace, sans-serif;
+      font-size: 16; }
+    .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para {
+      position: absolute;
+      right: 0;
+      top: 175rem;
+      margin-right: 250px;
+      width: 400px; }
+    .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-left-para {
+      width: 400px;
+      margin-left: 2rem;
+      margin-top: 2rem;
+      right: 0; }
+
+.footer {
+  background-color: #282b2e;
+  text-align: center;
+  border-style: solid;
+  border-color: #282b2e; }
+  .footer span {
+    color: #00e6e6; }
+  .footer p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
+    font-weight: 400px; }
