@@ -726,7 +726,7 @@ main {
       margin: 0.4rem;
       font-size: 0.8rem; }
   #bg-contact {
-    background-size: contain; }
+    background-size: initial; }
   #contact .contact-lg-heading {
     font-size: 2.5rem;
     margin-left: 8vh;
