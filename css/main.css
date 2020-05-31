@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
 @import url("https://fonts.googleapis.com/css?family=Calistoga");
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -484,15 +485,19 @@ main {
       height: 210vh; }
       #bg-portfolio .portfolio-bio .portfolio-projects .portfolio-project-heading {
         width: 600px;
-        color: #f38654;
+        color: #27303b;
         letter-spacing: 1px;
         word-spacing: 0;
         font-family: "Space Mono", monospace, sans-serif;
         border-color: black;
         margin-top: 5rem;
-        font-size: 50px;
+        font-size: 45px;
         margin-left: 220px;
-        font-weight: 700; }
+        font-weight: 700;
+        letter-spacing: 0;
+        word-spacing: 0; }
+        #bg-portfolio .portfolio-bio .portfolio-projects .portfolio-project-heading span {
+          color: #f38654; }
       #bg-portfolio .portfolio-bio .portfolio-projects .portfolio-project-grid {
         border-color: black;
         display: grid;
@@ -578,7 +583,7 @@ main {
         font-size: 16px;
         font-weight: 600;
         cursor: pointer;
-        margin-top: 6rem;
+        margin-top: 6.5rem;
         margin-left: 36.4rem; }
         #bg-portfolio .portfolio-bio .portfolio-projects .portfolio-more-proj-btn a {
           color: #27303b;
@@ -636,7 +641,7 @@ main {
     .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para {
       position: absolute;
       right: 0;
-      top: 182rem;
+      top: 184rem;
       margin-right: 250px;
       width: 400px;
       color: #27303b;
@@ -668,17 +673,31 @@ main {
           font-size: 16; }
     .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-left-para {
       width: 400px;
+      margin-top: 2rem;
       margin-left: 3rem;
       right: 0; }
 
-.footer {
-  background-color: #282b2e;
+.footer-1 {
+  background-color: #27303b;
   text-align: center;
   border-style: solid;
-  border-color: #282b2e; }
-  .footer span {
-    color: #00e6e6; }
-  .footer p {
+  border-color: #27303b;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0; }
+  .footer-1 p {
+    margin: 1rem;
     font-family: "Noto Sans JP", sans-serif;
-    font-size: 14px;
-    font-weight: 400px; }
+    background-color: #27303b;
+    letter-spacing: 1px; }
+  .footer-1 #footer-icon {
+    color: #99a3e8; }
+
+.footer-2 {
+  background-color: #4b5e6a;
+  border-color: #4b5e6a;
+  border-style: solid;
+  text-align: center; }
+  .footer-2 p {
+    font-size: 12px; }
