@@ -27,19 +27,19 @@ body {
   //border-style: solid;
   margin-bottom: 0;
   font-weight: 300;
-  font-size: 3rem;
-  margin-top: 0;
+  font-size: 4rem;
+  //margin-top: 0;
   //margin-left: 3rem;
   padding: 0;
   text-align: center;
   //font-family: "Calistoga", sans-serif;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
 
   span {
     color: $secondary-color;
     font-weight: 700;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "Raleway", sans-serif;
   }
 }
 
@@ -59,9 +59,11 @@ body {
 .sm-para {
   text-align: center;
   font-weight: 400;
-  font-family: "Patrick Hand", cursive;
+  //font-family: "Patrick Hand", cursive;
+  font-family: "Space Mono", cursive, sans-serif;
   word-spacing: 2px;
   letter-spacing: 1.5px;
+  line-height: 1.7;
 }
 
 a {
@@ -82,18 +84,16 @@ header {
 
 main {
   //border-style: solid;
-  padding: 2rem;
+  padding: 1rem;
   padding-right: 4rem;
   height: 100%;
 
   .lg-icons {
     //border-style: solid;
-    //border-style: solid;
-    margin-top: 3rem;
+    margin-top: 2rem;
     text-align: center;
 
     a {
-      //border-style: solid;
       //border-style: solid;
       margin: 2rem;
       margin-bottom: 0;
@@ -124,7 +124,7 @@ main {
     }
     .fa-file-pdf-o {
       &:hover {
-        color: #49c0b6;
+        color: #f38654;
         //background-color: #fff;
         @include easeOut;
       }
@@ -134,7 +134,7 @@ main {
       margin: 0;
       padding: 0rem;
       &:hover {
-        color: #0abf53;
+        color: #f38654;
         //background-color: #fff;
         @include easeOut;
       }
@@ -143,33 +143,13 @@ main {
 
   .lg-icons-name {
     //border-style: solid;
-    display: grid;
-    grid-template-areas: "name-1 name-2 name-3";
     margin-top: 3px;
-    grid-template-columns: 550px 145px 200px;
+    text-align: center;
 
-    .lg-icon-name-1 {
-      margin-left: 517px;
+    span {
+      margin: 1rem;
       color: #fff;
       font-size: 15px;
-      //font-family: "Raleway", sans-serif;
-      //border-style: solid;
-      //font-weight: 500;
-    }
-
-    .lg-icon-name-2 {
-      margin-left: 60px;
-      color: #fff;
-      font-size: 15px;
-      //border-style: solid;
-    }
-
-    .lg-icon-name-3 {
-      margin-left: 3px;
-      color: #fff;
-      font-size: 15px;
-      //border-style: solid;
-      margin-top: 0;
     }
   }
 
@@ -187,10 +167,13 @@ main {
     margin-bottom: 1rem;
     font-weight: 500;
     margin-left: 3rem;
-    font-size: 1.1rem;
-    padding-left: 30.1rem;
+    font-size: 1.7rem;
+    padding-left: 27.5rem;
+    //text-align: center;
     font-weight: 500;
     //text-align: center;
+    //font-family: "Space Mono", cursive, sans-serif;
+    font-family: "Raleway", sans-serif;
   }
 }
 
@@ -198,19 +181,20 @@ main {
   //border-style: solid;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  //justify-content: center;
+  text-align: center;
   height: 100%;
   padding: 0 3rem;
 
   h2 {
-    padding-left: 18rem;
+    //padding-left: 15rem;
     //border-style: solid;
     font-weight: 500;
     margin: 0.8rem;
-    font-size: 1.2rem;
-    font-family: "Patrick Hand", cursive;
+    font-size: 1.1rem;
+    font-family: "Space Mono", cursive, sans-serif;
     word-spacing: 2px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
   }
 }
 
@@ -220,7 +204,7 @@ main {
 }
 
 .copyright {
-  margin-top: 4.3rem;
+  margin-top: 2.3rem;
   margin-bottom: 0;
   //border-style: solid;
   //text-align: center;
@@ -278,8 +262,11 @@ main {
     margin-top: 1.5rem;
     text-align: center;
     font-size: 1rem;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    //font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Space Mono", cursive, sans-serif;
     font-weight: 100;
+    line-height: 2;
+    letter-spacing: 1px;
   }
   .contact-icons {
     //margin-left: 3.5rem;
@@ -400,7 +387,7 @@ main {
   margin: 0;
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
-  background-image: url(../img/bg_contact_2.jpg);
+  background-image: url(../img/bg_contact.jpg);
   //background-color: $primary-color;
   background-attachment: fixed;
   background-size: cover;
@@ -416,7 +403,7 @@ main {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: rgba(black, 0.6);
+    background: rgba(#333, 0.3);
   }
 }
 
@@ -427,27 +414,27 @@ main {
     //border-style: solid;
     //border-color: black;
     height: 100vh;
-    background-image: url(../img/bg_portfolio.jpg);
+    background-image: url(../img/bg_portfolio_2.jpg);
     background-size: cover;
 
     .portfolio-intro {
       //border-style: solid;
 
       h2 {
-        margin-top: 20rem;
-        margin-left: 7rem;
+        margin-top: 15rem;
+        margin-left: 10rem;
         margin-bottom: 0;
         //border-style: solid;
-        font-size: 3rem;
+        font-size: 5rem;
       }
       h3 {
         //border-style: solid;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         margin-top: 0.1rem;
-        margin-left: 7rem;
+        margin-left: 10rem;
       }
       a {
-        margin-left: 7rem;
+        margin-left: 10rem;
         margin-top: 2rem;
         //border-style: solid;
       }
@@ -462,8 +449,8 @@ main {
       padding: 10px 25px;
       text-decoration: none;
       display: inline-block;
-      font-size: 16px;
-      font-weight: 600;
+      font-size: 20px;
+      font-weight: 500;
       cursor: pointer;
 
       &:hover {
@@ -477,14 +464,14 @@ main {
       //border-style: solid;
       margin-top: 2.5rem;
       margin-bottom: 1rem;
-      padding-left: 7rem;
+      padding-left: 10rem;
 
       .portfolio-divider-inside {
         border-top: solid;
         border-width: 1px;
         //border-bottom: solid;
         width: 70px;
-        color: darken($color: grey, $amount: 10);
+        color: white;
       }
     }
   }
@@ -493,7 +480,7 @@ main {
     //background-color: #a3d2df;
     border-top-style: solid;
     //border-color: #a3d2df;
-    border-color: #1a1d21;
+    border-color: #727270;
     //background-image: url(../img/bg_bio_2.jpg);
     //background-size: cover;
     //background-color;
