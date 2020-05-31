@@ -75,6 +75,7 @@
       margin-left: 6vh;
     }
     .container {
+      margin-top: 3vh;
       margin-left: 5vh;
       padding: 0;
       h2 {
@@ -111,6 +112,34 @@
       span {
         margin: 0.4rem;
         font-size: 0.8rem;
+      }
+    }
+  }
+
+  #contact {
+    * {
+      //border-style: solid;
+    }
+    .contact-lg-heading {
+      font-size: 3rem;
+      margin-left: 8vh;
+      //margin-top: vh;
+    }
+    .contact-sm-heading {
+      //font-size: 4rem;
+      font-size: 0.8rem;
+      margin-left: 8vh;
+    }
+    .contact-icons {
+      margin-top: 5vh;
+      text-align: center;
+      margin-left: 8vh;
+      a {
+        margin: 2vh;
+        i {
+          font-size: 0.7rem;
+          padding: 7px;
+        }
       }
     }
   }

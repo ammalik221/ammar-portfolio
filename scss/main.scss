@@ -4,7 +4,6 @@
 @import url("https://fonts.googleapis.com/css?family=Calistoga");
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
-@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -231,11 +230,11 @@ main {
 
 #contact {
   //border-style: solid;
-  .lg-heading {
+  .contact-lg-heading {
     font-size: 4rem;
     //border-style: solid;
     text-align: center;
-    margin-top: 9rem;
+    margin-top: 25vh;
   }
 
   .contact-sm-heading {
@@ -256,24 +255,7 @@ main {
     text-align: center;
 
     a {
-      margin: 7px;
-
-      i {
-        text-align: center;
-        //border-style: solid;
-        background-color: rgba(255, 255, 255, 0.815);
-        padding: 10px;
-        border-radius: 35px;
-        font-size: 1rem;
-        color: $primary-color;
-      }
-    }
-
-    #git {
-      &:hover {
-        color: darken($color: #333, $amount: 10);
-        @include easeOut;
-      }
+      margin: 2vh;
 
       i {
         text-align: center;
@@ -283,7 +265,11 @@ main {
         border-radius: 35px;
         font-size: 1rem;
         color: #fff;
+      }
+    }
 
+    #git {
+      i {
         &:hover {
           color: #333;
           background-color: #fff;
@@ -293,20 +279,7 @@ main {
     }
 
     #linkedin {
-      &:hover {
-        color: darken($color: #333, $amount: 10);
-        @include easeOut;
-      }
-
       i {
-        text-align: center;
-        //border-style: solid;
-        background-color: darken($color: #333, $amount: 10);
-        padding: 10px;
-        border-radius: 35px;
-        font-size: 1rem;
-        color: #fff;
-
         &:hover {
           color: #0077b5;
           background-color: #fff;
@@ -316,20 +289,7 @@ main {
     }
 
     #medium {
-      &:hover {
-        color: #00ab6c;
-        @include easeOut;
-      }
-
       i {
-        text-align: center;
-        //border-style: solid;
-        background-color: darken($color: #333, $amount: 10);
-        padding: 10px;
-        border-radius: 35px;
-        font-size: 1rem;
-        color: #fff;
-
         &:hover {
           color: #00ab6c;
           background-color: #fff;
@@ -339,20 +299,7 @@ main {
     }
 
     #gmail {
-      &:hover {
-        color: #ea4335;
-        @include easeOut;
-      }
-
       i {
-        text-align: center;
-        //border-style: solid;
-        background-color: darken($color: #333, $amount: 10);
-        padding: 10px;
-        border-radius: 35px;
-        font-size: 1rem;
-        color: #fff;
-
         &:hover {
           color: #ea4335;
           background-color: #fff;
@@ -369,7 +316,6 @@ main {
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
   background-image: url(../img/bg_contact.jpg);
-  //background-color: $primary-color;
   background-attachment: fixed;
   background-size: cover;
 
@@ -831,3 +777,5 @@ main {
     font-size: 12px;
   }
 }
+
+@import "mobile";
