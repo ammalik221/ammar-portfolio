@@ -114,7 +114,8 @@ body {
   body#bg-img {
     background: url(../img/bg_main.jpg);
     background-attachment: fixed;
-    background-size: cover; }
+    background-size: cover;
+    background-repeat: no-repeat; }
     body#bg-img:after {
       content: "";
       position: absolute;
@@ -245,6 +246,7 @@ main {
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
   background-image: url(../img/bg_resume_2.jpg);
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; }
   #bg-resume:after {
@@ -310,6 +312,7 @@ main {
   line-height: 1.5;
   background-image: url(../img/bg_contact.jpg);
   background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover; }
   #bg-contact:after {
     content: "";
@@ -757,7 +760,9 @@ main {
 
 @media screen and (max-width: 480px) {
   #bg-img {
-    background-size: cover; }
+    background-image: url("../dist/img/bg_contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
   #home .lg-heading {
     margin-top: 20vh;
     font-size: 2.5rem;
