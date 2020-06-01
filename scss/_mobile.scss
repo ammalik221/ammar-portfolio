@@ -82,16 +82,100 @@
       }
     }
   }
-  #portfolio {
-    .portfolio-intro {
-      .heading {
-        font-size: 8vh;
-        span {
-          font-size: 8vh;
+  #bg-portfolio {
+    * {
+      //border-style: solid;
+    }
+    #portfolio {
+      .portfolio-intro {
+        h2 {
+          margin-left: 0;
+          margin-top: 24vh;
+          font-size: 9vw;
+          text-align: center;
+        }
+        h3 {
+          margin-left: 0;
+          font-size: 3vw;
+          text-align: center;
+        }
+        .portfolio-divider {
+          margin: auto;
+          display: table;
+          padding-left: 0;
+          width: 120px;
+          margin-top: 7vh;
+          .portfolio-divider-inside {
+            width: 120px;
+          }
+        }
+        div.resume-btn {
+          margin: auto;
+          display: table;
+          padding-left: 0;
+          a {
+            margin-top: 7vh;
+            margin-left: auto;
+          }
         }
       }
-      h3 {
-        font-size: 1vh;
+    }
+
+    .portfolio-bio {
+      height: 170vh;
+      .portfolio-outer-box {
+        width: 80vh;
+        height: 140vh;
+        .portfolio-bio-right-para {
+          top: 0;
+          right: 0;
+          left: 4vw;
+        }
+      }
+    }
+
+    .portfolio-skills {
+      height: 140vh;
+      .portfolio-skills-outer-box {
+        width: 80vh;
+        height: 110vh;
+        .portfolio-skills-right-para {
+          top: 0;
+          left: 4vw;
+        }
+      }
+    }
+
+    .portfolio-project-table {
+    }
+
+    .portfolio-projects {
+      height: 400vh;
+      .portfolio-project-heading {
+        font-size: 7vh;
+      }
+      .portfolio-project-grid {
+        width: 70vh;
+        grid-template-areas:
+          "proj1"
+          "proj2"
+          "proj3"
+          "proj4";
+        .portfolio-project-1 {
+          grid-area: proj1;
+        }
+        .portfolio-project-2 {
+          grid-area: proj2;
+        }
+        .portfolio-project-3 {
+          grid-area: proj3;
+        }
+        .portfolio-project-4 {
+          grid-area: proj4;
+        }
+      }
+      .portfolio-more-proj-btn {
+        margin-top: 185vh;
       }
     }
   }
@@ -183,10 +267,27 @@
     }
   }
 
-  #portfolio {
-    .portfolio-intro {
-      h2 {
-        font-size: 1vh;
+  #bg-portfolio {
+    #portfolio {
+      .portfolio-intro {
+        h2 {
+          margin-top: 20vh;
+          margin-left: 21vw;
+          font-size: 12px;
+        }
+        h3 {
+          font-size: 3vw;
+          margin-left: 30vw;
+        }
+        .portfolio-divider {
+          padding-left: 40vw;
+          .portfolio-divider-inside {
+            width: 120px;
+          }
+        }
+        a {
+          margin-left: 36vw;
+        }
       }
     }
   }

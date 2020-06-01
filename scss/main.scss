@@ -408,14 +408,18 @@ main {
     height: 100vh;
     margin: 0;
     background-image: url(../img/bg_bio_4.jpg);
+    margin: auto;
+    display: table;
 
     .portfolio-outer-box {
       background-color: #fff;
       background-size: cover;
+      //border-color: green;
       height: 75vh;
       width: 150vh;
-      margin-left: 10rem;
-      margin-top: 5rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 12vh;
       box-shadow: 5px 5px 10px black;
       border-left-style: solid;
       border-width: 40px;
@@ -478,32 +482,43 @@ main {
     background-color: #f5f7f9;
     //margin-top: 5rem;
     margin: 0;
-    height: 210vh;
+    height: 214vh;
     width: 100%;
+    display: table;
 
     .portfolio-project-heading {
-      width: 100vh;
       color: #27303b;
       font-family: "Space Mono", monospace, sans-serif;
       border-color: black;
       font-size: 8vh;
-      margin-left: 37vh;
       font-weight: 700;
       letter-spacing: 0;
       word-spacing: 0;
+      text-align: center;
 
       span {
         color: #f38654;
       }
     }
 
+    .portfolio-project-table {
+      //border-style: solid;
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0;
+    }
+
     .portfolio-project-grid {
       //border-style: solid;
       border-color: black;
       display: grid;
-      margin-left: 37vh;
-      margin-top: 3rem;
-      width: 75vh;
+      //margin-left: 30vh;
+      //margin-left: 20%;
+      //margin-right: auto;
+      margin: auto;
+      margin-top: 3vh;
+      width: 130vh;
       height: 170vh;
       grid-template-areas: "proj1 proj2" "proj3 proj4";
       grid-template-columns: repeat(2, 1fr);
@@ -580,6 +595,11 @@ main {
       }
     }
 
+    .portfolio-btn {
+      margin: auto;
+      display: table;
+    }
+
     .portfolio-more-proj-btn {
       //background-color: #fff;
       border-style: solid;
@@ -593,7 +613,7 @@ main {
       font-weight: 600;
       cursor: pointer;
       margin-top: 4vh;
-      margin-left: 90vh;
+      //margin-left: 90vh;
 
       a {
         color: #27303b;
@@ -620,13 +640,17 @@ main {
   width: 100%;
   margin-bottom: 0;
   height: 100vh;
+  margin: auto;
+  display: table;
 
   .portfolio-skills-outer-box {
     background-color: #fff;
-    height: 77vh;
+    height: 75vh;
     width: 150vh;
-    margin-left: 10rem;
-    margin-top: 5rem;
+    //margin-left: 12vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12vh;
     box-shadow: 5px 5px 10px black;
     border-left-style: solid;
     border-width: 40px;
