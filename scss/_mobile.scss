@@ -184,9 +184,7 @@
 //smartphones
 @include mediaSm {
   #bg-img {
-    background-image: url("../dist/img/bg_contact.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
   }
   #home {
     .lg-heading {
