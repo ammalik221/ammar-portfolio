@@ -116,7 +116,7 @@ main {
         color: #fff;
 
         &:hover {
-          color: darken(#c6f0d5, 10);
+          color: darken(#b1e3fa, 10);
           //background-color: #fff;
           @include easeOut;
         }
@@ -414,6 +414,11 @@ main {
       border-width: 40px;
       border-color: #eeeeee;
 
+      &:hover {
+        box-shadow: 20px 20px 20px #000;
+        @include easeOut;
+      }
+
       h2,
       h3,
       p {
@@ -534,7 +539,7 @@ main {
         border-color: lighten($color: #f38654, $amount: 5);
         border-width: 10px;
         border-radius: 4px;
-        opacity: 0.9;
+        //opacity: 0.9;
 
         h4 {
           color: #a3afbf;
@@ -572,7 +577,7 @@ main {
 
         &:hover {
           box-shadow: 15px 15px 10px 3px grey;
-          opacity: 1;
+          //opacity: 1;
           @include easeOut;
         }
       }

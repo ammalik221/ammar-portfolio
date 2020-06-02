@@ -8,13 +8,13 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.5s ease-out; }
+  transition: all 0.5s ease-in-out; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0px 0 5px 0px;
     background: #fff;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-in-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -50,12 +50,12 @@
     background: #373737;
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-in-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: #444;
-    transition: all 0.5s ease-out;
+    transition: all 0.5s ease-in-out;
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
@@ -69,7 +69,7 @@
       border-style: solid; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-in-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
@@ -77,7 +77,7 @@
     .menu .nav-item:hover {
       background-color: #2b2b2b;
       cursor: pointer;
-      transition: all 0.5s ease-out; }
+      transition: all 0.5s ease-in-out; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -87,7 +87,7 @@
     font-weight: 300;
     color: #fff;
     text-decoration: none;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-in-out; }
     .menu .nav-link:hover {
       color: #f38654; }
 
@@ -182,7 +182,7 @@ main {
       margin-top: 1rem; }
       main .lg-icons a:hover {
         color: aqua;
-        transition: all 0.5s ease-out; }
+        transition: all 0.5s ease-in-out; }
       main .lg-icons a i {
         margin-bottom: 0;
         text-align: center;
@@ -190,8 +190,8 @@ main {
         font-size: 1.5rem;
         color: #fff; }
         main .lg-icons a i:hover {
-          color: #9ee5b7;
-          transition: all 0.5s ease-out; }
+          color: #81d2f7;
+          transition: all 0.5s ease-in-out; }
   main .lg-icons-name {
     margin-top: 3px;
     text-align: center; }
@@ -284,19 +284,19 @@ main {
   #contact .contact-icons #git i:hover {
     color: #333;
     background-color: #fff;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-in-out; }
   #contact .contact-icons #linkedin i:hover {
     color: #0077b5;
     background-color: #fff;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-in-out; }
   #contact .contact-icons #medium i:hover {
     color: #00ab6c;
     background-color: #fff;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-in-out; }
   #contact .contact-icons #gmail i:hover {
     color: #ea4335;
     background-color: #fff;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-in-out; }
 
 #bg-contact {
   height: 100%;
@@ -352,7 +352,7 @@ main {
       #bg-portfolio #portfolio .button:hover {
         background-color: #f38654;
         color: black;
-        transition: all 0.5s ease-out; }
+        transition: all 0.5s ease-in-out; }
     #bg-portfolio #portfolio .portfolio-divider {
       margin-top: 2.5rem;
       margin-bottom: 1rem;
@@ -383,6 +383,9 @@ main {
       border-left-style: solid;
       border-width: 40px;
       border-color: #eeeeee; }
+      #bg-portfolio .portfolio-bio .portfolio-outer-box:hover {
+        box-shadow: 20px 20px 20px #000;
+        transition: all 0.5s ease-in-out; }
       #bg-portfolio .portfolio-bio .portfolio-outer-box h2,
       #bg-portfolio .portfolio-bio .portfolio-outer-box h3,
       #bg-portfolio .portfolio-bio .portfolio-outer-box p {
@@ -467,8 +470,7 @@ main {
         border-bottom-style: solid;
         border-color: #f5976c;
         border-width: 10px;
-        border-radius: 4px;
-        opacity: 0.9; }
+        border-radius: 4px; }
         #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1 h4,
         #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-2 h4,
         #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-3 h4,
@@ -510,8 +512,7 @@ main {
         #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-3:hover,
         #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-4:hover {
           box-shadow: 15px 15px 10px 3px grey;
-          opacity: 1;
-          transition: all 0.5s ease-out; }
+          transition: all 0.5s ease-in-out; }
       #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1 {
         grid-area: proj1; }
       #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-2 {
@@ -543,7 +544,7 @@ main {
         background-color: #f38654;
         color: white;
         box-shadow: 10px 10px 10px grey;
-        transition: all 0.5s ease-out; }
+        transition: all 0.5s ease-in-out; }
 
 .portfolio-skills {
   border-top-style: solid;
