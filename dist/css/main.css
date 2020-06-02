@@ -189,19 +189,9 @@ main {
         padding: 0px;
         font-size: 1.5rem;
         color: #fff; }
-    main .lg-icons .fa-folder-open-o:hover {
-      color: #f38654;
-      transition: all 0.5s ease-out; }
-    main .lg-icons .fa-file-pdf-o:hover {
-      color: #f38654;
-      transition: all 0.5s ease-out; }
-    main .lg-icons .fa-weixin {
-      font-size: 1.5rem;
-      margin: 0;
-      padding: 0rem; }
-      main .lg-icons .fa-weixin:hover {
-        color: #f38654;
-        transition: all 0.5s ease-out; }
+        main .lg-icons a i:hover {
+          color: #9ee5b7;
+          transition: all 0.5s ease-out; }
   main .lg-icons-name {
     margin-top: 3px;
     text-align: center; }
@@ -265,7 +255,10 @@ main {
 #contact .contact-lg-heading {
   font-size: 4rem;
   text-align: center;
-  margin-top: 25vh; }
+  margin-top: 25vh;
+  font-weight: 700; }
+  #contact .contact-lg-heading span {
+    font-weight: 700; }
 
 #contact .contact-sm-heading {
   margin-top: 1.5rem;
@@ -436,12 +429,16 @@ main {
       font-family: "Space Mono", monospace, sans-serif;
       border-color: black;
       font-size: 8vh;
-      font-weight: 700;
+      font-weight: 800;
       letter-spacing: 0;
       word-spacing: 0;
       text-align: center; }
       #bg-portfolio .portfolio-projects .portfolio-project-heading span {
-        color: #f38654; }
+        color: #f38654;
+        letter-spacing: 0;
+        word-spacing: 0;
+        font-weight: 800;
+        text-align: center; }
     #bg-portfolio .portfolio-projects .portfolio-project-table {
       display: table;
       margin-left: auto;
@@ -451,7 +448,7 @@ main {
       border-color: black;
       display: grid;
       margin: auto;
-      margin-top: 3vh;
+      margin-top: 0.3vh;
       width: 130vh;
       height: 170vh;
       grid-template-areas: "proj1 proj2" "proj3 proj4";
@@ -466,11 +463,12 @@ main {
         width: 60vh;
         background-color: white;
         border-color: black;
-        box-shadow: 2px 2px 7px grey;
+        box-shadow: 4px 4px 7px grey;
         border-bottom-style: solid;
         border-color: #f5976c;
         border-width: 10px;
-        border-radius: 4px; }
+        border-radius: 4px;
+        opacity: 0.9; }
         #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1 h4,
         #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-2 h4,
         #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-3 h4,
@@ -512,6 +510,7 @@ main {
         #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-3:hover,
         #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-4:hover {
           box-shadow: 15px 15px 10px 3px grey;
+          opacity: 1;
           transition: all 0.5s ease-out; }
       #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1 {
         grid-area: proj1; }
@@ -760,9 +759,7 @@ main {
 
 @media screen and (max-width: 480px) {
   #bg-img {
-    background-image: url("../dist/img/bg_contact.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-size: cover; }
   #home .lg-heading {
     margin-top: 20vh;
     font-size: 2.5rem;
