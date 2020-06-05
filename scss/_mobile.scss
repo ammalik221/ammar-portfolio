@@ -12,83 +12,84 @@
 
 // 641px
 @include portraitTablets {
-  /* * {
-    //border-style: dashed;
-  }
   #bg-img {
-    background-size: cover;
-  }
-
-  #home {
-    .sm-heading {
-      text-align: center;
-      padding-left: 0;
+    * {
+      //border-style: solid;
     }
 
-    .container {
-      h2 {
-        padding-left: 0;
-        text-align: center;
+    #home {
+      .lg-heading {
+        font-size: 4rem;
+        padding: 0;
+        margin-top: 22vh;
       }
-    }
-
-    .divider {
-      padding-left: 0;
-    }
-  }
-
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0;
-
-    &.show {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
-  }
-
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0);
-
-    .portrait {
-      background: url("../img/profile_sm.jpg");
-      width: 150px;
-      height: 150px;
-    }
-  }
-
-  #contact {
-    .contact-lg-heading {
-      font-size: 4rem;
-      margin-left: 8vh;
-      //margin-top: vh;
-    }
-    .contact-sm-heading {
-      //font-size: 4rem;
-      font-size: 1rem;
-      margin-left: 8vh;
-    }
-    .contact-icons {
-      margin-top: 5vh;
-      text-align: center;
-      margin-left: 8vh;
-      a {
-        margin: 2vh;
-        i {
+      .sm-heading {
+        width: 100%;
+        font-size: 1.7rem;
+      }
+      .container {
+        padding: 5px;
+        h2 {
           font-size: 1rem;
-          padding: 10px;
+        }
+      }
+      .divider {
+        .divider-inside {
+          width: 100px;
+          height: 3px;
+          //border-style: solid;
+          //border-color: blue;
+        }
+      }
+      .sm-para {
+        font-size: 1rem;
+        width: 100%;
+      }
+      .lg-icons {
+        a {
+          margin: 1.4rem;
+          i {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      .lg-icons-name {
+        //margin: 1rem;
+        margin-top: 2px;
+        span {
+          margin: 0.4rem;
+          font-size: 1rem;
         }
       }
     }
   }
+
+  #bg-contact {
+    * {
+      //border-style: solid;
+    }
+    #contact {
+      padding-top: 3vh;
+      .contact-lg-heading {
+        font-size: 4rem;
+      }
+      .contact-sm-heading {
+        width: 80%;
+        margin-left: 7vh;
+        font-size: 1rem;
+        margin-top: 6vh;
+      }
+      .contact-icons {
+        a {
+          i {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  /*
   #bg-portfolio {
     * {
       //border-style: solid;
@@ -194,6 +195,33 @@
     * {
       //border-style: solid;
     }
+    ul.menu-nav,
+    div.menu-branding {
+      float: none;
+      width: 100%;
+      min-height: 0;
+
+      &.show {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    .menu-nav {
+      height: 75vh;
+      transform: translate3d(-100%, 0, 0);
+      font-size: 24px;
+    }
+
+    .menu-branding {
+      height: 25vh;
+      transform: translate3d(100%, 0, 0);
+
+      .portrait {
+        background: url("../img/profile_sm.jpg");
+        width: 150px;
+        height: 150px;
+      }
+    }
     #home {
       .lg-heading {
         font-size: 2.7rem;
@@ -206,10 +234,8 @@
       }
       .container {
         padding: 5px;
-
         h2 {
           font-size: 0.8rem;
-          width: 100%;
         }
       }
       .divider {
@@ -243,35 +269,32 @@
     }
   }
 
-  /*
-  #contact {
+  #bg-contact {
     * {
       //border-style: solid;
     }
-    .contact-lg-heading {
-      font-size: 2.5rem;
-      margin-left: 8vh;
-      margin-top: 25vh;
-    }
-    .contact-sm-heading {
-      //font-size: 4rem;
-      font-size: 1rem;
-      margin-left: 8vh;
-      margin-top: 10vh;
-    }
-    .contact-icons {
-      margin-top: 10vh;
-      text-align: center;
-      margin-left: 8vh;
-      a {
-        margin: 2vh;
-        i {
-          font-size: 0.9rem;
-          padding: 10px;
+    #contact {
+      padding-top: 3vh;
+      .contact-lg-heading {
+        font-size: 4rem;
+      }
+      .contact-sm-heading {
+        width: 80%;
+        margin-left: 7vh;
+        font-size: 1rem;
+        margin-top: 6vh;
+      }
+      .contact-icons {
+        a {
+          i {
+            font-size: 1.2rem;
+          }
         }
       }
     }
   }
+
+  /*
 
   #bg-portfolio {
     #portfolio {
@@ -347,6 +370,22 @@
           margin: 0.3rem;
           font-size: 0.9rem;
         }
+      }
+    }
+  }
+
+  #bg-contact {
+    * {
+      //border-style: solid;
+    }
+    #contact {
+      padding-top: 3vh;
+      .contact-lg-heading {
+        font-size: 3rem;
+      }
+      .contact-sm-heading {
+        font-size: 0.8rem;
+        margin-top: 10vh;
       }
     }
   }
