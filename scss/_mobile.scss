@@ -196,19 +196,19 @@
     }
     #home {
       .lg-heading {
-        font-size: 2rem;
+        font-size: 2.7rem;
         padding: 0;
-        margin-top: 25vh;
+        margin-top: 22vh;
       }
       .sm-heading {
         width: 100%;
-        font-size: 1rem;
+        font-size: 1.3rem;
       }
       .container {
-        //padding: 0;
+        padding: 5px;
 
         h2 {
-          font-size: 0.7rem;
+          font-size: 0.8rem;
           width: 100%;
         }
       }
@@ -221,14 +221,14 @@
         }
       }
       .sm-para {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         width: 100%;
       }
       .lg-icons {
         a {
-          margin: 1rem;
+          margin: 1.4rem;
           i {
-            font-size: 1rem;
+            font-size: 1.5rem;
           }
         }
       }
@@ -236,8 +236,8 @@
         //margin: 1rem;
         margin-top: 2px;
         span {
-          margin: 0.3rem;
-          font-size: 0.7rem;
+          margin: 0.4rem;
+          font-size: 1rem;
         }
       }
     }
@@ -303,56 +303,49 @@
 @include smartPhones {
   #bg-img {
     * {
-      border-style: solid;
+      //border-style: solid;
     }
     #home {
       .lg-heading {
-        font-size: 2rem;
+        font-size: 2.5rem;
         text-align: center;
-        margin-left: 2.5vh;
         width: 100%;
-        margin-top: 20vh;
+        margin-top: 23vh;
       }
       .sm-heading {
-        font-size: 1rem;
+        font-size: 1.3rem;
         width: 100%;
-        margin-left: 2vh;
       }
       .container {
         width: 100%;
         padding: 0;
-        margin-left: 1vh;
         h2 {
-          font-size: 0.6rem;
+          font-size: 0.8rem;
           width: 100%;
         }
       }
       .divider {
-        margin-left: 5vh;
         .divider-inside {
-          width: 50px;
+          width: 100px;
         }
       }
       .sm-para {
-        font-size: 0.6rem;
-        margin-left: 6vh;
+        font-size: 0.8rem;
       }
       .lg-icons {
-        margin-left: 5vh;
         a {
-          margin: 1rem;
+          margin: 1.2rem;
           i {
-            font-size: 1rem;
+            font-size: 1.3rem;
           }
         }
       }
       .lg-icons-name {
-        margin-left: 5vh;
         //margin: 1rem;
         margin-top: 2px;
         span {
           margin: 0.3rem;
-          font-size: 0.7rem;
+          font-size: 0.9rem;
         }
       }
     }

@@ -148,7 +148,7 @@ body {
     border-top: solid;
     border-width: 1px;
     width: 350px;
-    color: #676767; }
+    color: #5a5a5a; }
 
 .sm-para {
   text-align: center;
@@ -807,30 +807,32 @@ main {
 
 @media screen and (max-width: 481px) {
   #bg-img #home .lg-heading {
-    font-size: 2rem;
+    font-size: 2.7rem;
     padding: 0;
-    margin-top: 25vh; }
+    margin-top: 22vh; }
   #bg-img #home .sm-heading {
     width: 100%;
-    font-size: 1rem; }
-  #bg-img #home .container h2 {
-    font-size: 0.7rem;
-    width: 100%; }
+    font-size: 1.3rem; }
+  #bg-img #home .container {
+    padding: 5px; }
+    #bg-img #home .container h2 {
+      font-size: 0.8rem;
+      width: 100%; }
   #bg-img #home .divider .divider-inside {
     width: 100px;
     height: 3px; }
   #bg-img #home .sm-para {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     width: 100%; }
   #bg-img #home .lg-icons a {
-    margin: 1rem; }
+    margin: 1.4rem; }
     #bg-img #home .lg-icons a i {
-      font-size: 1rem; }
+      font-size: 1.5rem; }
   #bg-img #home .lg-icons-name {
     margin-top: 2px; }
     #bg-img #home .lg-icons-name span {
-      margin: 0.3rem;
-      font-size: 0.7rem; }
+      margin: 0.4rem;
+      font-size: 1rem; }
   /*
   #contact {
     * {
@@ -887,41 +889,30 @@ main {
   }*/ }
 
 @media screen and (max-width: 320px) {
-  #bg-img * {
-    border-style: solid; }
   #bg-img #home .lg-heading {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
-    margin-left: 2.5vh;
     width: 100%;
-    margin-top: 20vh; }
+    margin-top: 23vh; }
   #bg-img #home .sm-heading {
-    font-size: 1rem;
-    width: 100%;
-    margin-left: 2vh; }
+    font-size: 1.3rem;
+    width: 100%; }
   #bg-img #home .container {
     width: 100%;
-    padding: 0;
-    margin-left: 1vh; }
+    padding: 0; }
     #bg-img #home .container h2 {
-      font-size: 0.6rem;
+      font-size: 0.8rem;
       width: 100%; }
-  #bg-img #home .divider {
-    margin-left: 5vh; }
-    #bg-img #home .divider .divider-inside {
-      width: 50px; }
+  #bg-img #home .divider .divider-inside {
+    width: 100px; }
   #bg-img #home .sm-para {
-    font-size: 0.6rem;
-    margin-left: 6vh; }
-  #bg-img #home .lg-icons {
-    margin-left: 5vh; }
-    #bg-img #home .lg-icons a {
-      margin: 1rem; }
-      #bg-img #home .lg-icons a i {
-        font-size: 1rem; }
+    font-size: 0.8rem; }
+  #bg-img #home .lg-icons a {
+    margin: 1.2rem; }
+    #bg-img #home .lg-icons a i {
+      font-size: 1.3rem; }
   #bg-img #home .lg-icons-name {
-    margin-left: 5vh;
     margin-top: 2px; }
     #bg-img #home .lg-icons-name span {
       margin: 0.3rem;
-      font-size: 0.7rem; } }
+      font-size: 0.9rem; } }
