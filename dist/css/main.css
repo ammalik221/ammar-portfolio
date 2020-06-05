@@ -294,41 +294,37 @@ header {
 /*----------------------------------portfolio---------------------------------
 -----------------------------------------------------------------------
 ----------------------------------------------------------------------*/
-/*
 #bg-portfolio {
   background-color: #fff;
-
-  #portfolio {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5; }
+  #bg-portfolio #portfolio {
     height: 100vh;
+    width: 100%;
     background-image: url(../img/bg_portfolio_2.jpg);
     background-size: cover;
-
-    .portfolio-intro {
-      //border-style: solid;
-
-      h2 {
-        margin-top: 35vh;
-        margin-left: 10rem;
-        margin-bottom: 0;
-        //border-style: solid;
-        //font-weight: 600;
-        font-size: 12vh;
-      }
-      h3 {
-        //border-style: solid;
-        font-size: 4vh;
-        margin-top: 0.1rem;
-        margin-left: 10rem;
-      }
-      a {
-        margin-left: 10rem;
-        margin-top: 2rem;
-        //border-style: solid;
-      }
-    }
-
-    .button {
-      //background-color: #fff;
+    background-attachment: fixed; }
+    #bg-portfolio #portfolio .portfolio-intro h2 {
+      margin-top: 35vh;
+      margin-left: 12vw;
+      margin-bottom: 0;
+      color: #fff;
+      font-size: 12vh; }
+      #bg-portfolio #portfolio .portfolio-intro h2 span {
+        color: #f38654; }
+    #bg-portfolio #portfolio .portfolio-intro h3 {
+      font-size: 4vh;
+      margin-top: 2vh;
+      margin-left: 12vw;
+      color: #fff; }
+    #bg-portfolio #portfolio .portfolio-intro a {
+      margin-left: 12vw;
+      margin-top: 5vh; }
+    #bg-portfolio #portfolio .button {
       border-style: solid;
       border-width: 1px;
       border-color: #f38654;
@@ -338,122 +334,89 @@ header {
       display: inline-block;
       font-size: 20px;
       font-weight: 500;
-      cursor: pointer;
-
-      &:hover {
+      cursor: pointer; }
+      #bg-portfolio #portfolio .button:hover {
         background-color: #f38654;
         color: black;
-        @include easeOut;
-      }
-    }
-
-    .portfolio-divider {
-      //border-style: solid;
-      margin-top: 2.5rem;
+        transition: all 0.5s ease-in-out; }
+    #bg-portfolio #portfolio .portfolio-divider {
+      margin-top: 3vh;
       margin-bottom: 1rem;
-      padding-left: 10rem;
-
-      .portfolio-divider-inside {
+      padding-left: 12vw; }
+      #bg-portfolio #portfolio .portfolio-divider .portfolio-divider-inside {
         border-top: solid;
         border-width: 1px;
-        //border-bottom: solid;
         width: 70px;
-        color: white;
-      }
-    }
-  }
-
-  .portfolio-bio {
-    border-top-style: solid;
+        color: white; }
+    #bg-portfolio #portfolio#portfolio {
+      overflow: hidden; }
+      #bg-portfolio #portfolio#portfolio h1 {
+        margin-top: 20vh; }
+  #bg-portfolio .portfolio-bio {
     border-color: #727270;
     width: 100%;
-    height: 100vh;
     margin: 0;
     background-image: url(../img/bg_bio_4.jpg);
-    margin: auto;
-    display: table;
-
-    .portfolio-outer-box {
+    padding-bottom: 10vh;
+    display: table; }
+    #bg-portfolio .portfolio-bio .portfolio-outer-box {
       background-color: #fff;
       background-size: cover;
-      //border-color: green;
-      height: 75vh;
-      width: 150vh;
+      width: 70vw;
       margin-left: auto;
       margin-right: auto;
       margin-top: 12vh;
-      box-shadow: 5px 5px 10px black;
       border-left-style: solid;
       border-width: 40px;
       border-color: #eeeeee;
-
-      &:hover {
-        box-shadow: 20px 20px 20px #000;
-        @include easeOut;
-      }
-
-      h2,
-      h3,
-      p {
-        color: #27303b;
-      }
-
-      h2 {
+      padding-bottom: 5vh; }
+      #bg-portfolio .portfolio-bio .portfolio-outer-box h2,
+      #bg-portfolio .portfolio-bio .portfolio-outer-box h3,
+      #bg-portfolio .portfolio-bio .portfolio-outer-box p {
+        color: #27303b; }
+      #bg-portfolio .portfolio-bio .portfolio-outer-box h2 {
         font-family: "Space Mono", monospace, sans-serif;
         font-size: 64px;
-        //border-style: solid;
         border-color: black;
         margin-bottom: 0;
-        width: 400px;
-        margin-top: 2rem;
-        margin-left: 2rem;
+        margin-top: 3vh;
+        margin-left: 2vw;
         color: #eb613d;
-        //color: #;
-      }
-
-      h3 {
+        padding-bottom: 0; }
+      #bg-portfolio .portfolio-bio .portfolio-outer-box h3 {
         font-family: "Space Mono", monospace, sans-serif;
-        //border-style: solid;
         border-color: black;
         font-size: 20.8px;
         margin: 0;
-        margin-left: 2rem;
-        width: 400px;
-      }
-
-      p {
+        margin-left: 2vw; }
+      #bg-portfolio .portfolio-bio .portfolio-outer-box p {
         font-family: "Space Mono", monospace, sans-serif;
-        font-size: 16;
-      }
-
-      .portfolio-bio-right-para {
-        position: relative;
-        top: -63vh;
-        left: 75vh;
-        margin-right: 250px;
-        width: 400px;
-      }
-
-      .portfolio-bio-left-para {
-        //border-style: solid;
-        width: 400px;
-        margin-left: 2rem;
-        right: 0;
-      }
-    }
-  }
-
-  .portfolio-projects {
+        font-size: 16; }
+      #bg-portfolio .portfolio-bio .portfolio-outer-box .portfolio-bio-para-grid {
+        margin-top: 0;
+        display: grid;
+        grid-template-areas: "head para2" "para1 para2";
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5vh;
+        grid-row-gap: 0; }
+        #bg-portfolio .portfolio-bio .portfolio-outer-box .portfolio-bio-para-grid .portfolio-bio-right-para {
+          grid-area: para2;
+          margin-top: 0; }
+        #bg-portfolio .portfolio-bio .portfolio-outer-box .portfolio-bio-para-grid h3 {
+          grid-area: head; }
+        #bg-portfolio .portfolio-bio .portfolio-outer-box .portfolio-bio-para-grid .portfolio-bio-left-para {
+          margin-top: 0;
+          margin-left: 2vw;
+          grid-area: para1; }
+  #bg-portfolio .portfolio-projects {
     border-top-style: solid;
     border-color: #f5f7f9;
     background-color: #f5f7f9;
-    //margin-top: 5rem;
     margin: 0;
     height: 214vh;
     width: 100%;
-    display: table;
-
-    .portfolio-project-heading {
+    display: table; }
+    #bg-portfolio .portfolio-projects .portfolio-project-heading {
       color: #27303b;
       font-family: "Space Mono", monospace, sans-serif;
       border-color: black;
@@ -461,121 +424,96 @@ header {
       font-weight: 800;
       letter-spacing: 0;
       word-spacing: 0;
-      //margin-left: auto;
-      text-align: center;
-
-      span {
+      text-align: center; }
+      #bg-portfolio .portfolio-projects .portfolio-project-heading span {
         color: #f38654;
         letter-spacing: 0;
         word-spacing: 0;
         font-weight: 800;
-        text-align: center;
-      }
-    }
-
-    .portfolio-project-table {
-      //border-style: solid;
+        text-align: center; }
+    #bg-portfolio .portfolio-projects .portfolio-project-table {
       display: table;
       margin-left: auto;
       margin-right: auto;
-      padding: 0;
-    }
-
-    .portfolio-project-grid {
-      //border-style: solid;
+      padding: 0; }
+    #bg-portfolio .portfolio-projects .portfolio-project-grid {
       border-color: black;
       display: grid;
-      //margin-left: 30vh;
-      //margin-left: 20%;
-      //margin-right: auto;
       margin: auto;
       margin-top: 0.3vh;
       width: 130vh;
       height: 170vh;
       grid-template-areas: "proj1 proj2" "proj3 proj4";
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10vh;
-
-      img {
-        width: 60vh;
-      }
-
-      .portfolio-project-1,
-      .portfolio-project-2,
-      .portfolio-project-3,
-      .portfolio-project-4 {
+      grid-gap: 10vh; }
+      #bg-portfolio .portfolio-projects .portfolio-project-grid img {
+        width: 60vh; }
+      #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1,
+      #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-2,
+      #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-3,
+      #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-4 {
         width: 60vh;
         background-color: white;
         border-color: black;
         box-shadow: 4px 4px 7px grey;
         border-bottom-style: solid;
-        border-color: lighten($color: #f38654, $amount: 5);
+        border-color: #f5976c;
         border-width: 10px;
-        border-radius: 4px;
-        //opacity: 0.9;
-
-        h4 {
+        border-radius: 4px; }
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1 h4,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-2 h4,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-3 h4,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-4 h4 {
           color: #a3afbf;
           font-family: "Noto Sans JP", sans-serif;
-          //font-family: "Raleway", sans-serif;
           font-size: 2vh;
           font-weight: 600;
           margin-left: 1rem;
-          margin-bottom: 0;
-        }
-
-        a {
-          //font-family: "Noto Sans JP", sans-serif;
+          margin-bottom: 0; }
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1 a,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-2 a,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-3 a,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-4 a {
           font-family: "Raleway", sans-serif;
           font-size: 3.5vh;
           font-weight: 700;
           color: #27303b;
           margin-left: 1rem;
-          margin-top: 0;
-
-          &:hover {
+          margin-top: 0; }
+          #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1 a:hover,
+          #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-2 a:hover,
+          #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-3 a:hover,
+          #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-4 a:hover {
             text-decoration: underline;
-            cursor: pointer;
-          }
-        }
-
-        p {
+            cursor: pointer; }
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1 p,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-2 p,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-3 p,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-4 p {
           color: #526173;
           font-family: "Space Mono", monospace, sans-serif;
           font-size: 2.5vh;
           font-weight: 400;
           margin-left: 1rem;
-          margin-bottom: 1rem;
-        }
-
-        &:hover {
+          margin-bottom: 1rem; }
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1:hover,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-2:hover,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-3:hover,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-4:hover {
           box-shadow: 15px 15px 10px 3px grey;
-          //opacity: 1;
-          @include easeOut;
-        }
-      }
-
-      .portfolio-project-1 {
-        grid-area: proj1;
-      }
-      .portfolio-project-2 {
-        grid-area: proj2;
-      }
-      .portfolio-project-3 {
-        grid-area: proj3;
-      }
-      .portfolio-project-4 {
-        grid-area: proj4;
-      }
-    }
-
-    .portfolio-btn {
+          transition: all 0.5s ease-in-out; }
+      #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1 {
+        grid-area: proj1; }
+      #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-2 {
+        grid-area: proj2; }
+      #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-3 {
+        grid-area: proj3; }
+      #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-4 {
+        grid-area: proj4; }
+    #bg-portfolio .portfolio-projects .portfolio-btn {
       margin: auto;
-      display: table;
-    }
-
-    .portfolio-more-proj-btn {
-      //background-color: #fff;
+      display: table; }
+    #bg-portfolio .portfolio-projects .portfolio-more-proj-btn {
       border-style: solid;
       border-width: 1px;
       border-color: #f38654;
@@ -586,24 +524,16 @@ header {
       font-size: 16px;
       font-weight: 600;
       cursor: pointer;
-      margin-top: 4vh;
-      //margin-left: 90vh;
-
-      a {
+      margin-top: 4vh; }
+      #bg-portfolio .portfolio-projects .portfolio-more-proj-btn a {
         color: #27303b;
         font-size: 16px;
-        font-weight: 600;
-      }
-
-      &:hover {
+        font-weight: 600; }
+      #bg-portfolio .portfolio-projects .portfolio-more-proj-btn:hover {
         background-color: #f38654;
         color: white;
         box-shadow: 10px 10px 10px grey;
-        @include easeOut;
-      }
-    }
-  }
-}
+        transition: all 0.5s ease-in-out; }
 
 .portfolio-skills {
   border-top-style: solid;
@@ -615,57 +545,42 @@ header {
   margin-bottom: 0;
   height: 100vh;
   margin: auto;
-  display: table;
-
-  .portfolio-skills-outer-box {
+  display: table; }
+  .portfolio-skills .portfolio-skills-outer-box {
     background-color: #fff;
     height: 75vh;
     width: 150vh;
-    //margin-left: 12vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 12vh;
     box-shadow: 5px 5px 10px black;
     border-left-style: solid;
     border-width: 40px;
-    border-color: #eeeeee;
-
-    h2,
-    h3,
-    p {
-      color: #27303b;
-    }
-
-    h2 {
+    border-color: #eeeeee; }
+    .portfolio-skills .portfolio-skills-outer-box h2,
+    .portfolio-skills .portfolio-skills-outer-box h3,
+    .portfolio-skills .portfolio-skills-outer-box p {
+      color: #27303b; }
+    .portfolio-skills .portfolio-skills-outer-box h2 {
       font-family: "Space Mono", monospace, sans-serif;
       font-size: 64px;
-      //border-style: solid;
       border-color: black;
       margin-bottom: 0;
       width: 400px;
       margin-top: 2rem;
       margin-left: 2rem;
-      color: #eb613d;
-    }
-
-    h3 {
+      color: #eb613d; }
+    .portfolio-skills .portfolio-skills-outer-box h3 {
       font-family: "Space Mono", monospace, sans-serif;
-      //border-style: solid;
       border-color: black;
       font-size: 20.8px;
       margin: 0;
       margin-left: 2rem;
-      width: 400px;
-    }
-
-    p {
+      width: 400px; }
+    .portfolio-skills .portfolio-skills-outer-box p {
       font-family: "Space Mono", monospace, sans-serif;
-      font-size: 16;
-    }
-
-    .portfolio-skills-right-para {
-      //border-style: solid;
-      //background-color: aqua;
+      font-size: 16; }
+    .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para {
       position: relative;
       top: -55vh;
       left: 75vh;
@@ -674,88 +589,60 @@ header {
       font-family: "Space Mono", monospace, sans-serif;
       font-size: 16;
       display: grid;
-      grid-template-areas:
-        "heading heading"
-        "left-skills right-skills";
-      grid-template-columns: 200px 200px;
-
-      h3 {
+      grid-template-areas: "heading heading" "left-skills right-skills";
+      grid-template-columns: 200px 200px; }
+      .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para h3 {
         padding: 0;
         margin: 0;
-        grid-area: heading;
-      }
-
-      .ulist-1 {
-        grid-area: left-skills;
-      }
-
-      .ulist-2 {
-        grid-area: right-skills;
-      }
-
-      .ulist-1,
-      .ulist-2 {
+        grid-area: heading; }
+      .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para .ulist-1 {
+        grid-area: left-skills; }
+      .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para .ulist-2 {
+        grid-area: right-skills; }
+      .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para .ulist-1,
+      .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para .ulist-2 {
         list-style-type: disc;
         border-color: green;
         color: #27303b;
         margin-bottom: 0;
         margin-top: 0;
-        padding-right: 0;
-
-        li {
+        padding-right: 0; }
+        .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para .ulist-1 li,
+        .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para .ulist-2 li {
           margin-right: 0px;
           font-family: "Space Mono", monospace, sans-serif;
-          font-size: 16;
-        }
-      }
-    }
-
-    .portfolio-skills-left-para {
-      //border-style: solid;
+          font-size: 16; }
+    .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-left-para {
       width: 400px;
       margin-top: 2rem;
       margin-left: 3rem;
-      //margin-top: 2rem;
-      right: 0;
-    }
-  }
-}
+      right: 0; }
 
 .footer-1 {
   background-color: #27303b;
   text-align: center;
-  //border-color: green;
   border-style: solid;
   border-color: #27303b;
   font-size: 16px;
   font-weight: 400;
   margin: 0;
-  padding: 0;
-
-  p {
+  padding: 0; }
+  .footer-1 p {
     margin: 1rem;
     font-family: "Noto Sans JP", sans-serif;
     background-color: #27303b;
-    letter-spacing: 1px;
-  }
-
-  #footer-icon {
-    color: #99a3e8;
-    //color: #ff1500af;
-  }
-}
+    letter-spacing: 1px; }
+  .footer-1 #footer-icon {
+    color: #99a3e8; }
 
 .footer-2 {
   background-color: #4b5e6a;
   border-color: #4b5e6a;
   border-style: solid;
-  text-align: center;
+  text-align: center; }
+  .footer-2 p {
+    font-size: 12px; }
 
-  p {
-    font-size: 12px;
-  }
-}
-*/
 @media (min-width: 641px) {
   #bg-img #home .lg-heading {
     font-size: 4rem;
@@ -792,104 +679,8 @@ header {
       margin-top: 6vh; }
     #bg-contact #contact .contact-icons a i {
       font-size: 1.2rem; }
-  /*
-  #bg-portfolio {
-    * {
-      //border-style: solid;
-    }
-    #portfolio {
-      .portfolio-intro {
-        h2 {
-          margin-left: 0;
-          margin-top: 24vh;
-          font-size: 9vw;
-          text-align: center;
-        }
-        h3 {
-          margin-left: 0;
-          font-size: 3vw;
-          text-align: center;
-        }
-        .portfolio-divider {
-          margin: auto;
-          display: table;
-          padding-left: 0;
-          width: 120px;
-          margin-top: 7vh;
-          .portfolio-divider-inside {
-            width: 120px;
-          }
-        }
-        div.resume-btn {
-          margin: auto;
-          display: table;
-          padding-left: 0;
-          a {
-            margin-top: 7vh;
-            margin-left: auto;
-          }
-        }
-      }
-    }
-
-    .portfolio-bio {
-      height: 170vh;
-      .portfolio-outer-box {
-        width: 80vh;
-        height: 140vh;
-        .portfolio-bio-right-para {
-          top: 0;
-          right: 0;
-          left: 4vw;
-        }
-      }
-    }
-
-    .portfolio-skills {
-      height: 140vh;
-      .portfolio-skills-outer-box {
-        width: 80vh;
-        height: 110vh;
-        .portfolio-skills-right-para {
-          top: 0;
-          left: 4vw;
-        }
-      }
-    }
-
-    .portfolio-project-table {
-    }
-
-    .portfolio-projects {
-      height: 400vh;
-      .portfolio-project-heading {
-        font-size: 7vh;
-      }
-      .portfolio-project-grid {
-        width: 70vh;
-        grid-template-areas:
-          "proj1"
-          "proj2"
-          "proj3"
-          "proj4";
-        .portfolio-project-1 {
-          grid-area: proj1;
-        }
-        .portfolio-project-2 {
-          grid-area: proj2;
-        }
-        .portfolio-project-3 {
-          grid-area: proj3;
-        }
-        .portfolio-project-4 {
-          grid-area: proj4;
-        }
-      }
-      .portfolio-more-proj-btn {
-        margin-top: 185vh;
-      }
-    }
-  } */ }
+  #bg-portfolio .portfolio-intro h2 {
+    font-size: 10rem; } }
 
 @media screen and (max-width: 481px) {
   #bg-img ul.menu-nav,
