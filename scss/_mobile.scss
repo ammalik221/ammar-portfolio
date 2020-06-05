@@ -191,67 +191,61 @@
 // 481px
 @include smallerTablets {
   #bg-img {
+    * {
+      //border-style: solid;
+    }
     #home {
       .lg-heading {
-        font-size: 10rem;
-      }
-    }
-  }
-  /*#bg-img {
-    background-size: cover;
-  }
-  #home {
-    .lg-heading {
-      margin-top: 20vh;
-      font-size: 2.5rem;
-      text-align: center;
-      margin-left: 6vh;
-    }
-    .sm-heading {
-      font-size: 1.5rem;
-      margin-left: 6vh;
-    }
-    .container {
-      margin-top: 3vh;
-      margin-left: 5vh;
-      padding: 0;
-      h2 {
+        font-size: 2rem;
+        margin-left: 5.5vh;
         padding: 0;
-        margin-left: 0;
-        margin: 0;
-        //width: 45vh;
-        font-size: 0.8rem;
-        margin-left: 0;
       }
-    }
-    .divider {
-      margin-top: 1rem;
-      .divider-inside {
-        width: 100px;
-        margin-left: 4vh;
+      .sm-heading {
+        width: 100%;
+        font-size: 1rem;
+        margin-left: 2vh;
       }
-    }
-    .sm-para {
-      font-size: 0.8rem;
-      margin-left: 6vh;
-    }
-    .lg-icons {
-      margin-left: 4vh;
-      a {
-        margin: 1rem;
-        i {
-          font-size: 1.5rem;
+      .container {
+        padding: 0;
+        margin-left: 1vh;
+        h2 {
+          font-size: 0.7rem;
+          width: 100%;
+        }
+      }
+      .divider {
+        .divider-inside {
+          margin-left: 4vh;
+          width: 50px;
+        }
+      }
+      .sm-para {
+        font-size: 0.7rem;
+        width: 100%;
+        margin-left: 2.7vh;
+      }
+      .lg-icons {
+        margin-left: 5vh;
+        a {
+          margin: 1rem;
+          i {
+            font-size: 1rem;
+          }
+        }
+      }
+      .lg-icons-name {
+        margin-left: 5vh;
+        //margin: 1rem;
+        margin-top: 2px;
+        span {
+          margin: 0.3rem;
+          font-size: 0.7rem;
         }
       }
     }
-    .lg-icons-name {
-      margin-left: 4vh;
-      span {
-        margin: 0.4rem;
-        font-size: 0.8rem;
-      }
-    }
   }
+
+  /*
   #contact {
     * {
       //border-style: solid;
