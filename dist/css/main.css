@@ -840,6 +840,7 @@ header {
       font-size: 12px;
       margin-left: 0; }
   #bg-portfolio .portfolio-bio .portfolio-outer-box {
+    border-width: 15px;
     width: 100%; }
     #bg-portfolio .portfolio-bio .portfolio-outer-box p {
       font-size: 2vh; }
@@ -889,6 +890,7 @@ header {
       font-size: 14px; }
   .portfolio-skills .portfolio-skills-outer-box {
     padding-top: 1vh;
+    border-width: 15px;
     width: 100%; }
     .portfolio-skills .portfolio-skills-outer-box p {
       font-size: 2vh; }
