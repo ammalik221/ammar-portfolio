@@ -17,7 +17,7 @@ $background-opacity: 0.6;
       background-size: cover;
       background-repeat: no-repeat;
 
-      &:after {
+      /*&:after {
         content: "";
         position: absolute;
         top: 0;
@@ -26,7 +26,7 @@ $background-opacity: 0.6;
         height: 100%;
         z-index: -1;
         background: rgba($primary-color, $background-opacity);
-      }
+      }*/
     }
   }
 }

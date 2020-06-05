@@ -197,17 +197,16 @@
     #home {
       .lg-heading {
         font-size: 2rem;
-        margin-left: 5.5vh;
         padding: 0;
+        margin-top: 25vh;
       }
       .sm-heading {
         width: 100%;
         font-size: 1rem;
-        margin-left: 2vh;
       }
       .container {
-        padding: 0;
-        margin-left: 1vh;
+        //padding: 0;
+
         h2 {
           font-size: 0.7rem;
           width: 100%;
@@ -215,17 +214,17 @@
       }
       .divider {
         .divider-inside {
-          margin-left: 4vh;
-          width: 50px;
+          width: 100px;
+          height: 3px;
+          //border-style: solid;
+          //border-color: blue;
         }
       }
       .sm-para {
         font-size: 0.7rem;
         width: 100%;
-        margin-left: 2.7vh;
       }
       .lg-icons {
-        margin-left: 5vh;
         a {
           margin: 1rem;
           i {
@@ -234,7 +233,6 @@
         }
       }
       .lg-icons-name {
-        margin-left: 5vh;
         //margin: 1rem;
         margin-top: 2px;
         span {
@@ -305,7 +303,7 @@
 @include smartPhones {
   #bg-img {
     * {
-      //border-style: solid;
+      border-style: solid;
     }
     #home {
       .lg-heading {
