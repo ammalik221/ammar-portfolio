@@ -409,19 +409,16 @@ header {
           margin-left: 2vw;
           grid-area: para1; }
   #bg-portfolio .portfolio-projects {
-    border-top-style: solid;
     border-color: #f5f7f9;
     background-color: #f5f7f9;
     margin: 0;
-    height: 214vh;
     width: 100%;
     display: table; }
     #bg-portfolio .portfolio-projects .portfolio-project-heading {
       color: #27303b;
-      font-family: "Space Mono", monospace, sans-serif;
       border-color: black;
       font-size: 8vh;
-      font-weight: 800;
+      font-weight: 1000;
       letter-spacing: 0;
       word-spacing: 0;
       text-align: center; }
@@ -429,7 +426,7 @@ header {
         color: #f38654;
         letter-spacing: 0;
         word-spacing: 0;
-        font-weight: 800;
+        font-weight: 1000;
         text-align: center; }
     #bg-portfolio .portfolio-projects .portfolio-project-table {
       display: table;
@@ -441,18 +438,19 @@ header {
       display: grid;
       margin: auto;
       margin-top: 0.3vh;
-      width: 130vh;
-      height: 170vh;
+      width: 63vw;
+      margin-bottom: 4vh;
       grid-template-areas: "proj1 proj2" "proj3 proj4";
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10vh; }
+      grid-gap: 3vw; }
       #bg-portfolio .portfolio-projects .portfolio-project-grid img {
-        width: 60vh; }
+        width: 100%;
+        padding: 0; }
       #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1,
       #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-2,
       #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-3,
       #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-4 {
-        width: 60vh;
+        width: 30vw;
         background-color: white;
         border-color: black;
         box-shadow: 4px 4px 7px grey;
@@ -460,6 +458,23 @@ header {
         border-color: #f5976c;
         border-width: 10px;
         border-radius: 4px; }
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1 .portfolio-project-1-sm-box,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1 .portfolio-project-2-sm-box,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1 .portfolio-project-3-sm-box,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1 .portfolio-project-4-sm-box,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-2 .portfolio-project-1-sm-box,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-2 .portfolio-project-2-sm-box,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-2 .portfolio-project-3-sm-box,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-2 .portfolio-project-4-sm-box,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-3 .portfolio-project-1-sm-box,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-3 .portfolio-project-2-sm-box,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-3 .portfolio-project-3-sm-box,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-3 .portfolio-project-4-sm-box,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-4 .portfolio-project-1-sm-box,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-4 .portfolio-project-2-sm-box,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-4 .portfolio-project-3-sm-box,
+        #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-4 .portfolio-project-4-sm-box {
+          padding-left: 2vw; }
         #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1 h4,
         #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-2 h4,
         #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-3 h4,
@@ -468,7 +483,6 @@ header {
           font-family: "Noto Sans JP", sans-serif;
           font-size: 2vh;
           font-weight: 600;
-          margin-left: 1rem;
           margin-bottom: 0; }
         #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1 a,
         #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-2 a,
@@ -478,7 +492,6 @@ header {
           font-size: 3.5vh;
           font-weight: 700;
           color: #27303b;
-          margin-left: 1rem;
           margin-top: 0; }
           #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1 a:hover,
           #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-2 a:hover,
@@ -494,7 +507,6 @@ header {
           font-family: "Space Mono", monospace, sans-serif;
           font-size: 2.5vh;
           font-weight: 400;
-          margin-left: 1rem;
           margin-bottom: 1rem; }
         #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-1:hover,
         #bg-portfolio .portfolio-projects .portfolio-project-grid .portfolio-project-2:hover,
@@ -524,7 +536,8 @@ header {
       font-size: 16px;
       font-weight: 600;
       cursor: pointer;
-      margin-top: 4vh; }
+      margin-top: 4vh;
+      margin-bottom: 8vh; }
       #bg-portfolio .portfolio-projects .portfolio-more-proj-btn a {
         color: #27303b;
         font-size: 16px;
@@ -536,27 +549,23 @@ header {
         transition: all 0.5s ease-in-out; }
 
 .portfolio-skills {
-  border-top-style: solid;
-  border-color: #f5f7f9;
-  border-bottom-color: blueviolet;
   background-image: url(../img/bg_skills.jpg);
   background-size: cover;
   width: 100%;
   margin-bottom: 0;
-  height: 100vh;
-  margin: auto;
+  padding-bottom: 5vh;
   display: table; }
   .portfolio-skills .portfolio-skills-outer-box {
     background-color: #fff;
-    height: 75vh;
-    width: 150vh;
+    width: 70vw;
+    margin-bottom: 10vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: 12vh;
-    box-shadow: 5px 5px 10px black;
     border-left-style: solid;
     border-width: 40px;
-    border-color: #eeeeee; }
+    border-color: #eeeeee;
+    padding-bottom: 5vh; }
     .portfolio-skills .portfolio-skills-outer-box h2,
     .portfolio-skills .portfolio-skills-outer-box h3,
     .portfolio-skills .portfolio-skills-outer-box p {
@@ -566,57 +575,64 @@ header {
       font-size: 64px;
       border-color: black;
       margin-bottom: 0;
-      width: 400px;
-      margin-top: 2rem;
-      margin-left: 2rem;
+      margin-top: 3vh;
+      margin-left: 2vw;
       color: #eb613d; }
     .portfolio-skills .portfolio-skills-outer-box h3 {
       font-family: "Space Mono", monospace, sans-serif;
       border-color: black;
       font-size: 20.8px;
       margin: 0;
-      margin-left: 2rem;
-      width: 400px; }
+      margin-left: 2vw; }
     .portfolio-skills .portfolio-skills-outer-box p {
       font-family: "Space Mono", monospace, sans-serif;
       font-size: 16; }
-    .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para {
-      position: relative;
-      top: -55vh;
-      left: 75vh;
-      width: 400px;
-      color: #27303b;
-      font-family: "Space Mono", monospace, sans-serif;
-      font-size: 16;
+    .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-para-grid {
+      margin: 0;
       display: grid;
-      grid-template-areas: "heading heading" "left-skills right-skills";
-      grid-template-columns: 200px 200px; }
-      .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para h3 {
-        padding: 0;
-        margin: 0;
-        grid-area: heading; }
-      .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para .ulist-1 {
-        grid-area: left-skills; }
-      .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para .ulist-2 {
-        grid-area: right-skills; }
-      .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para .ulist-1,
-      .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para .ulist-2 {
-        list-style-type: disc;
-        border-color: green;
-        color: #27303b;
-        margin-bottom: 0;
+      grid-template-areas: "head para2" "para1 para2";
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 3vw;
+      grid-row-gap: 5vh; }
+      .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-para-grid .portfolio-skills-right-para {
+        grid-area: para2;
         margin-top: 0;
-        padding-right: 0; }
-        .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para .ulist-1 li,
-        .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-right-para .ulist-2 li {
-          margin-right: 0px;
-          font-family: "Space Mono", monospace, sans-serif;
-          font-size: 16; }
-    .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-left-para {
-      width: 400px;
-      margin-top: 2rem;
-      margin-left: 3rem;
-      right: 0; }
+        color: #27303b;
+        font-family: "Space Mono", monospace, sans-serif;
+        font-size: 16;
+        display: grid;
+        grid-template-areas: "heading heading" "left-skills right-skills" "left-skills right-skills" "left-skills right-skills" "left-skills right-skills";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr); }
+        .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-para-grid .portfolio-skills-right-para h3 {
+          padding: 0;
+          margin: 0;
+          grid-area: heading;
+          padding: 1vh; }
+        .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-para-grid .portfolio-skills-right-para .ulist-1 {
+          grid-area: left-skills; }
+        .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-para-grid .portfolio-skills-right-para .ulist-2 {
+          grid-area: right-skills; }
+        .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-para-grid .portfolio-skills-right-para .ulist-1,
+        .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-para-grid .portfolio-skills-right-para .ulist-2 {
+          padding-left: 2vw;
+          list-style-type: disc;
+          border-color: green;
+          color: #27303b;
+          margin-bottom: 0;
+          margin-top: 0;
+          padding-right: 0; }
+          .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-para-grid .portfolio-skills-right-para .ulist-1 li,
+          .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-para-grid .portfolio-skills-right-para .ulist-2 li {
+            margin-right: 0px;
+            font-family: "Space Mono", monospace, sans-serif;
+            font-size: 16; }
+      .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-para-grid .portfolio-skills-para-head {
+        grid-area: head; }
+      .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-para-grid .portfolio-skills-left-para {
+        grid-area: para1;
+        margin-top: 0;
+        margin-left: 2vw; }
 
 .footer-1 {
   background-color: #27303b;
@@ -631,7 +647,8 @@ header {
     margin: 1rem;
     font-family: "Noto Sans JP", sans-serif;
     background-color: #27303b;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    color: #fff; }
   .footer-1 #footer-icon {
     color: #99a3e8; }
 
@@ -641,7 +658,8 @@ header {
   border-style: solid;
   text-align: center; }
   .footer-2 p {
-    font-size: 12px; }
+    font-size: 12px;
+    color: #fff; }
 
 @media (min-width: 641px) {
   #bg-img #home .lg-heading {
