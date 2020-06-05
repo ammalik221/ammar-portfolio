@@ -14,7 +14,7 @@
 @include portraitTablets {
   #bg-img {
     * {
-      //border-style: solid;
+      border-style: solid;
     }
 
     #home {
@@ -88,24 +88,173 @@
   }
 
   #bg-portfolio {
-    * {
-      //border-style: solid;
+    #portfolio {
+      * {
+        //border-style: solid;
+      }
+      .portfolio-intro {
+        h2 {
+          margin-left: 0;
+          width: 100%;
+          font-size: 10vh;
+          text-align: center;
+        }
+        h3 {
+          margin-left: 0;
+          text-align: center;
+        }
+        .portfolio-divider {
+          padding-left: 0;
+          display: flex;
+          justify-content: center;
+          .portfolio-divider-inside {
+            text-align: center;
+            margin-left: 0;
+          }
+        }
+        .resume-btn {
+          display: flex;
+          justify-content: center;
+          padding-left: 0;
+          .button {
+            font-size: 15px;
+            margin-left: 0;
+          }
+        }
+      }
     }
-    .portfolio-intro {
+
+    .portfolio-bio {
+      .portfolio-outer-box {
+        * {
+          //border-style: solid;
+        }
+        //border-left: 2vh;
+        border-width: 15px;
+        p {
+          font-size: 2vh;
+        }
+        width: 100%;
+        h2 {
+          font-size: 8vh;
+        }
+        .portfolio-bio-para-grid {
+          //grid-template-areas: "head" "para1" "para2";
+          //grid-template-columns: repeat(1, 1fr);
+          //grid-column-gap: 0;
+
+          h3.portfolio-bio-top-heading {
+            //grid-area: head;
+            font-size: 3vh;
+            margin-left: 2vh;
+          }
+          .portfolio-bio-left-para {
+            //grid-area: para1;
+            padding-right: 2vw;
+            margin-left: 2vw;
+          }
+          .portfolio-bio-right-para {
+            //grid-area: para2;
+            margin-left: 2vw;
+            padding-right: 2vw;
+          }
+        }
+      }
+    }
+    .portfolio-projects {
+      .portfolio-project-heading {
+        font-size: 5vh;
+      }
+      .portfolio-project-table {
+        width: 100%;
+        padding: 5vw;
+        //border-style: solid;
+        .portfolio-project-grid {
+          width: 100%;
+          //grid-template-areas: "proj1" "proj2" "proj3" "proj4";
+          //grid-template-columns: repeat(1, 1fr);
+          grid-gap: 5vh;
+
+          .portfolio-project-1 {
+            width: 100%;
+            //grid-area: proj1;
+          }
+          .portfolio-project-2 {
+            width: 100%;
+            //grid-area: proj2;
+          }
+          .portfolio-project-3 {
+            width: 100%;
+            //grid-area: proj3;
+          }
+          .portfolio-project-4 {
+            width: 100%;
+            //grid-area: proj4;
+          }
+        }
+      }
+      .portfolio-btn {
+        .portfolio-more-proj-btn {
+          padding: 5px 12px;
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .portfolio-skills {
+    .portfolio-skills-outer-box {
+      padding-top: 1vh;
+      border-width: 15px;
+      p {
+        font-size: 2vh;
+      }
+      width: 100%;
       h2 {
-        font-size: 10rem;
+        font-size: 5vh;
       }
-      h3 {
+      .portfolio-skills-para-grid {
+        //grid-template-areas: "head" "para1" "para2";
+        //grid-template-columns: repeat(1, 1fr);
+        //grid-column-gap: 0;
+
+        .portfolio-skills-para-head {
+          //grid-area: head;
+          font-size: 3vh;
+          margin-left: 2vh;
+        }
+        .portfolio-skills-left-para {
+          //grid-area: para1;
+          padding-right: 2vw;
+          margin-left: 2vw;
+        }
+        .portfolio-skills-right-para {
+          //grid-area: para2;
+          margin-left: 2vw;
+          padding-right: 2vw;
+          h3 {
+            font-size: 3vh;
+          }
+        }
       }
-      .portfolio-divider {
-      }
-      .resume-btn {
-      }
+    }
+  }
+
+  .footer-1 {
+    font-size: 3vh;
+    font-weight: 0;
+  }
+  .footer-2 {
+    p {
+      font-size: 2.5vh;
     }
   }
 }
 
-// 481px
+//------------------------------------------------------481px--------------------------
+//-------------------------------------------------------------------------------------
 @include smallerTablets {
   #bg-img {
     * {
@@ -180,36 +329,174 @@
       }
     }
   }
-
-  /*
-
   #bg-portfolio {
     #portfolio {
+      * {
+        //border-style: solid;
+      }
       .portfolio-intro {
         h2 {
-          margin-top: 20vh;
-          margin-left: 21vw;
-          font-size: 12px;
+          margin-left: 0;
+          width: 100%;
+          font-size: 8vh;
+          text-align: center;
         }
         h3 {
-          font-size: 3vw;
-          margin-left: 30vw;
+          margin-left: 0;
+          text-align: center;
         }
         .portfolio-divider {
-          padding-left: 40vw;
+          padding-left: 0;
+          display: flex;
+          justify-content: center;
           .portfolio-divider-inside {
-            width: 120px;
+            text-align: center;
+            margin-left: 0;
           }
         }
-        a {
-          margin-left: 36vw;
+        .resume-btn {
+          display: flex;
+          justify-content: center;
+          padding-left: 0;
+          .button {
+            font-size: 12px;
+            margin-left: 0;
+          }
         }
       }
     }
-  }*/
+
+    .portfolio-bio {
+      .portfolio-outer-box {
+        * {
+          //border-style: solid;
+        }
+        //border-left: 2vh;
+        border-width: 15px;
+        p {
+          font-size: 2vh;
+        }
+        width: 100%;
+        h2 {
+          font-size: 6vh;
+        }
+        .portfolio-bio-para-grid {
+          grid-template-areas: "head" "para1" "para2";
+          grid-template-columns: repeat(1, 1fr);
+          grid-column-gap: 0;
+
+          h3.portfolio-bio-top-heading {
+            grid-area: head;
+            font-size: 3vh;
+            margin-left: 2vh;
+          }
+          .portfolio-bio-left-para {
+            grid-area: para1;
+            padding-right: 2vw;
+            margin-left: 2vw;
+          }
+          .portfolio-bio-right-para {
+            grid-area: para2;
+            margin-left: 2vw;
+            padding-right: 2vw;
+          }
+        }
+      }
+    }
+    .portfolio-projects {
+      .portfolio-project-heading {
+        font-size: 5vh;
+      }
+      .portfolio-project-table {
+        width: 100%;
+        padding: 5vw;
+        //border-style: solid;
+        .portfolio-project-grid {
+          width: 100%;
+          grid-template-areas: "proj1" "proj2" "proj3" "proj4";
+          grid-template-columns: repeat(1, 1fr);
+          grid-gap: 10vh;
+
+          .portfolio-project-1 {
+            width: 100%;
+            grid-area: proj1;
+          }
+          .portfolio-project-2 {
+            width: 100%;
+            grid-area: proj2;
+          }
+          .portfolio-project-3 {
+            width: 100%;
+            grid-area: proj3;
+          }
+          .portfolio-project-4 {
+            width: 100%;
+            grid-area: proj4;
+          }
+        }
+      }
+      .portfolio-btn {
+        .portfolio-more-proj-btn {
+          padding: 5px 12px;
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .portfolio-skills {
+    .portfolio-skills-outer-box {
+      padding-top: 1vh;
+      border-width: 15px;
+      p {
+        font-size: 2vh;
+      }
+      width: 100%;
+      h2 {
+        font-size: 5vh;
+      }
+      .portfolio-skills-para-grid {
+        grid-template-areas: "head" "para1" "para2";
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0;
+
+        .portfolio-skills-para-head {
+          grid-area: head;
+          font-size: 3vh;
+          margin-left: 2vh;
+        }
+        .portfolio-skills-left-para {
+          grid-area: para1;
+          padding-right: 2vw;
+          margin-left: 2vw;
+        }
+        .portfolio-skills-right-para {
+          grid-area: para2;
+          margin-left: 2vw;
+          padding-right: 2vw;
+          h3 {
+            font-size: 3vh;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-1 {
+    font-size: 2vh;
+    font-weight: 0;
+  }
+  .footer-2 {
+    p {
+      font-size: 2vh;
+    }
+  }
 }
 
-// 320px
+//--------------------------------------------320px------------------------------
+//-------------------------------------------------------------------------------
 @include smartPhones {
   ul.menu-nav,
   div.menu-branding {
