@@ -661,6 +661,78 @@ header {
     font-size: 12px;
     color: #fff; }
 
+@media (max-width: 961px) {
+  #bg-portfolio #portfolio .portfolio-intro h2 {
+    font-size: 9vh; }
+  #bg-portfolio #portfolio .portfolio-intro h3 {
+    font-size: 3.5vh; }
+  #bg-portfolio .portfolio-bio .portfolio-outer-box {
+    width: 80vw;
+    border-width: 15px; }
+    #bg-portfolio .portfolio-bio .portfolio-outer-box p {
+      font-size: 2vh; }
+    #bg-portfolio .portfolio-bio .portfolio-outer-box h2 {
+      font-size: 8vh; }
+    #bg-portfolio .portfolio-bio .portfolio-outer-box .portfolio-bio-para-grid h3.portfolio-bio-top-heading {
+      font-size: 4vh;
+      margin-left: 2vw; }
+    #bg-portfolio .portfolio-bio .portfolio-outer-box .portfolio-bio-para-grid .portfolio-bio-left-para {
+      font-size: 2vh;
+      padding-right: 2vw;
+      margin-left: 2vw; }
+    #bg-portfolio .portfolio-bio .portfolio-outer-box .portfolio-bio-para-grid .portfolio-bio-right-para {
+      margin-left: 2vw;
+      padding-right: 2vw; }
+  #bg-portfolio .portfolio-projects .portfolio-project-heading {
+    font-size: 5vh; }
+  #bg-portfolio .portfolio-projects .portfolio-project-table {
+    width: 100%;
+    padding: 5vw; }
+    #bg-portfolio .portfolio-projects .portfolio-project-table .portfolio-project-grid {
+      width: 100%;
+      grid-gap: 5vh; }
+      #bg-portfolio .portfolio-projects .portfolio-project-table .portfolio-project-grid .portfolio-project-1 {
+        width: 100%; }
+      #bg-portfolio .portfolio-projects .portfolio-project-table .portfolio-project-grid .portfolio-project-2 {
+        width: 100%; }
+      #bg-portfolio .portfolio-projects .portfolio-project-table .portfolio-project-grid .portfolio-project-3 {
+        width: 100%; }
+      #bg-portfolio .portfolio-projects .portfolio-project-table .portfolio-project-grid .portfolio-project-4 {
+        width: 100%; }
+  #bg-portfolio .portfolio-projects .portfolio-btn .portfolio-more-proj-btn {
+    padding: 5px 12px; }
+    #bg-portfolio .portfolio-projects .portfolio-btn .portfolio-more-proj-btn a {
+      font-size: 14px; }
+  #bg-portfolio .portfolio-skills .portfolio-skills-outer-box {
+    padding-top: 1vh;
+    border-width: 15px;
+    width: 80vw; }
+    #bg-portfolio .portfolio-skills .portfolio-skills-outer-box p {
+      font-size: 2vh; }
+    #bg-portfolio .portfolio-skills .portfolio-skills-outer-box h2 {
+      font-size: 7vh; }
+    #bg-portfolio .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-para-grid .portfolio-skills-para-head {
+      font-size: 3vh;
+      margin-left: 2vw; }
+    #bg-portfolio .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-para-grid .portfolio-skills-left-para {
+      padding-right: 2vw;
+      margin-left: 2vw;
+      font-size: 2vh; }
+    #bg-portfolio .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-para-grid .portfolio-skills-right-para {
+      margin-left: 2vw;
+      padding-right: 2vw;
+      font-size: 2vh; }
+      #bg-portfolio .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-para-grid .portfolio-skills-right-para h3 {
+        font-size: 3vh; }
+      #bg-portfolio .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-para-grid .portfolio-skills-right-para .ulist-1,
+      #bg-portfolio .portfolio-skills .portfolio-skills-outer-box .portfolio-skills-para-grid .portfolio-skills-right-para .ulist-2 {
+        margin-top: 2vh; }
+  #bg-portfolio .footer-1 {
+    font-size: 3vh;
+    font-weight: 0; }
+  #bg-portfolio .footer-2 p {
+    font-size: 2.5vh; } }
+
 @media (max-width: 641px) {
   #bg-img * {
     border-style: solid; }
