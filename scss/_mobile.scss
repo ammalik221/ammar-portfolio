@@ -1,13 +1,20 @@
-//Widescreens
-@include mediaXl {
+//laptops 1281px
+@include laptops {
 }
 
-//desktops and laptops
-@include mediaLg {
+// 1025px
+@include bigTablets {
 }
 
-//tablet and small laptops
-@include mediaMd {
+// 961px
+@include tablets {
+}
+
+// 641px
+@include portraitTablets {
+  /* * {
+    //border-style: dashed;
+  }
   #bg-img {
     background-size: cover;
   }
@@ -178,12 +185,19 @@
         margin-top: 185vh;
       }
     }
-  }
+  } */
 }
 
-//smartphones
-@include mediaSm {
+// 481px
+@include smallerTablets {
   #bg-img {
+    #home {
+      .lg-heading {
+        font-size: 10rem;
+      }
+    }
+  }
+  /*#bg-img {
     background-size: cover;
   }
   #home {
@@ -287,6 +301,66 @@
         }
         a {
           margin-left: 36vw;
+        }
+      }
+    }
+  }*/
+}
+
+// 320px
+@include smartPhones {
+  #bg-img {
+    * {
+      //border-style: solid;
+    }
+    #home {
+      .lg-heading {
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 2.5vh;
+        width: 100%;
+        margin-top: 20vh;
+      }
+      .sm-heading {
+        font-size: 1rem;
+        width: 100%;
+        margin-left: 2vh;
+      }
+      .container {
+        width: 100%;
+        padding: 0;
+        margin-left: 1vh;
+        h2 {
+          font-size: 0.6rem;
+          width: 100%;
+        }
+      }
+      .divider {
+        margin-left: 5vh;
+        .divider-inside {
+          width: 50px;
+        }
+      }
+      .sm-para {
+        font-size: 0.6rem;
+        margin-left: 6vh;
+      }
+      .lg-icons {
+        margin-left: 5vh;
+        a {
+          margin: 1rem;
+          i {
+            font-size: 1rem;
+          }
+        }
+      }
+      .lg-icons-name {
+        margin-left: 5vh;
+        //margin: 1rem;
+        margin-top: 2px;
+        span {
+          margin: 0.3rem;
+          font-size: 0.7rem;
         }
       }
     }
