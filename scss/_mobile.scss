@@ -111,33 +111,6 @@
     * {
       //border-style: solid;
     }
-    ul.menu-nav,
-    div.menu-branding {
-      float: none;
-      width: 100%;
-      min-height: 0;
-
-      &.show {
-        transform: translate3d(0, 0, 0);
-      }
-    }
-
-    .menu-nav {
-      height: 75vh;
-      transform: translate3d(-100%, 0, 0);
-      font-size: 24px;
-    }
-
-    .menu-branding {
-      height: 25vh;
-      transform: translate3d(100%, 0, 0);
-
-      .portrait {
-        background: url("../img/profile_sm.jpg");
-        width: 150px;
-        height: 150px;
-      }
-    }
     #home {
       .lg-heading {
         font-size: 2.7rem;
@@ -238,6 +211,33 @@
 
 // 320px
 @include smartPhones {
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      background: url("../img/profile_sm.jpg");
+      width: 150px;
+      height: 150px;
+    }
+  }
   #bg-img {
     * {
       //border-style: solid;
@@ -301,6 +301,168 @@
         font-size: 0.8rem;
         margin-top: 10vh;
       }
+    }
+  }
+
+  #bg-portfolio {
+    #portfolio {
+      * {
+        //border-style: solid;
+      }
+      .portfolio-intro {
+        h2 {
+          margin-left: 0;
+          width: 100%;
+          font-size: 8vh;
+          text-align: center;
+        }
+        h3 {
+          margin-left: 0;
+          text-align: center;
+        }
+        .portfolio-divider {
+          padding-left: 0;
+          display: flex;
+          justify-content: center;
+          .portfolio-divider-inside {
+            text-align: center;
+            margin-left: 0;
+          }
+        }
+        .resume-btn {
+          display: flex;
+          justify-content: center;
+          padding-left: 0;
+          .button {
+            font-size: 12px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    .portfolio-bio {
+      .portfolio-outer-box {
+        * {
+          //border-style: solid;
+        }
+        p {
+          font-size: 2vh;
+        }
+        width: 100%;
+        h2 {
+          font-size: 6vh;
+        }
+        .portfolio-bio-para-grid {
+          grid-template-areas: "head" "para1" "para2";
+          grid-template-columns: repeat(1, 1fr);
+          grid-column-gap: 0;
+
+          h3.portfolio-bio-top-heading {
+            grid-area: head;
+            font-size: 3vh;
+            margin-left: 2vh;
+          }
+          .portfolio-bio-left-para {
+            grid-area: para1;
+            padding-right: 2vw;
+            margin-left: 2vw;
+          }
+          .portfolio-bio-right-para {
+            grid-area: para2;
+            margin-left: 2vw;
+            padding-right: 2vw;
+          }
+        }
+      }
+    }
+    .portfolio-projects {
+      .portfolio-project-heading {
+        font-size: 5vh;
+      }
+      .portfolio-project-table {
+        width: 100%;
+        padding: 5vw;
+        //border-style: solid;
+        .portfolio-project-grid {
+          width: 100%;
+          grid-template-areas: "proj1" "proj2" "proj3" "proj4";
+          grid-template-columns: repeat(1, 1fr);
+          grid-gap: 10vh;
+
+          .portfolio-project-1 {
+            width: 100%;
+            grid-area: proj1;
+          }
+          .portfolio-project-2 {
+            width: 100%;
+            grid-area: proj2;
+          }
+          .portfolio-project-3 {
+            width: 100%;
+            grid-area: proj3;
+          }
+          .portfolio-project-4 {
+            width: 100%;
+            grid-area: proj4;
+          }
+        }
+      }
+      .portfolio-btn {
+        .portfolio-more-proj-btn {
+          padding: 5px 12px;
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .portfolio-skills {
+    .portfolio-skills-outer-box {
+      padding-top: 1vh;
+      p {
+        font-size: 2vh;
+      }
+      width: 100%;
+      h2 {
+        font-size: 5vh;
+      }
+      .portfolio-skills-para-grid {
+        grid-template-areas: "head" "para1" "para2";
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0;
+
+        .portfolio-skills-para-head {
+          grid-area: head;
+          font-size: 3vh;
+          margin-left: 2vh;
+        }
+        .portfolio-skills-left-para {
+          grid-area: para1;
+          padding-right: 2vw;
+          margin-left: 2vw;
+        }
+        .portfolio-skills-right-para {
+          grid-area: para2;
+          margin-left: 2vw;
+          padding-right: 2vw;
+          h3 {
+            font-size: 3vh;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-1 {
+    font-size: 2vh;
+    font-weight: 0;
+  }
+  .footer-2 {
+    p {
+      font-size: 2vh;
     }
   }
 }
