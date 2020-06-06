@@ -734,8 +734,25 @@ header {
     font-size: 2.5vh; } }
 
 @media (max-width: 641px) {
-  #bg-img * {
-    border-style: solid; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../img/profile_sm.jpg");
+      width: 150px;
+      height: 150px; }
   #bg-img #home .lg-heading {
     font-size: 4rem;
     padding: 0;
@@ -855,6 +872,25 @@ header {
     font-size: 2.5vh; } }
 
 @media screen and (max-width: 481px) {
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../img/profile_sm.jpg");
+      width: 150px;
+      height: 150px; }
   #bg-img #home .lg-heading {
     font-size: 2.7rem;
     padding: 0;
