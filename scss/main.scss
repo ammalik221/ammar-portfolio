@@ -855,7 +855,7 @@ header {
   * {
     //border-style: solid;
   }
-  background-color: #f5f7f9;
+  background-color: darken($color: #f5f7f9, $amount: 20);
   //background-image: url(../img/bg_portfolio_2.jpg);
   margin: 0;
   padding: 0;
@@ -872,6 +872,7 @@ header {
     .resume-main-grid {
       padding-left: 1vw;
       padding-right: 1vw;
+      padding-top: 2vh;
       display: grid;
       grid-template-areas: "left1 right1 right1" "left1 right2 right2";
       grid-template-columns: repeat(3, 1fr);
@@ -881,28 +882,37 @@ header {
       .resume-main-grid-right-1,
       .resume-main-grid-right-2 {
         background-color: white;
-        box-shadow: 4px 4px 7px grey;
+        box-shadow: 10px 10px 7px grey;
       }
 
       .resume-main-grid-left {
         grid-area: left1;
+        color: #fff;
+        background-color: darken($color: #15aabf, $amount: 20);
+
         .resume-main-grid-left-image-container {
           img {
             width: 100%;
           }
           .resume-main-grid-left-image-container-sm-box {
+            //background-color: red;
             padding-left: 1.5vw;
             h2 {
               font-size: 5vh;
               margin-bottom: 0;
+              font-weight: 700;
               span {
                 color: #f38654;
+                font-weight: 700;
               }
             }
             p {
               //border-style: solid;
               margin-top: 4vh;
-              font-size: 3vh;
+              //font-size: 3vh;
+              font-family: "Space Mono", monospace, sans-serif;
+              font-weight: 500;
+              font-size: 2.7vh;
               line-height: 1;
               i {
                 &:hover {
@@ -929,13 +939,16 @@ header {
             margin-bottom: 0;
             padding-top: 0;
             margin-top: 0;
+            font-weight: 700;
           }
 
           .ulist-1 {
             grid-area: list1;
+            font-family: "Space Mono", monospace, sans-serif;
           }
           .ulist-2 {
             grid-area: list2;
+            font-family: "Space Mono", monospace, sans-serif;
           }
         }
 
@@ -961,10 +974,14 @@ header {
         }
       }
       .resume-main-grid-right-1 {
+        //background-image: url(../img/bg_portfolio.jpg);
+        //background-color: red;
         grid-area: right1;
         p {
-          font-family: "Noto Sans", sans-serif;
+          //font-family: "Noto Sans", sans-serif;
+          font-family: "Space Mono", monospace, sans-serif;
           font-weight: 400;
+          font-size: 2.5vh;
         }
 
         h2,
@@ -1084,8 +1101,9 @@ header {
       .resume-main-grid-right-2 {
         grid-area: right2;
         p {
-          font-family: "Noto Sans", sans-serif;
+          font-family: "Space Mono", monospace, sans-serif;
           font-weight: 400;
+          font-size: 2.5vh;
         }
 
         .edu {

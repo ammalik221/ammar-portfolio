@@ -955,4 +955,53 @@
       font-size: 2vh;
     }
   }
+
+  #bg-resume {
+    * {
+      //border-style: solid;
+    }
+    #resume {
+      .resume-main-grid {
+        display: grid;
+        grid-template-areas: "left1" "right1" "right2";
+        grid-template-columns: repeat(1, 1fr);
+        .resume-main-grid-left {
+          grid-area: left1;
+          width: 100%;
+          .resume-main-grid-left-image-container {
+            h2,
+            p {
+              padding-left: 10vw;
+            }
+          }
+          .resume-left-divider {
+            margin-bottom: 3vh;
+            .resume-left-divider-inside {
+              width: 65vw;
+            }
+          }
+          .resume-main-grid-left-skills {
+            padding-left: 10vw;
+          }
+        }
+        .resume-main-grid-right-1 {
+          grid-area: right1;
+          .work {
+            font-size: 5vh;
+          }
+          .resume-main-grid-right-1-experience-grid {
+            h2 {
+              font-size: 2.5vh;
+            }
+            h4 {
+              font-size: 1.8vh;
+            }
+          }
+        }
+        .resume-main-grid-right-2 {
+          grid-area: right2;
+        }
+      }
+    }
+  }
 }
