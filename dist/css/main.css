@@ -1091,7 +1091,45 @@ header {
     font-size: 3vh;
     font-weight: 0; }
   .footer-2 p {
-    font-size: 2.5vh; } }
+    font-size: 2.5vh; }
+  #bg-resume #resume .resume-main-grid {
+    display: grid;
+    grid-template-areas: "left1" "right1" "right2";
+    grid-template-columns: repeat(1, 1fr); }
+    #bg-resume #resume .resume-main-grid .resume-main-grid-left {
+      grid-area: left1;
+      width: 100%; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-image-container h2,
+      #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-image-container p {
+        padding-left: 23vw; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-left-divider {
+        margin-bottom: 3vh; }
+        #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-left-divider .resume-left-divider-inside {
+          width: 75vw; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-skills {
+        padding-left: 23vw; }
+        #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-skills h2 {
+          padding-left: 18vw; }
+    #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 {
+      grid-area: right1; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .work {
+        font-size: 6vh; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid h2 {
+        font-size: 3vh; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid h4 {
+        font-size: 2.5vh; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid p {
+        font-size: 2.2vh; }
+    #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 {
+      grid-area: right2; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .edu {
+        font-size: 6vh; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid h2 {
+        font-size: 3vh; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid h4 {
+        font-size: 2.5vh; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid p {
+        font-size: 2.2vh; } }
 
 @media screen and (max-width: 481px) {
   ul.menu-nav,
@@ -1249,7 +1287,45 @@ header {
     font-size: 2vh;
     font-weight: 0; }
   .footer-2 p {
-    font-size: 2vh; } }
+    font-size: 2vh; }
+  #bg-resume #resume .resume-main-grid {
+    display: grid;
+    grid-template-areas: "left1" "right1" "right2";
+    grid-template-columns: repeat(1, 1fr); }
+    #bg-resume #resume .resume-main-grid .resume-main-grid-left {
+      grid-area: left1;
+      width: 100%; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-image-container h2,
+      #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-image-container p {
+        padding-left: 23vw; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-left-divider {
+        margin-bottom: 3vh; }
+        #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-left-divider .resume-left-divider-inside {
+          width: 75vw; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-skills {
+        padding-left: 23vw; }
+        #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-skills h2 {
+          padding-left: 18vw; }
+    #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 {
+      grid-area: right1; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .work {
+        font-size: 6vh; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid h2 {
+        font-size: 3vh; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid h4 {
+        font-size: 2.5vh; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid p {
+        font-size: 2.2vh; }
+    #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 {
+      grid-area: right2; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .edu {
+        font-size: 6vh; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid h2 {
+        font-size: 3vh; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid h4 {
+        font-size: 2.5vh; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid p {
+        font-size: 2.2vh; } }
 
 @media screen and (max-width: 320px) {
   ul.menu-nav,
@@ -1431,5 +1507,15 @@ header {
         font-size: 2.5vh; }
       #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid h4 {
         font-size: 1.8vh; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid p {
+        font-size: 1.6vh; }
     #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 {
-      grid-area: right2; } }
+      grid-area: right2; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .edu {
+        font-size: 5vh; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid h2 {
+        font-size: 2.5vh; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid h4 {
+        font-size: 1.8vh; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid p {
+        font-size: 1.6vh; } }
