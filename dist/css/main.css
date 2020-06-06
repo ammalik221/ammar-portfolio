@@ -662,17 +662,18 @@ header {
     color: #fff; }
 
 #bg-resume {
-  background-color: #fff;
+  background-color: #f5f7f9;
   margin: 0;
   padding: 0;
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
-  line-height: 1.5; }
+  line-height: 1.7; }
   #bg-resume #resume {
-    width: 100%;
-    background-color: #f5f7f9; }
+    width: 100%; }
     #bg-resume #resume .resume-main-grid {
+      padding-left: 1vw;
+      padding-right: 1vw;
       display: grid;
       grid-template-areas: "left1 right1 right1" "left1 right2 right2";
       grid-template-columns: repeat(3, 1fr);
@@ -689,9 +690,17 @@ header {
         #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-image-container .resume-main-grid-left-image-container-sm-box {
           padding-left: 1.5vw; }
           #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-image-container .resume-main-grid-left-image-container-sm-box h2 {
-            font-size: 6vh; }
+            font-size: 5vh;
+            margin-bottom: 0; }
+            #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-image-container .resume-main-grid-left-image-container-sm-box h2 span {
+              color: #f38654; }
           #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-image-container .resume-main-grid-left-image-container-sm-box p {
-            font-size: 3vh; }
+            margin-top: 4vh;
+            font-size: 3vh;
+            line-height: 1; }
+            #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-image-container .resume-main-grid-left-image-container-sm-box p i:hover {
+              color: #f38654;
+              transition: all 0.5s ease-in-out; }
         #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-skills {
           display: grid;
           grid-template-areas: "skill-head skillhead" "list1 list2";
@@ -701,7 +710,7 @@ header {
           margin-top: 0;
           padding-top: 0; }
           #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-skills h2 {
-            font-size: 6vh;
+            font-size: 5vh;
             grid-area: skill-head;
             margin-bottom: 0;
             padding-top: 0;
@@ -726,6 +735,9 @@ header {
             border-width: 0.5px; }
       #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 {
         grid-area: right1; }
+        #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 p {
+          font-family: "Noto Sans", sans-serif;
+          font-weight: 400; }
         #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 h2,
         #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 p,
         #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 h4 {
@@ -733,6 +745,8 @@ header {
         #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .work {
           font-size: 5vh;
           margin-bottom: 0; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .work span {
+            color: #f38654; }
         #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid {
           margin-top: 0;
           padding-top: 0; }
@@ -740,15 +754,27 @@ header {
             font-size: 3vh; }
           #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-1 h2 {
             margin-top: 3vh;
-            margin-bottom: 0; }
+            margin-bottom: 0;
+            color: #27303b;
+            font-weight: 1000; }
           #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-1 h4 {
             margin-top: 1vh;
             margin-bottom: 0; }
+            #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-1 h4 span {
+              background-color: #f38654;
+              padding-left: 5px;
+              padding-right: 5px;
+              padding-bottom: 3px;
+              padding-top: 3px;
+              color: #fff;
+              border-radius: 5px; }
           #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-1 p {
             margin-top: 2vh; }
           #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-2 h2 {
             margin-top: 3vh;
-            margin-bottom: 0; }
+            margin-bottom: 0;
+            color: #27303b;
+            font-weight: 1000; }
           #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-2 h4 {
             margin-top: 1vh;
             margin-bottom: 0; }
@@ -758,10 +784,20 @@ header {
             margin-bottom: 7vh; }
             #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-3 h2 {
               margin-top: 3vh;
-              margin-bottom: 0; }
+              margin-bottom: 0;
+              color: #27303b;
+              font-weight: 1000; }
             #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-3 h4 {
               margin-top: 1vh;
               margin-bottom: 0; }
+              #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-3 h4 span {
+                background-color: #f38654;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-bottom: 3px;
+                padding-top: 3px;
+                color: #fff;
+                border-radius: 5px; }
             #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-3 p {
               margin-top: 2vh; }
         #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-right-divider {
@@ -780,9 +816,14 @@ header {
             border-width: 0.5px; }
       #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 {
         grid-area: right2; }
+        #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 p {
+          font-family: "Noto Sans", sans-serif;
+          font-weight: 400; }
         #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .edu {
           font-size: 6vh;
           margin-bottom: 0; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .edu span {
+            color: #f38654; }
         #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 h2,
         #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 h4,
         #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 p {
@@ -791,7 +832,10 @@ header {
           margin-top: 0; }
           #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid .resume-main-grid-right-2-experience-1 h2 {
             margin-top: 3vh;
-            margin-bottom: 0; }
+            margin-bottom: 0;
+            color: #27303b;
+            font-weight: 1000;
+            font-size: 3vh; }
           #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid .resume-main-grid-right-2-experience-1 h4 {
             margin-top: 1vh;
             margin-bottom: 0; }
@@ -801,7 +845,10 @@ header {
             margin-bottom: 8vh; }
             #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid .resume-main-grid-right-2-experience-2 h2 {
               margin-top: 3vh;
-              margin-bottom: 0; }
+              margin-bottom: 0;
+              color: #27303b;
+              font-weight: 1000;
+              font-size: 3vh; }
             #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid .resume-main-grid-right-2-experience-2 h4 {
               margin-top: 1vh;
               margin-bottom: 0; }
