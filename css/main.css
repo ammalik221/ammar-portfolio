@@ -72,10 +72,11 @@
     transition: all 0.5s ease-in-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
-    .menu .nav-item.current > a {
+    .menu .nav-item.current a {
       color: #f38654; }
     .menu .nav-item:hover {
       background-color: #2b2b2b;
+      color: #f38654;
       cursor: pointer;
       transition: all 0.5s ease-in-out; }
   .menu .nav-link {
@@ -160,7 +161,6 @@ header {
     letter-spacing: 1.5px;
     line-height: 1.7; }
   #bg-img a {
-    color: #fff;
     text-decoration: none; }
   #bg-img .text-secondary {
     color: #f38654; }
@@ -661,7 +661,7 @@ header {
     font-size: 12px;
     color: #fff; }
 
-@media (max-width: 961px) {
+@media screen and (max-width: 961px) {
   #bg-portfolio #portfolio .portfolio-intro h2 {
     font-size: 9vh; }
   #bg-portfolio #portfolio .portfolio-intro h3 {
@@ -733,7 +733,7 @@ header {
   #bg-portfolio .footer-2 p {
     font-size: 2.5vh; } }
 
-@media (max-width: 641px) {
+@media screen and (max-width: 641px) {
   ul.menu-nav,
   div.menu-branding {
     float: none;
