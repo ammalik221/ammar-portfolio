@@ -103,12 +103,18 @@
       transform: translate3d(0, 0, 0);
     }
 
-    &.current > a {
-      color: $secondary-color;
+    &.current {
+      a {
+        color: $secondary-color;
+        //color: #000;
+      }
     }
 
     &:hover {
       background-color: darken($primary-color, 10);
+      color: $secondary-color;
+      //color: $secondary-color;
+      //background-color: red;
       cursor: pointer;
       @include easeOut;
     }
@@ -127,6 +133,7 @@
 
     &:hover {
       color: $secondary-color;
+      //color: red;
     }
   }
 }

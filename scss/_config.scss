@@ -45,25 +45,25 @@ $background-opacity: 0.6;
 }
 
 @mixin portraitTablets {
-  @media (max-width: 641px) {
+  @media screen and (max-width: 641px) {
     @content;
   }
 }
 
 @mixin tablets {
-  @media (max-width: 961px) {
+  @media screen and (max-width: 961px) {
     @content;
   }
 }
 
 @mixin bigTablets {
-  @media (max-width: 1025px) {
+  @media screen and (max-width: 1025px) {
     @content;
   }
 }
 
 @mixin laptops {
-  @media (max-width: 1281px) {
+  @media screen and (max-width: 1281px) {
     @content;
   }
 }
