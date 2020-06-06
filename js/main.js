@@ -97,3 +97,11 @@ function init() {
   // Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
+
+function copyFunction() {
+  //var copyText = document.getElementById("gmail");
+  //copyText.select();
+  //copyText.setSelectionRange(0, 99999);
+  //document.execCommand("copy");
+  //alert("Contact me at ammaralammalik221@gmail.com");
+}
