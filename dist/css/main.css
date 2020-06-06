@@ -661,6 +661,169 @@ header {
     font-size: 12px;
     color: #fff; }
 
+#bg-resume {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5; }
+  #bg-resume #resume {
+    width: 100%;
+    background-color: #f5f7f9; }
+    #bg-resume #resume .resume-main-grid {
+      display: grid;
+      grid-template-areas: "left1 right1 right1" "left1 right2 right2";
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3vh; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-left,
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-1,
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 {
+        background-color: white;
+        box-shadow: 4px 4px 7px grey; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-left {
+        grid-area: left1; }
+        #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-image-container img {
+          width: 100%; }
+        #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-image-container .resume-main-grid-left-image-container-sm-box {
+          padding-left: 1.5vw; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-image-container .resume-main-grid-left-image-container-sm-box h2 {
+            font-size: 6vh; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-image-container .resume-main-grid-left-image-container-sm-box p {
+            font-size: 3vh; }
+        #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-skills {
+          display: grid;
+          grid-template-areas: "skill-head skillhead" "list1 list2";
+          grid-template-columns: repeat(2, 1fr);
+          padding: 2vw;
+          font-size: 3vh;
+          margin-top: 0;
+          padding-top: 0; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-skills h2 {
+            font-size: 6vh;
+            grid-area: skill-head;
+            margin-bottom: 0;
+            padding-top: 0;
+            margin-top: 0; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-skills .ulist-1 {
+            grid-area: list1; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-main-grid-left-skills .ulist-2 {
+            grid-area: list2; }
+        #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-left-divider {
+          width: 100%;
+          margin-bottom: 2vh;
+          display: table;
+          justify-content: center;
+          margin-top: 6vh;
+          margin-bottom: 6vh; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-left .resume-left-divider .resume-left-divider-inside {
+            border-bottom-style: solid;
+            border-color: #333;
+            width: 25vw;
+            margin-left: auto;
+            margin-right: auto;
+            border-width: 0.5px; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 {
+        grid-area: right1; }
+        #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 h2,
+        #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 p,
+        #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 h4 {
+          padding-left: 2vw; }
+        #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .work {
+          font-size: 5vh;
+          margin-bottom: 0; }
+        #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid {
+          margin-top: 0;
+          padding-top: 0; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid h2 {
+            font-size: 3vh; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-1 h2 {
+            margin-top: 3vh;
+            margin-bottom: 0; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-1 h4 {
+            margin-top: 1vh;
+            margin-bottom: 0; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-1 p {
+            margin-top: 2vh; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-2 h2 {
+            margin-top: 3vh;
+            margin-bottom: 0; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-2 h4 {
+            margin-top: 1vh;
+            margin-bottom: 0; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-2 p {
+            margin-top: 2vh; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-3 {
+            margin-bottom: 7vh; }
+            #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-3 h2 {
+              margin-top: 3vh;
+              margin-bottom: 0; }
+            #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-3 h4 {
+              margin-top: 1vh;
+              margin-bottom: 0; }
+            #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-main-grid-right-1-experience-grid .resume-main-grid-right-1-experience-3 p {
+              margin-top: 2vh; }
+        #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-right-divider {
+          width: 100%;
+          margin-bottom: 2vh;
+          display: table;
+          justify-content: center;
+          margin-top: 6vh;
+          margin-bottom: 6vh; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 .resume-right-divider .resume-right-divider-inside {
+            border-bottom-style: solid;
+            border-color: #333;
+            width: 60vw;
+            margin-left: auto;
+            margin-right: auto;
+            border-width: 0.5px; }
+      #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 {
+        grid-area: right2; }
+        #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .edu {
+          font-size: 6vh;
+          margin-bottom: 0; }
+        #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 h2,
+        #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 h4,
+        #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 p {
+          padding-left: 2vw; }
+        #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid {
+          margin-top: 0; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid .resume-main-grid-right-2-experience-1 h2 {
+            margin-top: 3vh;
+            margin-bottom: 0; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid .resume-main-grid-right-2-experience-1 h4 {
+            margin-top: 1vh;
+            margin-bottom: 0; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid .resume-main-grid-right-2-experience-1 p {
+            margin-top: 2vh; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid .resume-main-grid-right-2-experience-2 {
+            margin-bottom: 8vh; }
+            #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid .resume-main-grid-right-2-experience-2 h2 {
+              margin-top: 3vh;
+              margin-bottom: 0; }
+            #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid .resume-main-grid-right-2-experience-2 h4 {
+              margin-top: 1vh;
+              margin-bottom: 0; }
+            #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid .resume-main-grid-right-2-experience-2 p {
+              margin-top: 2vh; }
+        #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-right-divider {
+          width: 100%;
+          margin-bottom: 2vh;
+          display: table;
+          justify-content: center;
+          margin-top: 6vh;
+          margin-bottom: 6vh; }
+          #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-right-divider .resume-right-divider-inside {
+            border-bottom-style: solid;
+            border-color: #333;
+            width: 60vw;
+            margin-left: auto;
+            margin-right: auto;
+            border-width: 0.5px; }
+  #bg-resume .footer-1 {
+    margin-top: 5vh; }
+
 @media screen and (max-width: 961px) {
   #bg-portfolio #portfolio .portfolio-intro h2 {
     font-size: 9vh; }
