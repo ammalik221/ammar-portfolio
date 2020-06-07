@@ -744,7 +744,10 @@ header {
             margin-right: auto;
             border-width: 0.5px; }
       #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 {
-        grid-area: right1; }
+        grid-area: right1;
+        border-right-style: solid;
+        border-width: 10px;
+        border-color: #0b5863; }
         #bg-resume #resume .resume-main-grid .resume-main-grid-right-1 p {
           font-family: "Space Mono", monospace, sans-serif;
           font-weight: 400;
@@ -826,7 +829,10 @@ header {
             margin-right: auto;
             border-width: 0.5px; }
       #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 {
-        grid-area: right2; }
+        grid-area: right2;
+        border-right-style: solid;
+        border-width: 10px;
+        border-color: #0b5863; }
         #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 p {
           font-family: "Space Mono", monospace, sans-serif;
           font-weight: 400;
@@ -841,8 +847,7 @@ header {
         #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 p {
           padding-left: 2vw; }
         #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid {
-          margin-top: 0;
-          border-right-style: solid; }
+          margin-top: 0; }
           #bg-resume #resume .resume-main-grid .resume-main-grid-right-2 .resume-main-grid-right-2-experience-grid .resume-main-grid-right-2-experience-1 h2 {
             margin-top: 3vh;
             margin-bottom: 0;
