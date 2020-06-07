@@ -1121,6 +1121,7 @@ header {
         }
         .resume-main-grid-right-2-experience-grid {
           margin-top: 0;
+          border-right-style: solid;
           .resume-main-grid-right-2-experience-1 {
             h2 {
               //border-style: solid;
@@ -1184,6 +1185,151 @@ header {
   }
   .footer-1 {
     margin-top: 5vh;
+  }
+  .menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    @include easeOut;
+
+    .btn-line {
+      width: 28px;
+      height: 3px;
+      margin: 0px 0 5px 0px;
+      background: darken($color: #15aabf, $amount: 10);
+      @include easeOut;
+    }
+
+    //rotate into x
+    &.close {
+      transform: rotate(180deg);
+
+      .btn-line {
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(7px, -6px);
+        }
+      }
+    }
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.98;
+    visibility: hidden;
+
+    &.show {
+      visibility: visible;
+    }
+
+    &-branding,
+    &-nav {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      float: left;
+      width: 50%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    &-nav {
+      //border-style: solid;
+      padding: 0;
+      margin: 0;
+      align-items: stretch;
+      justify-content: center;
+      text-align: center;
+      background: darken($primary-color, 5);
+      list-style: none;
+      transform: translate3d(0, -100%, 0);
+      @include easeOut;
+
+      &.show {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    &-branding {
+      background: $primary-color;
+      @include easeOut;
+      transform: translate3d(0, 100%, 0);
+
+      &.show {
+        transform: translate3d(0, 0, 0);
+      }
+
+      .portrait {
+        width: 250px;
+        height: 250px;
+        background: url("../img/profile_md.jpg");
+        border-color: $secondary-color;
+        border-radius: 50%;
+        background-size: cover;
+        border-style: solid;
+      }
+    }
+
+    .nav-item {
+      transform: translate3d(600px, 0, 0);
+      //border-style: solid;
+      @include easeOut;
+
+      &.show {
+        transform: translate3d(0, 0, 0);
+      }
+
+      &.current {
+        a {
+          color: $secondary-color;
+          //color: #000;
+        }
+      }
+
+      &:hover {
+        background-color: darken($primary-color, 10);
+        color: $secondary-color;
+        //color: $secondary-color;
+        //background-color: red;
+        cursor: pointer;
+        @include easeOut;
+      }
+    }
+
+    .nav-link {
+      display: inline-block;
+      position: relative;
+      font-size: 30px;
+      text-transform: uppercase;
+      padding: 1rem 0;
+      font-weight: 300;
+      color: #fff;
+      text-decoration: none;
+      @include easeOut;
+
+      &:hover {
+        color: $secondary-color;
+        //color: red;
+      }
+    }
+  }
+
+  @for $x from 1 through 3 {
+    .nav-item:nth-child(#{$x}) {
+      transition-delay: $x * 0.1s;
+    }
   }
 }
 
