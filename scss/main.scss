@@ -1106,6 +1106,8 @@ header {
         border-right-style: solid;
         border-width: 10px;
         border-color: darken($color: #15aabf, $amount: 20);
+        //border-color: darken($color: #f38654, $amount: 10);
+        //border-color: #f38654;
         p {
           font-family: "Space Mono", monospace, sans-serif;
           font-weight: 400;
@@ -1191,6 +1193,7 @@ header {
   }
   .footer-1 {
     margin-top: 5vh;
+    width: 100%;
   }
   .menu-btn {
     position: absolute;
@@ -1204,7 +1207,8 @@ header {
       width: 28px;
       height: 3px;
       margin: 0px 0 5px 0px;
-      background: darken($color: #15aabf, $amount: 10);
+      //background: darken($color: #15aabf, $amount: 10);f38654
+      background: darken($color: #f38654, $amount: 10);
       @include easeOut;
     }
 

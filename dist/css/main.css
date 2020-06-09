@@ -887,7 +887,8 @@ header {
             margin-right: auto;
             border-width: 0.5px; }
   #bg-resume .footer-1 {
-    margin-top: 5vh; }
+    margin-top: 5vh;
+    width: 100%; }
   #bg-resume .menu-btn {
     position: absolute;
     z-index: 3;
@@ -899,7 +900,7 @@ header {
       width: 28px;
       height: 3px;
       margin: 0px 0 5px 0px;
-      background: #108191;
+      background: #f06424;
       transition: all 0.5s ease-in-out; }
     #bg-resume .menu-btn.close {
       transform: rotate(180deg); }
