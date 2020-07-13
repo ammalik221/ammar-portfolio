@@ -1,9 +1,9 @@
-$primary-color: #444;
+$primary-color: #000;
 //$secondary-color: #eece1a;
 $secondary-color: #f38654;
 $show-home-image: true;
-$home-image: url(../img/bg_main.jpg);
-$background-opacity: 0.6;
+$home-image: url(../img/matte.jpg);
+$background-opacity: 0.5;
 
 @mixin easeOut {
   transition: all 0.5s ease-in-out;
